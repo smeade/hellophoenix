@@ -11,7 +11,7 @@ Questions and comments: contact me at [@smeade](https://twitter.com/smeade).
 Guides
 - [x] Up and Running [
 [demo](https://phx-001-up-and-running.herokuapp.com) |
-[src](https://github.com/smeade/hellophoenix/tree/001-up-and-running) |
+[src](https://github.com/smeade/hellophoenix/tree/phx-001-up-and-running) |
 [guide](https://hexdocs.pm/phoenix/up_and_running.html#content)
 ]
 - [ ] Adding Pages
@@ -39,7 +39,7 @@ Deployment
 - [x] Introduction to Deployment
 - [x] Deploying on Heroku [
 [demo](https://phx-001-up-and-running.herokuapp.com) |
-[src](https://github.com/smeade/hellophoenix/tree/001-up-and-running) |
+[src](https://github.com/smeade/hellophoenix/tree/phx-001-up-and-running) |
 [guide](https://hexdocs.pm/phoenix/heroku.html#content)
 ]
 
