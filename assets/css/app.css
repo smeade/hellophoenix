@@ -1,1 +1,7 @@
 /* This file is for your main application css. */
+
+body { padding-top: 70px; }
+
+.navbar-inverse .navbar-nav>li>a {
+  font-weight: bold;
+}

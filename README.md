@@ -1,11 +1,17 @@
 # Hello
 
-Working through the [Phoenix Guides (v1.3.0)](https://hexdocs.pm/phoenix/up_and_running.html).
+## Working through the [Phoenix Guides (v1.3.0)](https://hexdocs.pm/phoenix/up_and_running.html). 
+
+This git repository has a branch and demo app for each section of the guides.
 
 Questions and comments: contact me at [@smeade](https://twitter.com/smeade)
 
 Guides
-- [x] Up and Running [[guide](https://hexdocs.pm/phoenix/up_and_running.html#content)|[demo](https://phx-001-up-and-running.herokuapp.com)]
+- [x] Up and Running [
+  [guide](https://hexdocs.pm/phoenix/up_and_running.html#content)|
+  [src](https://github.com/smeade/hellophoenix/tree/001-up-and-running)|
+  [demo](https://phx-001-up-and-running.herokuapp.com)
+  ]
 - [ ] Adding Pages
   - [ ] A Static Page [[demo]()]
   - [ ] Another New Page [[demo]()]
@@ -29,9 +35,13 @@ Testing
 
 Deployment
 - [x] Introduction to Deployment
-- [x] Deploying on Heroku [[guide](https://hexdocs.pm/phoenix/heroku.html#content)|[demo](https://phx-001-up-and-running.herokuapp.com)]
+- [x] Deploying on Heroku [
+  [guide](https://hexdocs.pm/phoenix/heroku.html#content)|
+  [src](https://github.com/smeade/hellophoenix/tree/001-up-and-running)|
+  [demo](https://phx-001-up-and-running.herokuapp.com)
+  ]
 
-# Hello
+# From the Phoenix Framework
 
 To start your Phoenix server:
 
