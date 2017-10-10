@@ -10,7 +10,7 @@ This repository has [branches](https://github.com/smeade/hellophoenix/branches/a
 
 ### How to use this
 
-Read the Pheonix guides for information about each topic using the 'guide' links. Refer to this repository for example code ('src' links) and applications ('demo' links) that demonstrate the topic. This repository is a reference and is not a summary of the Phoenix guides nor a replacement for reading them nor for writing the code yourself as you follow along in the guides.
+This repository is not a summary of the Phoenix guides nor a replacement for reading them. Read the Pheonix guides for information about each topic (see 'guide' links below). Refer to this repository for example code ('src' links) and applications ('demo' links) that demonstrate the topic. 
 
 Contact: [@smeade](https://twitter.com/smeade).
 
