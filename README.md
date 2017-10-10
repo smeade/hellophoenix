@@ -1,5 +1,38 @@
 # Hello
 
+Working through the [Phoenix Guides (v1.3.0)](https://hexdocs.pm/phoenix/up_and_running.html).
+
+Questions and comments: contact me at [@smeade](https://twitter.com/smeade)
+
+Guides
+- [x] Up and Running [[guide](https://hexdocs.pm/phoenix/up_and_running.html#content)|[demo](https://phx-001-up-and-running.herokuapp.com)]
+- [ ] Adding Pages
+  - [ ] A Static Page [[demo]()]
+  - [ ] Another New Page [[demo]()]
+- [ ] Routing
+- [ ] Plug
+- [ ] Endpoint
+- [ ] Controllers
+- [ ] Views
+- [ ] Templates
+- [ ] Channels
+- [ ] Ecto
+- [ ] Contexts
+- [ ] Mix Tasks
+- [ ] Custom Errors
+
+Testing
+- [ ] Introduction to Testing
+- [ ] Testing Schemas
+- [ ] Testing Controllers
+- [ ] Testing Channels
+
+Deployment
+- [x] Introduction to Deployment
+- [x] Deploying on Heroku [[guide](https://hexdocs.pm/phoenix/heroku.html#content)|[demo](https://phx-001-up-and-running.herokuapp.com)]
+
+# Hello
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
