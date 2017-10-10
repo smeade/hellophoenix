@@ -2,7 +2,7 @@
 
 ### Working through the Phoenix Guides.
 
-Phoenix is a web development framework written in Elixir which implements the server-side MVC pattern [(1)](https://hexdocs.pm/phoenix/overview.html). The [Phoenix Guides](https://hexdocs.pm/phoenix/overview.html) are a very well written and organized introduction to the framework. The guides provide an overview of the framework, [installation](https://hexdocs.pm/phoenix/installation.html) instructions, a list of [learning](https://hexdocs.pm/phoenix/learning.html) resources, and places to connect with [community](https://hexdocs.pm/phoenix/community.html) members.
+Phoenix is a web development framework written in Elixir which implements the server-side MVC pattern [(1)](https://hexdocs.pm/phoenix/overview.html). The [Phoenix Guides](https://hexdocs.pm/phoenix/overview.html) are a very well written and organized introduction to the framework. The guides provide an overview of the framework, [installation](https://hexdocs.pm/phoenix/installation.html) instructions, a list of [learning](https://hexdocs.pm/phoenix/learning.html) resources, and places to connect with the [community](https://hexdocs.pm/phoenix/community.html).
 
 After these background and prequisite topics are covered and dependencies (including Elixir, Erlang, Hex, the Phoenix archive, PostgreSQL and node.js) are [installed](https://hexdocs.pm/phoenix/installation.html), the guides move on to building Phoenix apps. That's where this repo picks up.
 
@@ -10,7 +10,7 @@ This repository has [branches](https://github.com/smeade/hellophoenix/branches/a
 
 ### How to use this
 
-Read the Pheonix guides for information about each topic. Refer to this repository for example code and applications that demonstrate the topic. This repository is not a summary of the Phoenix guides nor a replacement for reading them. This is also not a replacement for writing the code yourself as you follow along in the guides.
+Read the Pheonix guides for information about each topic using the 'guide' links. Refer to this repository for example code ('src' links) and applications ('demo' links) that demonstrate the topic. This repository is a reference and is not a summary of the Phoenix guides nor a replacement for reading them nor for writing the code yourself as you follow along in the guides.
 
 Contact: [@smeade](https://twitter.com/smeade).
 
