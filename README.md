@@ -2,13 +2,13 @@
 
 ### Working through the [Phoenix Guides (v1.3.0)](https://hexdocs.pm/phoenix/up_and_running.html). 
 
-This git repository has a [branch](https://github.com/smeade/hellophoenix/branches/all) for each section of the guides. 
+There is a [branch for each section of the guides](https://github.com/smeade/hellophoenix/branches/all). 
 
-There is also a demo app deployed to Heroku for each section of the guides.
+There are also demo apps deployed to Heroku.
 
-Questions and comments: contact me at [@smeade](https://twitter.com/smeade).
+Contact: [@smeade](https://twitter.com/smeade).
 
-Guides
+### Guides
 - [x] Up and Running [
 [demo](https://phx-001-up-and-running.herokuapp.com) |
 [src](https://github.com/smeade/hellophoenix/tree/phx-001-up-and-running) |
@@ -29,13 +29,13 @@ Guides
 - [ ] Mix Tasks
 - [ ] Custom Errors
 
-Testing
+### Testing
 - [ ] Introduction to Testing
 - [ ] Testing Schemas
 - [ ] Testing Controllers
 - [ ] Testing Channels
 
-Deployment
+### Deployment
 - [x] Introduction to Deployment
 - [x] Deploying on Heroku [
 [demo](https://phx-001-up-and-running.herokuapp.com) |
@@ -43,7 +43,7 @@ Deployment
 [guide](https://hexdocs.pm/phoenix/heroku.html#content)
 ]
 
-# From the Phoenix Framework
+## From the Phoenix Framework
 
 To start your Phoenix server:
 
