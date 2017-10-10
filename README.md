@@ -13,7 +13,7 @@ Contact: [@smeade](https://twitter.com/smeade).
 [Master branch](https://github.com/smeade/hellophoenix)
 
 ### Guides
-**- [x] Up and Running [
+- [x] ** Up and Running [
 [demo](https://phx-001-up-and-running.herokuapp.com) |
 [src](https://github.com/smeade/hellophoenix/tree/phx-001-up-and-running) |
 [guide](https://hexdocs.pm/phoenix/up_and_running.html#content)
