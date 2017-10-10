@@ -6,7 +6,7 @@ Phoenix is a web development framework written in Elixir which implements the se
 
 After these background and prequisite topics are covered and dependencies (including Elixir, Erlang, Hex, the Phoenix archive, PostgreSQL and node.js) are [installed](https://hexdocs.pm/phoenix/installation.html), developers are ready jump into building Phoenix apps. That's where this repo picks up.
 
-In this repository, I am creating a [branch](https://github.com/smeade/hellophoenix/branches/all) for each topic from the guides which have deployable code. Each topic's branch demonstrates the code discussed in the guide for that topic and also has a demonstration app deployed to Heroku.
+In this repository, I am creating a [branch](https://github.com/smeade/hellophoenix/branches/all) for each code-related topic in the guides. Each topic's branch demonstrates the concepts discussed in the guide for that topic and also has a demonstration app deployed to Heroku.
 
 Contact: [@smeade](https://twitter.com/smeade).
 
