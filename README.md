@@ -1,8 +1,8 @@
-# Hello
+# Hello Phoenix
 
-## Working through the [Phoenix Guides (v1.3.0)](https://hexdocs.pm/phoenix/up_and_running.html). 
+### Working through the [Phoenix Guides (v1.3.0)](https://hexdocs.pm/phoenix/up_and_running.html). 
 
-This git repository has a [branch](https://github.com/smeade/hellophoenix/branches) and demo app for each section of the guides.
+This git repository has a [branch](https://github.com/smeade/hellophoenix/branches/all) for each section of the guides. There is also a demo app deployed to Heroku for each section of the guides.
 
 Questions and comments: contact me at [@smeade](https://twitter.com/smeade)
 
