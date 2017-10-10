@@ -17,8 +17,6 @@ Contact: [@smeade](https://twitter.com/smeade).
 [guide](https://hexdocs.pm/phoenix/up_and_running.html#content)
 ]
 - [ ] Adding Pages
-  - [ ] A Static Page
-  - [ ] Another New Page
 - [ ] Routing
 - [ ] Plug
 - [ ] Endpoint
