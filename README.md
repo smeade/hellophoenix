@@ -2,11 +2,11 @@
 
 ### Working through the Phoenix Guides.
 
-Phoenix is a web development framework written in Elixir which implements the server-side MVC pattern [1](https://hexdocs.pm/phoenix/overview.html). The [Phoenix Guides](https://hexdocs.pm/phoenix/overview.html) are a very well written and organized introduction to the framework. The guide authors begin with an [overview](https://hexdocs.pm/phoenix/overview.html) of the framework, installation [instructions](https://hexdocs.pm/phoenix/installation.html), a list of [resources](https://hexdocs.pm/phoenix/learning.html) for learning about Phoenix and [places](https://hexdocs.pm/phoenix/community.html) to connect with community members.
+Phoenix is a web development framework written in Elixir which implements the server-side MVC pattern [(1)](https://hexdocs.pm/phoenix/overview.html). The [Phoenix Guides](https://hexdocs.pm/phoenix/overview.html) are a very well written and organized introduction to the framework. The guides provide an [overview](https://hexdocs.pm/phoenix/overview.html) of the framework, installation [instructions](https://hexdocs.pm/phoenix/installation.html), a list of [resources](https://hexdocs.pm/phoenix/learning.html) for learning about Phoenix and [places](https://hexdocs.pm/phoenix/community.html) to connect with community members.
 
-Once Phoenix and dependencies are [installed](https://hexdocs.pm/phoenix/installation.html) (including Elixir, Erlang, Hex, the Phoenix archive, PostgreSQL and node.js ), we are ready jump into Phoenix. 
+After these background and prequisite topics are covered and dependencies (including Elixir, Erlang, Hex, the Phoenix archive, PostgreSQL and node.js) are [installed](https://hexdocs.pm/phoenix/installation.html), we are ready jump into building Phoenix apps. That's where this repo picks up.
 
-I am reading through the Phoenix guides. In this repository, I am creating a [branch for each section of the guides](https://github.com/smeade/hellophoenix/branches/all). Each section's branch demonstrates the code discussed in the guide for that topic. I am also deploying demonstration apps to Heroku for each topic.
+In this repository, I am creating a [branch for each section of the guides](https://github.com/smeade/hellophoenix/branches/all). Each topic's branch demonstrates the code discussed in the guide for that topic. I am also deploying demonstration apps to Heroku for each topic.
 
 Contact: [@smeade](https://twitter.com/smeade).
 
