@@ -1,4 +1,4 @@
-# Hello Phoenix: Up and Running
+# Hello Phoenix
 
 ### Working through the Phoenix Guides.
 
