@@ -2,19 +2,19 @@
 
 ## Working through the [Phoenix Guides (v1.3.0)](https://hexdocs.pm/phoenix/up_and_running.html). 
 
-This git repository has a branch and demo app for each section of the guides.
+This git repository has a [branch](https://github.com/smeade/hellophoenix/branches) and demo app for each section of the guides.
 
 Questions and comments: contact me at [@smeade](https://twitter.com/smeade)
 
 Guides
 - [x] Up and Running [
-  [guide](https://hexdocs.pm/phoenix/up_and_running.html#content)|
+  [demo](https://phx-001-up-and-running.herokuapp.com)|
   [src](https://github.com/smeade/hellophoenix/tree/001-up-and-running)|
-  [demo](https://phx-001-up-and-running.herokuapp.com)
+  [guide](https://hexdocs.pm/phoenix/up_and_running.html#content)|
   ]
 - [ ] Adding Pages
-  - [ ] A Static Page [[demo]()]
-  - [ ] Another New Page [[demo]()]
+  - [ ] A Static Page
+  - [ ] Another New Page
 - [ ] Routing
 - [ ] Plug
 - [ ] Endpoint
@@ -36,9 +36,9 @@ Testing
 Deployment
 - [x] Introduction to Deployment
 - [x] Deploying on Heroku [
-  [guide](https://hexdocs.pm/phoenix/heroku.html#content)|
+  [demo](https://phx-001-up-and-running.herokuapp.com)|
   [src](https://github.com/smeade/hellophoenix/tree/001-up-and-running)|
-  [demo](https://phx-001-up-and-running.herokuapp.com)
+  [guide](https://hexdocs.pm/phoenix/heroku.html#content)|
   ]
 
 # From the Phoenix Framework
