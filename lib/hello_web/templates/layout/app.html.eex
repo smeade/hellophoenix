@@ -27,15 +27,15 @@
 
         <div class="collapse navbar-collapse" id="navbar-collapse">
           <p class="navbar-text">
-            Demo Phoenix App: Up and Running<br/>
-            "get a Phoenix application up and running"
+            Demo Phoenix App: Adding Pages<br/>
+            a static page and page with a param
           </p>
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a href="https://hexdocs.pm/phoenix/up_and_running.html#content">Guide</a>
+              <a href="https://hexdocs.pm/phoenix/adding_pages.html">Guide</a>
             </li>
             <li>
-              <a href="https://github.com/smeade/hellophoenix/tree/phx-001-up-and-running">Source</a>
+              <a href="https://github.com/smeade/hellophoenix/tree/phx-002-adding-pages">Source</a>
             </li>
             <li>
               <a href="https://github.com/smeade/hellophoenix/blob/master/README.md">About</a>

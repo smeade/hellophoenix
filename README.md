@@ -20,7 +20,13 @@ Contact: [@smeade](https://twitter.com/smeade).
 [src](https://github.com/smeade/hellophoenix/tree/phx-001-up-and-running) |
 [demo](https://phx-001-up-and-running.herokuapp.com)
 ]
-- [ ] Adding Pages
+- [x] Adding Pages [
+[guide](https://hexdocs.pm/phoenix/adding_pages.html) |
+[src](https://github.com/smeade/hellophoenix/tree/phx-002-adding-pages) |
+[demo](https://phx-002-adding-pages.herokuapp.com)
+]
+  - [x] A purely static page [[demo](https://phx-002-adding-pages.herokuapp.com/hello)]
+  - [x] A page with a param [[demo](https://phx-002-adding-pages.herokuapp.com/hello/Scott)]
 - [ ] Routing
 - [ ] Plug
 - [ ] Endpoint
