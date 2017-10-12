@@ -59,3 +59,37 @@ Contact: [@smeade](https://twitter.com/smeade).
   * Docs: https://hexdocs.pm/phoenix
   * Mailing list: http://groups.google.com/group/phoenix-talk
   * Source: https://github.com/phoenixframework/phoenix
+
+## Deploying each branch to its own Heroku app
+
+We'll create a demo app for each branch of this repo. To do so, we need to:
+
+1. Tell Phoenix of the updated Heroku URL
+2. Create the Heroku application and add buildpacks
+3. Create environment variables in the new app in Heroku
+
+### Tell Phoenix of the updated Heroku URL
+
+Update the host in `prod.exs`.
+
+```
+url: [scheme: "https", host: "phx-002-adding-pages.herokuapp.com", port: 443],
+```
+
+### Create the Heroku application and add buildpacks
+
+```
+$ heroku create phx-002-adding-pages --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
+$ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-002-adding-pages
+$ git push phx-002-adding-pages phx-002-adding-pages:master
+
+```
+
+### Create environment variables in Heroku
+
+```
+$ heroku addons:create heroku-postgresql:hobby-dev -a phx-002-adding-pages
+$ heroku config:set POOL_SIZE=18 -a phx-002-adding-pages
+$ mix phx.gen.secret
+$ heroku config:set SECRET_KEY_BASE="" -a phx-002-adding-pages
+```
