@@ -81,8 +81,6 @@ url: [scheme: "https", host: "phx-002-adding-pages.herokuapp.com", port: 443],
 ```
 $ heroku create phx-002-adding-pages --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
 $ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-002-adding-pages
-$ git push phx-002-adding-pages phx-002-adding-pages:master
-
 ```
 
 ### Create environment variables in Heroku
@@ -92,4 +90,12 @@ $ heroku addons:create heroku-postgresql:hobby-dev -a phx-002-adding-pages
 $ heroku config:set POOL_SIZE=18 -a phx-002-adding-pages
 $ mix phx.gen.secret
 $ heroku config:set SECRET_KEY_BASE="" -a phx-002-adding-pages
+```
+
+### Add a git remote and deploy
+
+```
+$ git remote add phx-002-adding-pages https://git.heroku.com/phx-002-adding-pages.git
+$ git push phx-002-adding-pages phx-002-adding-pages:master
+$ heroku open
 ```
