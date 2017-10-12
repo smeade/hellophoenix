@@ -90,7 +90,7 @@ $ heroku config:set SECRET_KEY_BASE="" -a phx-002-adding-pages
 ```
 $ git remote add phx-002-adding-pages https://git.heroku.com/phx-002-adding-pages.git
 $ git push phx-002-adding-pages phx-002-adding-pages:master
-$ heroku open
+$ heroku open -a phx-002-adding-pages
 ```
 
 ## Learn more
