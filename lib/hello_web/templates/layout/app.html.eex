@@ -32,13 +32,13 @@
           </p>
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a href="https://hexdocs.pm/phoenix/adding_pages.html">Guide</a>
+              <a href="https://github.com/smeade/hellophoenix/blob/master/README.md">README</a>
+            </li>
+            <li>
+              <a href="https://hexdocs.pm/phoenix/adding_pages.html">Phoenix Guides</a>
             </li>
             <li>
               <a href="https://github.com/smeade/hellophoenix/tree/phx-002-adding-pages">Source</a>
-            </li>
-            <li>
-              <a href="https://github.com/smeade/hellophoenix/blob/master/README.md">About</a>
             </li>
             <li>
               <a href="https://twitter.com/smeade">@smeade</a>

@@ -52,14 +52,6 @@ Contact: [@smeade](https://twitter.com/smeade).
 [demo](https://phx-001-up-and-running.herokuapp.com)
 ]
 
-## Learn more
-
-  * Official website: http://www.phoenixframework.org/
-  * Guides: http://phoenixframework.org/docs/overview
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
-
 ## Deploying each branch to its own Heroku app
 
 We'll create a demo app for each branch of this repo. To do so, we need to:
@@ -67,6 +59,7 @@ We'll create a demo app for each branch of this repo. To do so, we need to:
 1. Tell Phoenix of the updated Heroku URL
 2. Create the Heroku application and add buildpacks
 3. Create environment variables in the new app in Heroku
+4. Add a git remote and deploy
 
 ### Tell Phoenix of the updated Heroku URL
 
@@ -99,3 +92,11 @@ $ git remote add phx-002-adding-pages https://git.heroku.com/phx-002-adding-page
 $ git push phx-002-adding-pages phx-002-adding-pages:master
 $ heroku open
 ```
+
+## Learn more
+
+  * Official website: http://www.phoenixframework.org/
+  * Guides: http://phoenixframework.org/docs/overview
+  * Docs: https://hexdocs.pm/phoenix
+  * Mailing list: http://groups.google.com/group/phoenix-talk
+  * Source: https://github.com/phoenixframework/phoenix
