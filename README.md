@@ -8,15 +8,13 @@ After these prerequisite topics are covered and dependencies (including Elixir, 
 
 ### How to use this
 
-This repository is not a tutorial, a summary of the guides nor a replacement for reading them. It is reference code for topics covered in the Phoenix guides. 
+This repository is not a tutorial nor a replacement for reading them. It is reference code for topics covered in the Phoenix guides. 
 
 Read the Phoenix guides for information about each topic (see 'guide' links). Refer to this repository for example code ('src' links) and demo-applications ('demo' links) demonstrating the topic. 
 
 Note that while Phoenix apps are very responsive, these demo apps are deployed to free Heroku dynos which go to sleep after 30 minutes of inactivity. When you click on a demo link, there will be a delay while the dyno activates.
 
 Contact: [@smeade](https://twitter.com/smeade).
-
-[Master branch](https://github.com/smeade/hellophoenix)
 
 ### Guides
 - [x] Up and Running [
@@ -31,7 +29,7 @@ Contact: [@smeade](https://twitter.com/smeade).
     ]
   - [x] A purely static page [[demo](https://phx-002-adding-pages.herokuapp.com/hello)]
   - [x] A page with a param [[demo](https://phx-002-adding-pages.herokuapp.com/hello/Scott)]
-- [ ] Routing [
+- [x] Routing [
     [guide](https://hexdocs.pm/phoenix/routing.html) |
     [src](https://github.com/smeade/hellophoenix/tree/phx-003-routing)
     ]
@@ -70,7 +68,7 @@ Contact: [@smeade](https://twitter.com/smeade).
       [src: plug](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/plugs/admin.ex) |
       [demo](https://phx-003-routing.herokuapp.com/admin/users)
       ]
-  - [ ] Channel Routes
+  - [x] Channel Routes [guide](https://hexdocs.pm/phoenix/routing.html#channel-routes)
 - [ ] Plug
 - [ ] Endpoint
 - [ ] Controllers
