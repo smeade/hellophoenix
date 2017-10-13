@@ -58,7 +58,7 @@ Contact: [@smeade](https://twitter.com/smeade).
     ]
   - [x] Scoped Routes [
       [guide](https://hexdocs.pm/phoenix/routing.html#scoped-routes) |
-      [src](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L35) |
+      [src](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L40) |
       [demo](https://phx-003-routing.herokuapp.com/admin/users)
     ]
   - [x] Pipelines [[guide](https://hexdocs.pm/phoenix/routing.html#pipelines )]
@@ -66,7 +66,7 @@ Contact: [@smeade](https://twitter.com/smeade).
       [src](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L5)
     ]
     - [x] Creating New Pipelines [
-      [src: pipeline](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L20)|
+      [src: pipeline](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L20) |
       [src: plug](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/plugs/admin.ex) |
       [demo](https://phx-003-routing.herokuapp.com/admin/users)
       ]
