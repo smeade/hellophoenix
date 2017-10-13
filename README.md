@@ -8,7 +8,7 @@ After these prerequisite topics are covered and dependencies (including Elixir, 
 
 ### How to use this
 
-This repository is reference code for topics covered in the Phoenix guides. It's a cheat sheet of sorts with fully functioning code deployed to live demo apps.
+This repository is a cheat sheet of sorts with fully functioning code deployed to live demo apps. This is reference code for topics covered in the Phoenix guides.
 
 This repository is not a tutorial nor a replacement for reading them. Read the Phoenix guides for information about each topic (see 'guide' links). Refer to this repository for example code ('src' links) and demo-applications ('demo' links) demonstrating the topic. 
 
