@@ -36,9 +36,9 @@ Contact: [@smeade](https://twitter.com/smeade).
   - [x] Path Helpers [[demo](https://phx-003-routing.herokuapp.com/users?admin=true&active=false)]
   - [x] Nested Resources [[demo](https://phx-003-routing.herokuapp.com/users/111/posts)]
   - [x] Scoped Routes [[demo](https://phx-003-routing.herokuapp.com/admin/users)]
-  - [ ] Pipelines
-    - [ ] The :browser and :api Pipelines
-    - [ ] Creating New Pipelines
+  - [x] Pipelines
+    - [x] The :browser and :api Pipelines
+    - [x] Creating New Pipelines [[src]()|[src]()]
   - [ ] Channel Routes
 - [ ] Plug
 - [ ] Endpoint

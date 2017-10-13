@@ -3,10 +3,12 @@ defmodule HelloWeb.Endpoint do
 
   socket "/socket", HelloWeb.UserSocket
 
+  # Serve static assets.
   # Serve at "/" the static files from "priv/static" directory.
   #
   # You should set gzip to true if you are running phoenix.digest
   # when deploying your static files in production.
+  # Since this plug comes before the logger, serving of static assets is not logged.
   plug Plug.Static,
     at: "/", from: :hello, gzip: false,
     only: ~w(css fonts images js favicon.ico robots.txt)
@@ -19,17 +21,27 @@ defmodule HelloWeb.Endpoint do
     plug Phoenix.CodeReloader
   end
 
+  # Generate a unique request id for each request.
   plug Plug.RequestId
+
+  # Log incoming requests.
   plug Plug.Logger
 
+  # Parse request body.
+  # Parse urlencoded, multipart and json (with poison).
   plug Plug.Parsers,
     parsers: [:urlencoded, :multipart, :json],
     pass: ["*/*"],
     json_decoder: Poison
 
+  # Override the request's POST method with the method 
+  # defined in the _method request parameter.
   plug Plug.MethodOverride
+
+  # Convert HEAD requests to GET requests.
   plug Plug.Head
 
+  # Set up session management (does not fetch session).
   # The session will be stored in the cookie and signed,
   # this means its contents can be read but not tampered with.
   # Set :encryption_salt if you would also like to encrypt it.
@@ -38,6 +50,7 @@ defmodule HelloWeb.Endpoint do
     key: "_hello_key",
     signing_salt: "6BG5rALh"
 
+  # Into a router....
   plug HelloWeb.Router
 
   @doc """

@@ -85,15 +85,15 @@
             <a href="https://phx-003-routing.herokuapp.com/jobs/active">BackgroundJob.Plug/active</a>
             <br/>
             Path helpers: 
-            <a href="<%= page_path(@conn, :index) %>">To the Welcome Page!</a> |
+            <a href="<%= page_path(@conn, :index) %>">Welcome Page!</a> |
             <a href="<%= user_path(@conn, :index) %>">User page</a> |            
-            <a href="<%= user_path(@conn, :index, admin: true, active: false) %>">User Page with query strings</a>
+            <a href="<%= user_path(@conn, :index, admin: true, active: false) %>">With query strings</a>
             <br/>
             Nested Resources:
             <a href="<%= user_post_path(@conn, :index, 111) %>">User 111 posts</a> |
             <a href="<%= user_post_path(@conn, :index, 999) %>">User 999 posts</a>
             <br/>
-            Scoped Routes:
+            Scoped Routes plus Pipelines:
             <a href="<%= admin_user_path(@conn, :index) %>">admin/users</a>
           </div>
         </div>
