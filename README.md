@@ -35,9 +35,22 @@ Contact: [@smeade](https://twitter.com/smeade).
     [guide](https://hexdocs.pm/phoenix/routing.html) |
     [src](https://github.com/smeade/hellophoenix/tree/phx-003-routing)
     ]
-  - [x] Resources [[demo](https://phx-003-routing.herokuapp.com/users)]
-  - [x] Forward [[demo](https://phx-003-routing.herokuapp.com/jobs) | [demo](https://phx-003-routing.herokuapp.com/jobs/active)]
-  - [x] Path Helpers [[demo](https://phx-003-routing.herokuapp.com/users?admin=true&active=false)]
+  - [x] Resources [
+    [guide](https://hexdocs.pm/phoenix/routing.html#resources) |
+    [src](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L34) |
+    [demo](https://phx-003-routing.herokuapp.com/users)
+    ]
+  - [x] Forward [
+    [guide](https://hexdocs.pm/phoenix/routing.html#forward) |
+    [src](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L50) |
+    [demo](https://phx-003-routing.herokuapp.com/jobs) |
+    [demo](https://phx-003-routing.herokuapp.com/jobs/active)
+    ]
+  - [x] Path Helpers [
+    [guide](https://hexdocs.pm/phoenix/routing.html#path-helpers) |
+    [src](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/templates/layout/app.html.eex#L90) |
+    [demo](https://phx-003-routing.herokuapp.com/users?admin=true&active=false)
+    ]
   - [x] Nested Resources [
       [guide](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L35) |
       [src](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L35) | 
@@ -48,11 +61,13 @@ Contact: [@smeade](https://twitter.com/smeade).
       [src](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L35) |
       [demo](https://phx-003-routing.herokuapp.com/admin/users)
     ]
-  - [x] Pipelines
-    - [x] The :browser and :api Pipelines
+  - [x] Pipelines [[guide](https://hexdocs.pm/phoenix/routing.html#pipelines )]
+    - [x] The :browser and :api Pipelines [
+      [src](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L5)
+    ]
     - [x] Creating New Pipelines [
-      [pipeline](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L20)|
-      [plugs](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/plugs/admin.ex) |
+      [src: pipeline](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L20)|
+      [src: plug](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/plugs/admin.ex) |
       [demo](https://phx-003-routing.herokuapp.com/admin/users)
       ]
   - [ ] Channel Routes

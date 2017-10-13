@@ -1,6 +1,29 @@
 <div class="row">
   <div class="col-xs-12">
     <p class="lead">Admin/Users:</p>
+    <p class="lead">user_is_admin: <%= @admin %></p>
+    <pre>
+      router.ex:
+
+      pipeline :admin_checks do
+        plug :ensure_authenticated_user
+        plug :ensure_user_is_admin
+      end
+
+      scope "/admin", Admin, as: :admin do
+        pipe_through [:browser, :admin_checks]
+
+        resources "/users", UserController
+      end
+    </pre>
+    <pre>
+      plugs/admin.ex
+
+      def ensure_user_is_admin(conn, _) do
+        if current_user_is_admin() do
+          conn |> assign(:user_is_admin, true)
+      ...
+    </pre>
   </div>
 </div>
 
