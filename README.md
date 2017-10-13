@@ -68,7 +68,7 @@ Contact: [@smeade](https://twitter.com/smeade).
       [src: plug](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/plugs/admin.ex) |
       [demo](https://phx-003-routing.herokuapp.com/admin/users)
       ]
-  - [x] Channel Routes [guide](https://hexdocs.pm/phoenix/routing.html#channel-routes)
+  - [x] Channel Routes [[guide](https://hexdocs.pm/phoenix/routing.html#channel-routes)]
 - [x] Plug [
     [guide](https://hexdocs.pm/phoenix/plug.html)
     ]
