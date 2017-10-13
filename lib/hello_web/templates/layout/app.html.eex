@@ -63,6 +63,19 @@
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
 
       <main role="main">
+        <div class="row">
+          <div class="col-xs-12">
+            Path helpers: 
+            <a href="<%= page_path(@conn, :index) %>">To the Welcome Page!</a> |
+            <a href="<%= user_path(@conn, :index) %>">User page</a> |            
+            <a href="<%= user_path(@conn, :index, admin: true, active: false) %>">User Page with query strings</a> |
+            <br/>
+            Nested routes: 
+            <a href="<%= user_post_path(@conn, :index, 111) %>">User 111 posts</a> |
+            <a href="<%= user_post_path(@conn, :index, 999) %>">User 999 posts</a> 
+          </div>
+        </div>
+        <br/>
         <%= render @view_module, @view_template, assigns %>
       </main>
 

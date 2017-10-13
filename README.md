@@ -28,6 +28,15 @@ Contact: [@smeade](https://twitter.com/smeade).
   - [x] A purely static page [[demo](https://phx-002-adding-pages.herokuapp.com/hello)]
   - [x] A page with a param [[demo](https://phx-002-adding-pages.herokuapp.com/hello/Scott)]
 - [ ] Routing
+  - [x] Resources [[demo](https://phx-003-routing.herokuapp.com/users)]
+  - [x] Forward [[demo](https://phx-003-routing.herokuapp.com/jobs) | [demo](https://phx-003-routing.herokuapp.com/jobs/active)]
+  - [x] Path Helpers [[demo](https://phx-003-routing.herokuapp.com/users?admin=true&active=false)]
+  - [x] Nested Resources [[demo](https://phx-003-routing.herokuapp.com/users/111/posts)]
+  - [ ] Scoped Routes
+  - [ ] Pipelines
+    - [ ] The :browser and :api Pipelines
+    - [ ] Creating New Pipelines
+  - [ ] Channel Routes
 - [ ] Plug
 - [ ] Endpoint
 - [ ] Controllers
@@ -66,31 +75,31 @@ We'll create a demo app for each branch of this repo. To do so, we need to:
 Update the host in `prod.exs`.
 
 ```
-url: [scheme: "https", host: "phx-002-adding-pages.herokuapp.com", port: 443],
+url: [scheme: "https", host: "phx-003-routing.herokuapp.com", port: 443],
 ```
 
 ### Create the Heroku application and add buildpacks
 
 ```
-$ heroku create phx-002-adding-pages --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
-$ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-002-adding-pages
+$ heroku create phx-003-routing --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
+$ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-003-routing
 ```
 
 ### Create environment variables in Heroku
 
 ```
-$ heroku addons:create heroku-postgresql:hobby-dev -a phx-002-adding-pages
-$ heroku config:set POOL_SIZE=18 -a phx-002-adding-pages
+$ heroku addons:create heroku-postgresql:hobby-dev -a phx-003-routing
+$ heroku config:set POOL_SIZE=18 -a phx-003-routing
 $ mix phx.gen.secret
-$ heroku config:set SECRET_KEY_BASE="" -a phx-002-adding-pages
+$ heroku config:set  -a phx-003-routing SECRET_KEY_BASE=""
 ```
 
 ### Add a git remote and deploy
 
 ```
-$ git remote add phx-002-adding-pages https://git.heroku.com/phx-002-adding-pages.git
-$ git push phx-002-adding-pages phx-002-adding-pages:master
-$ heroku open -a phx-002-adding-pages
+$ git remote add phx-003-routing https://git.heroku.com/phx-003-routing.git
+$ git push phx-003-routing phx-003-routing:master
+$ heroku open -a phx-003-routing
 ```
 
 ## Learn more

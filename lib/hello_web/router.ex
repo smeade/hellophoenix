@@ -19,7 +19,20 @@ defmodule HelloWeb.Router do
     get "/", PageController, :index
     get "/hello", HelloController, :index
     get "/hello/:messenger", HelloController, :show
+
+    # Resources:
+    # https://hexdocs.pm/phoenix/routing.html#resources
+    resources "/users", UserController, only: [:index] do
+      # Nested resources:
+      # https://hexdocs.pm/phoenix/routing.html#nested-resources
+      resources "/posts", PostController
+    end
   end
+
+  # Forward:
+  # Send all requests that start with a particular path to a particular plug
+  # https://hexdocs.pm/phoenix/routing.html#forward
+  forward "/jobs", BackgroundJob.Plug
 
   # Other scopes may use custom stacks.
   # scope "/api", HelloWeb do
