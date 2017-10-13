@@ -8,7 +8,11 @@ After these prerequisite topics are covered and dependencies (including Elixir, 
 
 ### How to use this
 
-This repository is not a summary of the Phoenix guides nor a replacement for reading them. Read the Phoenix guides for information about each topic (see 'guide' links). Refer to this repository for example code ('src' links) and demo-applications ('demo' links) demonstrating the topic. Note that while Phoenix apps are very responsive, my demo apps are deployed to free Heroku dynos which go to sleep after 30 minutes of inactivity. When you first click on a demo link, there will be a short delay while the dyno becomes active again.
+This repository is not a tutorial, a summary of the guides nor a replacement for reading them. It is reference code for topics covered in the Phoenix guides. 
+
+Read the Phoenix guides for information about each topic (see 'guide' links). Refer to this repository for example code ('src' links) and demo-applications ('demo' links) demonstrating the topic. 
+
+Note that while Phoenix apps are very responsive, these demo apps are deployed to free Heroku dynos which go to sleep after 30 minutes of inactivity. When you click on a demo link, there will be a delay while the dyno activates.
 
 Contact: [@smeade](https://twitter.com/smeade).
 
@@ -16,29 +20,41 @@ Contact: [@smeade](https://twitter.com/smeade).
 
 ### Guides
 - [x] Up and Running [
-[guide](https://hexdocs.pm/phoenix/up_and_running.html#content) |
-[src](https://github.com/smeade/hellophoenix/tree/phx-001-up-and-running) |
-[demo](https://phx-001-up-and-running.herokuapp.com)
-]
+    [guide](https://hexdocs.pm/phoenix/up_and_running.html#content) |
+    [src](https://github.com/smeade/hellophoenix/tree/phx-001-up-and-running) |
+    [demo](https://phx-001-up-and-running.herokuapp.com)
+    ]
 - [x] Adding Pages [
-[guide](https://hexdocs.pm/phoenix/adding_pages.html) |
-[src](https://github.com/smeade/hellophoenix/tree/phx-002-adding-pages) |
-[demo](https://phx-002-adding-pages.herokuapp.com)
-]
+    [guide](https://hexdocs.pm/phoenix/adding_pages.html) |
+    [src](https://github.com/smeade/hellophoenix/tree/phx-002-adding-pages) |
+    [demo](https://phx-002-adding-pages.herokuapp.com)
+    ]
   - [x] A purely static page [[demo](https://phx-002-adding-pages.herokuapp.com/hello)]
   - [x] A page with a param [[demo](https://phx-002-adding-pages.herokuapp.com/hello/Scott)]
 - [ ] Routing [
-[guide](https://hexdocs.pm/phoenix/routing.html) |
-[src](https://github.com/smeade/hellophoenix/tree/phx-003-routing)
-]
+    [guide](https://hexdocs.pm/phoenix/routing.html) |
+    [src](https://github.com/smeade/hellophoenix/tree/phx-003-routing)
+    ]
   - [x] Resources [[demo](https://phx-003-routing.herokuapp.com/users)]
   - [x] Forward [[demo](https://phx-003-routing.herokuapp.com/jobs) | [demo](https://phx-003-routing.herokuapp.com/jobs/active)]
   - [x] Path Helpers [[demo](https://phx-003-routing.herokuapp.com/users?admin=true&active=false)]
-  - [x] Nested Resources [[demo](https://phx-003-routing.herokuapp.com/users/111/posts)]
-  - [x] Scoped Routes [[demo](https://phx-003-routing.herokuapp.com/admin/users)]
+  - [x] Nested Resources [
+      [guide](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L35) |
+      [src](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L35) | 
+      [demo](https://phx-003-routing.herokuapp.com/users/111/posts)
+    ]
+  - [x] Scoped Routes [
+      [guide](https://hexdocs.pm/phoenix/routing.html#scoped-routes) |
+      [src](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L35) |
+      [demo](https://phx-003-routing.herokuapp.com/admin/users)
+    ]
   - [x] Pipelines
     - [x] The :browser and :api Pipelines
-    - [x] Creating New Pipelines [[src]()|[src]()]
+    - [x] Creating New Pipelines [
+      [pipeline](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L20)|
+      [plugs](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/plugs/admin.ex) |
+      [demo](https://phx-003-routing.herokuapp.com/admin/users)
+      ]
   - [ ] Channel Routes
 - [ ] Plug
 - [ ] Endpoint
