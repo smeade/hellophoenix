@@ -61,6 +61,22 @@
       <main role="main">
         <div class="row">
           <div class="col-xs-12">
+            <h4>Up and Running</h4>
+          </div>
+          <div class="col-xs-12">
+            <a href="/">A working Phoenix application</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <h4>Adding Pages</h4>
+          </div>
+          <div class="col-xs-12">
+            <a href="/hello">A purely static page</a> | <a href="/hello/Scott">A page with params</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
             <h4>Routing</h4>
           </div>
           <div class="col-xs-12">

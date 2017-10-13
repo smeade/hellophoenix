@@ -27,7 +27,10 @@ Contact: [@smeade](https://twitter.com/smeade).
 ]
   - [x] A purely static page [[demo](https://phx-002-adding-pages.herokuapp.com/hello)]
   - [x] A page with a param [[demo](https://phx-002-adding-pages.herokuapp.com/hello/Scott)]
-- [ ] Routing
+- [ ] Routing [
+[guide](https://hexdocs.pm/phoenix/routing.html) |
+[src](https://github.com/smeade/hellophoenix/tree/phx-003-routing)
+]
   - [x] Resources [[demo](https://phx-003-routing.herokuapp.com/users)]
   - [x] Forward [[demo](https://phx-003-routing.herokuapp.com/jobs) | [demo](https://phx-003-routing.herokuapp.com/jobs/active)]
   - [x] Path Helpers [[demo](https://phx-003-routing.herokuapp.com/users?admin=true&active=false)]
