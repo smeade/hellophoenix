@@ -80,7 +80,15 @@ Contact: [@smeade](https://twitter.com/smeade).
     [guide](https://hexdocs.pm/phoenix/plug.html#module-plugs) |
     [src](https://github.com/smeade/hellophoenix/tree/phx-004-plug/lib/hell_web/plugs/locale.ex)
     ]
-- [ ] Endpoint
+- [x] Endpoint [[docs](https://hexdocs.pm/phoenix/Phoenix.Endpoint.html)]
+  - [x] Endpoint Contents [
+    [guide](https://hexdocs.pm/phoenix/endpoint.html#endpoint-contents) |
+    [src](https://github.com/smeade/hellophoenix/tree/phx-005-endpoint/lib/hello_web/endpoint.ex)
+    ]
+  - [x] Using SSL [
+    [guide](https://hexdocs.pm/phoenix/endpoint.html#using-ssl) |
+    [src](https://github.com/smeade/hellophoenix/tree/phx-005-endpoint/config/prod.exs#L21)
+    ]
 - [ ] Controllers
 - [ ] Views
 - [ ] Templates
@@ -117,31 +125,31 @@ We'll create a demo app for each branch of this repo. To do so, we need to:
 Update the host in `prod.exs`.
 
 ```
-url: [scheme: "https", host: "phx-004-plug.herokuapp.com", port: 443],
+url: [scheme: "https", host: "phx-005-endpoint.herokuapp.com", port: 443],
 ```
 
 ### Create the Heroku application and add buildpacks
 
 ```
-$ heroku create phx-004-plug --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
-$ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-004-plug
+$ heroku create phx-005-endpoint --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
+$ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-005-endpoint
 ```
 
 ### Create environment variables in Heroku
 
 ```
-$ heroku addons:create heroku-postgresql:hobby-dev -a phx-004-plug
-$ heroku config:set POOL_SIZE=18 -a phx-004-plug
+$ heroku addons:create heroku-postgresql:hobby-dev -a phx-005-endpoint
+$ heroku config:set POOL_SIZE=18 -a phx-005-endpoint
 $ mix phx.gen.secret
-$ heroku config:set  -a phx-004-plug SECRET_KEY_BASE=""
+$ heroku config:set  -a phx-005-endpoint SECRET_KEY_BASE=""
 ```
 
 ### Add a git remote and deploy
 
 ```
-$ git remote add phx-004-plug https://git.heroku.com/phx-004-plug.git
-$ git push phx-004-plug phx-004-plug:master
-$ heroku open -a phx-004-plug
+$ git remote add phx-005-endpoint https://git.heroku.com/phx-005-endpoint.git
+$ git push phx-005-endpoint phx-005-endpoint:master
+$ heroku open -a phx-005-endpoint
 ```
 
 ## Learn more
