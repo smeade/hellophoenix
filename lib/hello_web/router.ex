@@ -27,6 +27,13 @@ defmodule HelloWeb.Router do
       # https://hexdocs.pm/phoenix/routing.html#nested-resources
       resources "/posts", PostController
     end
+
+    # Scoped Routes
+    # https://hexdocs.pm/phoenix/routing.html#scoped-routes
+    scope "/admin", Admin, as: :admin do
+      pipe_through :browser
+      resources "/users",   UserController
+    end    
   end
 
   # Forward:

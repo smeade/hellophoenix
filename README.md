@@ -32,7 +32,7 @@ Contact: [@smeade](https://twitter.com/smeade).
   - [x] Forward [[demo](https://phx-003-routing.herokuapp.com/jobs) | [demo](https://phx-003-routing.herokuapp.com/jobs/active)]
   - [x] Path Helpers [[demo](https://phx-003-routing.herokuapp.com/users?admin=true&active=false)]
   - [x] Nested Resources [[demo](https://phx-003-routing.herokuapp.com/users/111/posts)]
-  - [ ] Scoped Routes
+  - [x] Scoped Routes [[demo](https://phx-003-routing.herokuapp.com/admin/users)]
   - [ ] Pipelines
     - [ ] The :browser and :api Pipelines
     - [ ] Creating New Pipelines
