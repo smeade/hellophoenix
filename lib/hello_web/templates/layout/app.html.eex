@@ -27,7 +27,7 @@
 
         <div class="collapse navbar-collapse" id="navbar-collapse">
           <p class="navbar-text">
-            Demo Phoenix App: Routing
+            Demo Phoenix App: Plugs
           </p>
           <ul class="nav navbar-nav navbar-right">
             <li>
@@ -37,7 +37,7 @@
               <a href="https://hexdocs.pm/phoenix/adding_pages.html">Phoenix Guides</a>
             </li>
             <li>
-              <a href="https://github.com/smeade/hellophoenix/tree/phx-003-routing">Source</a>
+              <a href="https://github.com/smeade/hellophoenix/tree/phx-004-plug">Source</a>
             </li>
             <li>
               <a href="https://twitter.com/smeade">@smeade</a>
@@ -59,45 +59,6 @@
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
 
       <main role="main">
-        <div class="row">
-          <div class="col-xs-12">
-            <h4>Up and Running</h4>
-          </div>
-          <div class="col-xs-12">
-            <a href="/">A working Phoenix application</a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <h4>Adding Pages</h4>
-          </div>
-          <div class="col-xs-12">
-            <a href="/hello">A purely static page</a> | <a href="/hello/Scott">A page with params</a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <h4>Routing</h4>
-          </div>
-          <div class="col-xs-12">
-            Forward:
-            <a href="https://phx-003-routing.herokuapp.com/jobs">To BackgroundJob.Plug</a> | 
-            <a href="https://phx-003-routing.herokuapp.com/jobs/active">BackgroundJob.Plug/active</a>
-            <br/>
-            Path helpers: 
-            <a href="<%= page_path(@conn, :index) %>">Welcome Page!</a> |
-            <a href="<%= user_path(@conn, :index) %>">User page</a> |            
-            <a href="<%= user_path(@conn, :index, admin: true, active: false) %>">With query strings</a>
-            <br/>
-            Nested Resources:
-            <a href="<%= user_post_path(@conn, :index, 111) %>">User 111 posts</a> |
-            <a href="<%= user_post_path(@conn, :index, 999) %>">User 999 posts</a>
-            <br/>
-            Scoped Routes plus Pipelines:
-            <a href="<%= admin_user_path(@conn, :index) %>">admin/users</a>
-          </div>
-        </div>
-        <hr/>
         <%= render @view_module, @view_template, assigns %>
       </main>
 

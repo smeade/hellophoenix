@@ -1,6 +1,6 @@
 # Hello Phoenix
 
-### Working through the Phoenix guides
+### Phoenix Guides Cheat Sheet
 
 The [Phoenix Guides](https://hexdocs.pm/phoenix/overview.html) are a very well written and well organized introduction to the framework. The guides provide an overview of the framework, [installation](https://hexdocs.pm/phoenix/installation.html) instructions, [learning](https://hexdocs.pm/phoenix/learning.html) resources, and places to connect with the [community](https://hexdocs.pm/phoenix/community.html).
 
@@ -8,9 +8,9 @@ After these prerequisite topics are covered and dependencies (including Elixir, 
 
 ### How to use this
 
-This repository is not a tutorial nor a replacement for reading them. It is reference code for topics covered in the Phoenix guides. 
+This repository is reference code for topics covered in the Phoenix guides. It's a cheat sheet of sorts with fully functioning code deployed to live demo apps.
 
-Read the Phoenix guides for information about each topic (see 'guide' links). Refer to this repository for example code ('src' links) and demo-applications ('demo' links) demonstrating the topic. 
+This repository is not a tutorial nor a replacement for reading them. Read the Phoenix guides for information about each topic (see 'guide' links). Refer to this repository for example code ('src' links) and demo-applications ('demo' links) demonstrating the topic. 
 
 Note that while Phoenix apps are very responsive, these demo apps are deployed to free Heroku dynos which go to sleep after 30 minutes of inactivity. When you click on a demo link, there will be a delay while the dyno activates.
 
@@ -69,7 +69,17 @@ Contact: [@smeade](https://twitter.com/smeade).
       [demo](https://phx-003-routing.herokuapp.com/admin/users)
       ]
   - [x] Channel Routes [guide](https://hexdocs.pm/phoenix/routing.html#channel-routes)
-- [ ] Plug
+- [x] Plug [
+    [guide](https://hexdocs.pm/phoenix/plug.html)
+    ]
+  - [x] Function Plugs [
+    [guide](https://hexdocs.pm/phoenix/plug.html#function-plugs) |
+    [src](https://github.com/smeade/hellophoenix/tree/phx-004-plug/lib/hello_web/controllers/user_controller.ex#L10)
+    ]
+  - [x] Module Plugs [
+    [guide](https://hexdocs.pm/phoenix/plug.html#module-plugs) |
+    [src](https://github.com/smeade/hellophoenix/tree/phx-004-plug/lib/hell_web/plugs/locale.ex)
+    ]
 - [ ] Endpoint
 - [ ] Controllers
 - [ ] Views
@@ -107,31 +117,31 @@ We'll create a demo app for each branch of this repo. To do so, we need to:
 Update the host in `prod.exs`.
 
 ```
-url: [scheme: "https", host: "phx-003-routing.herokuapp.com", port: 443],
+url: [scheme: "https", host: "phx-004-plug.herokuapp.com", port: 443],
 ```
 
 ### Create the Heroku application and add buildpacks
 
 ```
-$ heroku create phx-003-routing --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
-$ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-003-routing
+$ heroku create phx-004-plug --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
+$ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-004-plug
 ```
 
 ### Create environment variables in Heroku
 
 ```
-$ heroku addons:create heroku-postgresql:hobby-dev -a phx-003-routing
-$ heroku config:set POOL_SIZE=18 -a phx-003-routing
+$ heroku addons:create heroku-postgresql:hobby-dev -a phx-004-plug
+$ heroku config:set POOL_SIZE=18 -a phx-004-plug
 $ mix phx.gen.secret
-$ heroku config:set  -a phx-003-routing SECRET_KEY_BASE=""
+$ heroku config:set  -a phx-004-plug SECRET_KEY_BASE=""
 ```
 
 ### Add a git remote and deploy
 
 ```
-$ git remote add phx-003-routing https://git.heroku.com/phx-003-routing.git
-$ git push phx-003-routing phx-003-routing:master
-$ heroku open -a phx-003-routing
+$ git remote add phx-004-plug https://git.heroku.com/phx-004-plug.git
+$ git push phx-004-plug phx-004-plug:master
+$ heroku open -a phx-004-plug
 ```
 
 ## Learn more
