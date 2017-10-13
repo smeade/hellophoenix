@@ -10,7 +10,7 @@ After these prerequisite topics are covered and dependencies (including Elixir, 
 
 This repository is a cheat sheet of sorts with fully functioning code deployed to live demo apps. This is reference code for topics covered in the Phoenix guides.
 
-This repository is not a tutorial nor a replacement for reading them. Read the Phoenix guides for information about each topic (see 'guide' links). Refer to this repository for example code ('src' links) and demo-applications ('demo' links) demonstrating the topic. 
+This repository is not a tutorial nor a replacement for reading them. Read the Phoenix guides for information about each topic (see 'guide' links). Refer to this repository for **ex**ample code ('ex' links) and demo applications ('demo' links) demonstrating the topic. 
 
 Note that while Phoenix apps are very responsive, these demo apps are deployed to free Heroku dynos which go to sleep after 30 minutes of inactivity. When you click on a demo link, there will be a delay while the dyno activates.
 
@@ -19,53 +19,53 @@ Contact: [@smeade](https://twitter.com/smeade).
 ### Guides
 - [x] Up and Running [
     [guide](https://hexdocs.pm/phoenix/up_and_running.html#content) |
-    [src](https://github.com/smeade/hellophoenix/tree/phx-001-up-and-running) |
+    [ex](https://github.com/smeade/hellophoenix/tree/phx-001-up-and-running) |
     [demo](https://phx-001-up-and-running.herokuapp.com)
     ]
 - [x] Adding Pages [
     [guide](https://hexdocs.pm/phoenix/adding_pages.html) |
-    [src](https://github.com/smeade/hellophoenix/tree/phx-002-adding-pages) |
+    [ex](https://github.com/smeade/hellophoenix/tree/phx-002-adding-pages) |
     [demo](https://phx-002-adding-pages.herokuapp.com)
     ]
   - [x] A purely static page [[demo](https://phx-002-adding-pages.herokuapp.com/hello)]
   - [x] A page with a param [[demo](https://phx-002-adding-pages.herokuapp.com/hello/Scott)]
 - [x] Routing [
     [guide](https://hexdocs.pm/phoenix/routing.html) |
-    [src](https://github.com/smeade/hellophoenix/tree/phx-003-routing)
+    [ex](https://github.com/smeade/hellophoenix/tree/phx-003-routing)
     ]
   - [x] Resources [
     [guide](https://hexdocs.pm/phoenix/routing.html#resources) |
-    [src](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L34) |
+    [ex](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L34) |
     [demo](https://phx-003-routing.herokuapp.com/users)
     ]
   - [x] Forward [
     [guide](https://hexdocs.pm/phoenix/routing.html#forward) |
-    [src](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L50) |
+    [ex](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L50) |
     [demo](https://phx-003-routing.herokuapp.com/jobs) |
     [demo](https://phx-003-routing.herokuapp.com/jobs/active)
     ]
   - [x] Path Helpers [
     [guide](https://hexdocs.pm/phoenix/routing.html#path-helpers) |
-    [src](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/templates/layout/app.html.eex#L90) |
+    [ex](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/templates/layout/app.html.eex#L90) |
     [demo](https://phx-003-routing.herokuapp.com/users?admin=true&active=false)
     ]
   - [x] Nested Resources [
       [guide](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L35) |
-      [src](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L35) | 
+      [ex](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L35) | 
       [demo](https://phx-003-routing.herokuapp.com/users/111/posts)
     ]
   - [x] Scoped Routes [
       [guide](https://hexdocs.pm/phoenix/routing.html#scoped-routes) |
-      [src](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L40) |
+      [ex](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L40) |
       [demo](https://phx-003-routing.herokuapp.com/admin/users)
     ]
   - [x] Pipelines [[guide](https://hexdocs.pm/phoenix/routing.html#pipelines )]
     - [x] The :browser and :api Pipelines [
-      [src](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L5)
+      [ex](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L5)
     ]
     - [x] Creating New Pipelines [
-      [src: pipeline](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L20) |
-      [src: plug](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/plugs/admin.ex) |
+      [ex: pipeline](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L20) |
+      [ex: plug](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/plugs/admin.ex) |
       [demo](https://phx-003-routing.herokuapp.com/admin/users)
       ]
   - [x] Channel Routes [[guide](https://hexdocs.pm/phoenix/routing.html#channel-routes)]
@@ -74,20 +74,20 @@ Contact: [@smeade](https://twitter.com/smeade).
     ]
   - [x] Function Plugs [
     [guide](https://hexdocs.pm/phoenix/plug.html#function-plugs) |
-    [src](https://github.com/smeade/hellophoenix/tree/phx-004-plug/lib/hello_web/controllers/user_controller.ex#L10)
+    [ex](https://github.com/smeade/hellophoenix/tree/phx-004-plug/lib/hello_web/controllers/user_controller.ex#L10)
     ]
   - [x] Module Plugs [
     [guide](https://hexdocs.pm/phoenix/plug.html#module-plugs) |
-    [src](https://github.com/smeade/hellophoenix/tree/phx-004-plug/lib/hell_web/plugs/locale.ex)
+    [ex](https://github.com/smeade/hellophoenix/tree/phx-004-plug/lib/hell_web/plugs/locale.ex)
     ]
 - [x] Endpoint [[docs](https://hexdocs.pm/phoenix/Phoenix.Endpoint.html)]
   - [x] Endpoint Contents [
     [guide](https://hexdocs.pm/phoenix/endpoint.html#endpoint-contents) |
-    [src](https://github.com/smeade/hellophoenix/tree/phx-005-endpoint/lib/hello_web/endpoint.ex)
+    [ex](https://github.com/smeade/hellophoenix/tree/phx-005-endpoint/lib/hello_web/endpoint.ex)
     ]
   - [x] Using SSL [
     [guide](https://hexdocs.pm/phoenix/endpoint.html#using-ssl) |
-    [src](https://github.com/smeade/hellophoenix/tree/phx-005-endpoint/config/prod.exs#L21)
+    [ex](https://github.com/smeade/hellophoenix/tree/phx-005-endpoint/config/prod.exs#L21)
     ]
 - [ ] Controllers
 - [ ] Views
@@ -107,7 +107,7 @@ Contact: [@smeade](https://twitter.com/smeade).
 ### Deployment
 - [x] Deploying on Heroku [
 [guide](https://hexdocs.pm/phoenix/heroku.html#content) |
-[src](https://github.com/smeade/hellophoenix/tree/phx-001-up-and-running) |
+[ex](https://github.com/smeade/hellophoenix/tree/phx-001-up-and-running) |
 [demo](https://phx-001-up-and-running.herokuapp.com)
 ]
 
