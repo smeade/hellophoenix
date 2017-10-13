@@ -40,31 +40,31 @@ Contact: [@smeade](https://twitter.com/smeade).
     ]
   - [x] Forward [
     [guide](https://hexdocs.pm/phoenix/routing.html#forward) |
-    [ex](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L50) |
+    [ex](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L47-L50) |
     [demo](https://phx-003-routing.herokuapp.com/jobs) |
     [demo](https://phx-003-routing.herokuapp.com/jobs/active)
     ]
   - [x] Path Helpers [
     [guide](https://hexdocs.pm/phoenix/routing.html#path-helpers) |
-    [ex](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/templates/layout/app.html.eex#L90) |
+    [ex](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/templates/layout/app.html.eex#L87-L90) |
     [demo](https://phx-003-routing.herokuapp.com/users?admin=true&active=false)
     ]
   - [x] Nested Resources [
       [guide](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L35) |
-      [ex](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L35) | 
+      [ex](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L32-L36) | 
       [demo](https://phx-003-routing.herokuapp.com/users/111/posts)
     ]
   - [x] Scoped Routes [
       [guide](https://hexdocs.pm/phoenix/routing.html#scoped-routes) |
-      [ex](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L40) |
+      [ex](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L38-L44) |
       [demo](https://phx-003-routing.herokuapp.com/admin/users)
     ]
   - [x] Pipelines [[guide](https://hexdocs.pm/phoenix/routing.html#pipelines )]
     - [x] The :browser and :api Pipelines [
-      [ex](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L5)
+      [ex](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L5-L15)
     ]
     - [x] Creating New Pipelines [
-      [ex: pipeline](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L20) |
+      [ex: pipeline](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L17-L23) |
       [ex: plug](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/plugs/admin.ex) |
       [demo](https://phx-003-routing.herokuapp.com/admin/users)
       ]
@@ -74,11 +74,11 @@ Contact: [@smeade](https://twitter.com/smeade).
     ]
   - [x] Function Plugs [
     [guide](https://hexdocs.pm/phoenix/plug.html#function-plugs) |
-    [ex](https://github.com/smeade/hellophoenix/tree/phx-004-plug/lib/hello_web/controllers/user_controller.ex#L10)
+    [ex](https://github.com/smeade/hellophoenix/blob/phx-004-plug/lib/hello_web/controllers/user_controller.ex#L10-L14)
     ]
   - [x] Module Plugs [
     [guide](https://hexdocs.pm/phoenix/plug.html#module-plugs) |
-    [ex](https://github.com/smeade/hellophoenix/tree/phx-004-plug/lib/hell_web/plugs/locale.ex)
+    [ex](https://github.com/smeade/hellophoenix/blob/phx-004-plug/lib/hello_web/plugs/locale.ex)
     ]
 - [x] Endpoint [[docs](https://hexdocs.pm/phoenix/Phoenix.Endpoint.html)]
   - [x] Endpoint Contents [
@@ -87,7 +87,7 @@ Contact: [@smeade](https://twitter.com/smeade).
     ]
   - [x] Using SSL [
     [guide](https://hexdocs.pm/phoenix/endpoint.html#using-ssl) |
-    [ex](https://github.com/smeade/hellophoenix/tree/phx-005-endpoint/config/prod.exs#L21)
+    [ex](https://github.com/smeade/hellophoenix/blob/phx-005-endpoint/config/prod.exs#L19-L22)
     ]
 - [ ] Controllers
 - [ ] Views
