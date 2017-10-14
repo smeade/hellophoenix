@@ -34,16 +34,16 @@ defmodule HelloWeb.Router do
     resources "/users", UserController, only: [:index] do
       resources "/posts", PostController
     end
-
-    # Scoped Routes
-    # https://hexdocs.pm/phoenix/routing.html#scoped-routes
-    scope "/admin", Admin, as: :admin do
-      pipe_through [:browser, :admin_checks]
-
-      resources "/users", UserController
-    end
   end
 
+  # Scoped Routes
+  # https://hexdocs.pm/phoenix/routing.html#scoped-routes
+  scope "/admin", HelloWeb.Admin, as: :admin do
+    pipe_through [:browser, :admin_checks]
+
+    resources "/users", UserController
+  end
+  
   # Forward:
   # Send all requests that start with a particular path to a particular plug
   # https://hexdocs.pm/phoenix/routing.html#forward
