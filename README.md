@@ -107,8 +107,9 @@ Contact: [@smeade](https://twitter.com/smeade).
   - [x] Assigning Layouts [
     [guide](https://hexdocs.pm/phoenix/controllers.html#assigning-layouts) |
     [ex](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/page_controller.ex#L7) |
-    [ex](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/templates/layout/admin.html.eex) |    
-    [demo](https://phx-006-controllers.herokuapp.com)]
+    [ex](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/templates/layout/admin.html.eex) | 
+    [demo](https://phx-006-controllers.herokuapp.com)
+    ]
   - [x] Overriding Rendering Formats [
     [guide](https://hexdocs.pm/phoenix/controllers.html#overriding-rendering-formats) |
     [ex](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/router.ex#L6) | 
