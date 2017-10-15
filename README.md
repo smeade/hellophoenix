@@ -127,6 +127,25 @@ Contact: [@smeade](https://twitter.com/smeade).
     [ex](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/page_controller.ex#L6)
     ]
 - [ ] Views
+  - [ ] Rendering Templates [ [guide](https://hexdocs.pm/phoenix/views.html#rendering-templates) ]
+    - [x] View Functions [
+        [ex](https://github.com/smeade/hellophoenix/blob/phx-007-views/lib/hello_web/views/layout_view.ex#L4-L8) |
+        [demo](https://phx-007-views.herokuapp.com/hello)
+        ]
+    - [ ] Templates are function definitions
+  - [ ] More About Views [
+    [guide](https://hexdocs.pm/phoenix/views.html#more-about-views)
+    ]
+  - [ ] A Word About Layouts [
+    [guide](https://hexdocs.pm/phoenix/views.html#a-word-about-layouts)
+    ]
+  - [ ] The ErrorView [
+    [guide](https://hexdocs.pm/phoenix/views.html#the-errorview)
+    ]
+  - [ ] Rendering JSON [
+    [guide](https://hexdocs.pm/phoenix/views.html#rendering-json)
+    ]
+  
 - [ ] Templates
 - [ ] Channels
 - [ ] Ecto
@@ -161,31 +180,31 @@ We'll create a demo app for each branch of this repo. To do so, we need to:
 Update the host in `prod.exs`.
 
 ```
-url: [scheme: "https", host: "phx-006-controllers.herokuapp.com", port: 443],
+url: [scheme: "https", host: "phx-007-views.herokuapp.com", port: 443],
 ```
 
 ### Create the Heroku application and add buildpacks
 
 ```
-$ heroku create phx-006-controllers --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
-$ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-006-controllers
+$ heroku create phx-007-views --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
+$ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-007-views
 ```
 
 ### Create environment variables in Heroku
 
 ```
-$ heroku addons:create heroku-postgresql:hobby-dev -a phx-006-controllers
-$ heroku config:set POOL_SIZE=18 -a phx-006-controllers
+$ heroku addons:create heroku-postgresql:hobby-dev -a phx-007-views
+$ heroku config:set POOL_SIZE=18 -a phx-007-views
 $ mix phx.gen.secret
-$ heroku config:set  -a phx-006-controllers SECRET_KEY_BASE="insertkeyhere"
+$ heroku config:set  -a phx-007-views SECRET_KEY_BASE="insertkeyhere"
 ```
 
 ### Add a git remote and deploy
 
 ```
-$ git remote add phx-006-controllers https://git.heroku.com/phx-006-controllers.git
-$ git push phx-006-controllers phx-006-controllers:master
-$ heroku open -a phx-006-controllers
+$ git remote add phx-007-views https://git.heroku.com/phx-007-views.git
+$ git push phx-007-views phx-007-views:master
+$ heroku open -a phx-007-views
 ```
 
 ## Learn more
