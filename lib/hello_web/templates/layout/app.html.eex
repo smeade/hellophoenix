@@ -27,7 +27,7 @@
 
         <div class="collapse navbar-collapse" id="navbar-collapse">
           <p class="navbar-text">
-            Demo Phoenix App: Controllers
+            Demo Phoenix App: Views
           </p>
           <ul class="nav navbar-nav navbar-right">
             <li>
