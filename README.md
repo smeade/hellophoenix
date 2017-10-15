@@ -75,6 +75,7 @@ Contact: [@smeade](https://twitter.com/smeade).
   - [x] Function Plugs [
     [guide](https://hexdocs.pm/phoenix/plug.html#function-plugs) |
     [src](https://github.com/smeade/hellophoenix/tree/phx-004-plug/lib/hello_web/controllers/user_controller.ex#L10)
+    [demo](https://phx-004-plug.herokuapp.com/users/)
     ]
   - [x] Module Plugs [
     [guide](https://hexdocs.pm/phoenix/plug.html#module-plugs) |
