@@ -127,25 +127,27 @@ Contact: [@smeade](https://twitter.com/smeade).
     [ex](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/page_controller.ex#L6)
     ]
 - [ ] Views
-  - [ ] Rendering Templates [ [guide](https://hexdocs.pm/phoenix/views.html#rendering-templates) ]
+  - [x] Rendering Templates [ [guide](https://hexdocs.pm/phoenix/views.html#rendering-templates) ]
     - [x] View Functions [
-        [ex](https://github.com/smeade/hellophoenix/blob/phx-007-views/lib/hello_web/views/layout_view.ex#L4-L8) |
-        [demo](https://phx-007-views.herokuapp.com/hello)
-        ]
-    - [ ] Templates are function definitions
-  - [ ] More About Views [
-    [guide](https://hexdocs.pm/phoenix/views.html#more-about-views)
+      [ex](https://github.com/smeade/hellophoenix/blob/phx-007-views/lib/hello_web/views/layout_view.ex#L4-L8) |
+      [demo](https://phx-007-views.herokuapp.com/hello)
+      ]
+    - [x] Templates are function definitions [
+      [ex](https://github.com/smeade/hellophoenix/blob/phx-007-views/lib/hello_web/views/page_view.ex#L4-L12) |
+      [demo](https://phx-007-views.herokuapp.com)
+      ]
+  - [x] A Word About Layouts [
+    [guide](https://hexdocs.pm/phoenix/views.html#a-word-about-layouts) |
+    [ex](https://github.com/smeade/hellophoenix/blob/phx-007-views/lib/hello_web/templates/layout/app.html.eex#L62)
     ]
-  - [ ] A Word About Layouts [
-    [guide](https://hexdocs.pm/phoenix/views.html#a-word-about-layouts)
-    ]
-  - [ ] The ErrorView [
-    [guide](https://hexdocs.pm/phoenix/views.html#the-errorview)
+  - [x] The ErrorView [
+    [guide](https://hexdocs.pm/phoenix/views.html#the-errorview) |
+    [ex](https://github.com/smeade/hellophoenix/tree/phx-007-views/lib/hello_web/templates/error/404.html.eex) |
+    [demo](https://phx-007-views.herokuapp.com/such/a/wrong/path)
     ]
   - [ ] Rendering JSON [
     [guide](https://hexdocs.pm/phoenix/views.html#rendering-json)
     ]
-  
 - [ ] Templates
 - [ ] Channels
 - [ ] Ecto
