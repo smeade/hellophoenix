@@ -90,29 +90,36 @@ Contact: [@smeade](https://twitter.com/smeade).
     [ex](https://github.com/smeade/hellophoenix/blob/phx-005-endpoint/config/prod.exs#L19-L22)
     ]
 - [x] Controllers
-  - [x] Actions [[guide](https://hexdocs.pm/phoenix/controllers.html#actions) | [ex](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/hello_controller.ex#L14-L16)]
+  - [x] Actions [[guide](https://hexdocs.pm/phoenix/controllers.html#actions) | [ex](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/hello_controller.ex#L14-L16)
+    ]
   - [x] Flash Messages [
     [guide](https://hexdocs.pm/phoenix/controllers.html#flash-messages) | 
-    [ex](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/hello_controller.ex#L8-L9)
-    [demo](https://phx-006-controllers.herokuapp.com/hello)]
+    [ex](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/hello_controller.ex#L8-L9) |
+    [demo](https://phx-006-controllers.herokuapp.com/hello)
+    ]
   - [x] Rendering [
     [guide](https://hexdocs.pm/phoenix/controllers.html#rendering) | 
     [ex](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/hello_controller.ex#L4-L8) | 
-    [demo](https://phx-006-controllers.herokuapp.com/hello)]
+    [demo](https://phx-006-controllers.herokuapp.com/hello)
+    ]
   - [x] Sending responses directly [
-    [guide](https://hexdocs.pm/phoenix/controllers.html#sending-responses-directly)]
+    [guide](https://hexdocs.pm/phoenix/controllers.html#sending-responses-directly) ]
   - [x] Assigning Layouts [
     [guide](https://hexdocs.pm/phoenix/controllers.html#assigning-layouts) |
     [ex](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/page_controller.ex#L7) |
+    [ex](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/templates/layout/admin.html.eex) |    
     [demo](https://phx-006-controllers.herokuapp.com)]
   - [x] Overriding Rendering Formats [
     [guide](https://hexdocs.pm/phoenix/controllers.html#overriding-rendering-formats) |
-    [ex](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/router.ex#L6)|
-    [ex](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/templates/page/index.text.eex)|[ex](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/page_controller.ex#L8) | 
-    [demo](https://phx-006-controllers.herokuapp.com/?_format=text&message=CrazyTown!) ]
+    [ex](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/router.ex#L6) | 
+    [ex](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/templates/page/index.text.eex) | 
+    [ex](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/page_controller.ex#L8) | 
+    [demo](https://phx-006-controllers.herokuapp.com/?_format=text&message=CrazyTown!)
+    ]
   - [x] Setting the HTTP Status [
     [guide](https://hexdocs.pm/phoenix/controllers.html#setting-the-http-status) |
-    [ex](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/page_controller.ex#L6)]
+    [ex](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/page_controller.ex#L6)
+    ]
 - [ ] Views
 - [ ] Templates
 - [ ] Channels
