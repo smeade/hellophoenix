@@ -147,10 +147,8 @@ Contact: [@smeade](https://twitter.com/smeade).
     ]
   - [x] Rendering JSON [
     [guide](https://hexdocs.pm/phoenix/views.html#rendering-json) |
-    [ex](https://github.com/smeade/hellophoenix/tree/phx-007-views/lib/hello_web/controllers/page_controller.ex#L10-L14) |
-    [demo](https://phx-007-views.herokuapp.com)
-    ]
-)
+    [ex](https://github.com/smeade/hellophoenix/tree/phx-007-views-json/lib/hello_web/controllers/page_controller.ex#L10-L14) |
+    [demo](https://phx-007-views-json.herokuapp.com)
     ]
 - [ ] Templates
 - [ ] Channels
@@ -192,25 +190,25 @@ url: [scheme: "https", host: "phx-007-views.herokuapp.com", port: 443],
 ### Create the Heroku application and add buildpacks
 
 ```
-$ heroku create phx-007-views --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
-$ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-007-views
+$ heroku create phx-007-views-json --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
+$ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-007-views-json
 ```
 
 ### Create environment variables in Heroku
 
 ```
-$ heroku addons:create heroku-postgresql:hobby-dev -a phx-007-views
-$ heroku config:set POOL_SIZE=18 -a phx-007-views
+$ heroku addons:create heroku-postgresql:hobby-dev -a phx-007-views-json
+$ heroku config:set POOL_SIZE=18 -a phx-007-views-json
 $ mix phx.gen.secret
-$ heroku config:set  -a phx-007-views SECRET_KEY_BASE="insertkeyhere"
+$ heroku config:set  -a phx-007-views-json SECRET_KEY_BASE="insertkeyhere"
 ```
 
 ### Add a git remote and deploy
 
 ```
-$ git remote add phx-007-views https://git.heroku.com/phx-007-views.git
-$ git push phx-007-views phx-007-views:master
-$ heroku open -a phx-007-views
+$ git remote add phx-007-views-json https://git.heroku.com/phx-007-views-json.git
+$ git push phx-007-views-json phx-007-views-json:master
+$ heroku open -a phx-007-views-json
 ```
 
 ## Learn more
