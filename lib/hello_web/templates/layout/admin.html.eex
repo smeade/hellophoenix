@@ -52,7 +52,6 @@
       <header class="header">
         <nav role="navigation">
         </nav>
-        <span class="logo"></span>
       </header>
 
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>

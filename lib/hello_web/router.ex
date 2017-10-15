@@ -3,7 +3,7 @@ defmodule HelloWeb.Router do
   import Plugs.Admin
 
   pipeline :browser do
-    plug :accepts, ["html"]
+    plug :accepts, ["html", "text"]
     plug :fetch_session
     plug :fetch_flash
     plug :protect_from_forgery
@@ -36,6 +36,11 @@ defmodule HelloWeb.Router do
       resources "/posts", PostController
     end
   end
+
+  # New route for redirects
+  scope "/", HelloWeb do
+    get "/redirect_test", PageController, :redirect_test, as: :redirect_test
+  end  
 
   # Scoped Routes
   # https://hexdocs.pm/phoenix/routing.html#scoped-routes
