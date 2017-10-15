@@ -145,8 +145,12 @@ Contact: [@smeade](https://twitter.com/smeade).
     [ex](https://github.com/smeade/hellophoenix/tree/phx-007-views/lib/hello_web/templates/error/404.html.eex) |
     [demo](https://phx-007-views.herokuapp.com/such/a/wrong/path)
     ]
-  - [ ] Rendering JSON [
-    [guide](https://hexdocs.pm/phoenix/views.html#rendering-json)
+  - [x] Rendering JSON [
+    [guide](https://hexdocs.pm/phoenix/views.html#rendering-json) |
+    [ex](https://github.com/smeade/hellophoenix/tree/phx-007-views/lib/hello_web/controllers/page_controller.ex#L10-L14) |
+    [demo](https://phx-007-views.herokuapp.com)
+    ]
+)
     ]
 - [ ] Templates
 - [ ] Channels
