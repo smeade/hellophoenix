@@ -90,12 +90,15 @@ Contact: [@smeade](https://twitter.com/smeade).
     [ex](https://github.com/smeade/hellophoenix/blob/phx-005-endpoint/config/prod.exs#L19-L22)
     ]
 - [x] Controllers
-  - [x] Actions [[guide](https://hexdocs.pm/phoenix/controllers.html#actions) | [ex](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/hello_controller.ex#L14-L16)
+  - [x] Actions [
+    [guide](https://hexdocs.pm/phoenix/controllers.html#actions) | 
+    [ex](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/hello_controller.ex#L14-L16) |
+    [demo](https://phx-006-controllers.herokuapp.com/hello)
     ]
   - [x] Flash Messages [
     [guide](https://hexdocs.pm/phoenix/controllers.html#flash-messages) | 
     [ex](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/hello_controller.ex#L8-L9) |
-    [demo](https://phx-006-controllers.herokuapp.com/hello)
+    [demo](https://phx-006-controllers.herokuapp.com/hello/@smeade)
     ]
   - [x] Rendering [
     [guide](https://hexdocs.pm/phoenix/controllers.html#rendering) | 
