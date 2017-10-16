@@ -100,7 +100,7 @@ Contact: [@smeade](https://twitter.com/smeade).
   - [x] Flash Messages [
     [guide](https://hexdocs.pm/phoenix/controllers.html#flash-messages) | 
     [code](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/hello_controller.ex#L8-L9) |
-    [demo](https://phx-006-controllers.herokuapp.com/hello/@smeade)
+    [demo](https://phx-006-controllers.herokuapp.com/hello)
     ]
   - [x] Rendering [
     [guide](https://hexdocs.pm/phoenix/controllers.html#rendering) | 
