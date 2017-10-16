@@ -2,15 +2,15 @@
 
 ### Phoenix Guides Cheat Sheet
 
-The [Phoenix Guides](https://hexdocs.pm/phoenix/overview.html) are a very well written and well organized introduction to the framework. The guides provide an overview of the framework, [installation](https://hexdocs.pm/phoenix/installation.html) instructions, [learning](https://hexdocs.pm/phoenix/learning.html) resources, and places to connect with the [community](https://hexdocs.pm/phoenix/community.html).
+The [Phoenix Guides](https://hexdocs.pm/phoenix/overview.html) are a very well written and organized introduction to the framework. The guides provide an overview of the framework, [installation](https://hexdocs.pm/phoenix/installation.html) instructions, [learning](https://hexdocs.pm/phoenix/learning.html) resources, and places to connect with the [community](https://hexdocs.pm/phoenix/community.html).
 
-After these prerequisite topics are covered and dependencies (including Elixir, Erlang, Hex, the Phoenix archive, PostgreSQL and node.js) are [installed](https://hexdocs.pm/phoenix/installation.html), the guides move on to building Phoenix apps. This repository has [branches](https://github.com/smeade/hellophoenix/branches/all) for each app-related topic in the guides. Each branch demonstrates concepts discussed in the guide for that topic. Most also have a demonstration app deployed to Heroku.
+After these prerequisite topics are covered and dependencies (including Elixir, Erlang, Hex, the Phoenix archive, PostgreSQL and node.js) are [installed](https://hexdocs.pm/phoenix/installation.html), the guides move on to building Phoenix apps. 
+
+This repository will have [branches](https://github.com/smeade/hellophoenix/branches/all) for each app-related topic in the guides. Each branch demonstrates concepts discussed in the guide for that topic. Most also have a demonstration app deployed to Heroku.
 
 ### How to use this
 
-This repository is a cheat sheet of sorts with fully functioning code deployed to live demo apps. This is reference code for topics covered in the Phoenix guides.
-
-This repository is not a tutorial nor a replacement for reading them. Read the Phoenix guides for information about each topic (see 'guide' links). Refer to this repository for **ex**ample code ('ex' links) and demo applications ('demo' links) demonstrating the topic. 
+This repository is not a tutorial. Read the Phoenix guides for each topic (see 'guide' links). Then refer to this repository for example code ('code' links) and demo applications ('demo' links).
 
 Note that while Phoenix apps are very responsive, these demo apps are deployed to free Heroku dynos which go to sleep after 30 minutes of inactivity. When you click on a demo link, there will be a delay while the dyno activates.
 
