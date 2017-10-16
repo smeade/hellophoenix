@@ -1,14 +1,16 @@
 # Hello Phoenix
 
-### A Phoenix Guides Cheat Sheet of Sorts
+Code examples and demonstration apps built while reading through the [Phoenix Guides](https://hexdocs.pm/phoenix/overview.html).
 
-The [Phoenix Guides](https://hexdocs.pm/phoenix/overview.html) are a very well written and organized introduction to the framework. The guides provide an overview of the framework, [installation](https://hexdocs.pm/phoenix/installation.html) instructions, [learning](https://hexdocs.pm/phoenix/learning.html) resources, and places to connect with the [community](https://hexdocs.pm/phoenix/community.html).
+### Working Through the Phoenix Guides
+
+The Phoenix Guides are a very well written and organized introduction to the framework. The guides provide an overview of the framework, [installation](https://hexdocs.pm/phoenix/installation.html) instructions, [learning](https://hexdocs.pm/phoenix/learning.html) resources, and places to connect with the [community](https://hexdocs.pm/phoenix/community.html).
 
 After these prerequisite topics are covered and dependencies (including Elixir, Erlang, Hex, the Phoenix archive, PostgreSQL and node.js) are [installed](https://hexdocs.pm/phoenix/installation.html), the guides move on to building Phoenix apps. 
 
 This repository will have [branches](https://github.com/smeade/hellophoenix/branches/all) for each app-related topic in the guides. Each branch demonstrates concepts discussed in the guide for that topic. Most also have a demonstration app deployed to Heroku.
 
-### How to use this
+### A Cheat-Sheet of Sorts
 
 This repository is not a tutorial. I made these code examples and demo apps only because I learn best by doing. Physically typing the code from the guides into a working and deployed Phoenix app is a great way to learn the framework.
 
