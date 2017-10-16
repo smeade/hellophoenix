@@ -150,7 +150,7 @@ Contact: [@smeade](https://twitter.com/smeade).
     [code](https://github.com/smeade/hellophoenix/tree/phx-007-views-json/lib/hello_web/controllers/page_controller.ex#L10-L14) |
     [demo](https://phx-007-views-json.herokuapp.com)
     ]
-- [ ] Templates [
+- [x] Templates [
   [guide](https://hexdocs.pm/phoenix/templates.html)
   ]
   - [x] hello_web.ex [
