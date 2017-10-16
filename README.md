@@ -164,7 +164,12 @@ Contact: [@smeade](https://twitter.com/smeade).
     [code](https://github.com/smeade/hellophoenix/blob/phx-008-templates/lib/hello_web/templates/page/test.html.eex#L7) |
     [demo](https://phx-008-templates.herokuapp.com/test)
     ]
-  - [ ] Shared Templates Across Views
+  - [x] Shared Templates Across Views [
+    [code](https://github.com/smeade/hellophoenix/blob/phx-008-templates-shared/lib/hello_web/templates/page/test.html.eex#L7) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-008-templates-shared/lib/hello_web/templates/shared/key.html.eex) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-008-templates-shared/lib/hello_web/views/shared_view.ex) |
+    [demo](https://phx-008-templates.herokuapp.com/test)
+    ]
 - [ ] Channels
 - [ ] Ecto
 - [ ] Contexts
@@ -198,31 +203,31 @@ We'll create a demo app for each branch of this repo. To do so, we need to:
 Update the host in `prod.exs`.
 
 ```
-url: [scheme: "https", host: "phx-008-templateskuapp.com", port: 443],
+url: [scheme: "https", host: "phx-008-templates-shared.herokuapp.com", port: 443],
 ```
 
 ### Create the Heroku application and add buildpacks
 
 ```
-$ heroku create phx-008-templates --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
-$ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-008-templates
+$ heroku create phx-008-templates-shared --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
+$ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-008-templates-shared
 ```
 
 ### Create environment variables in Heroku
 
 ```
-$ heroku addons:create heroku-postgresql:hobby-dev -a phx-008-templates
-$ heroku config:set POOL_SIZE=18 -a phx-008-templates
+$ heroku addons:create heroku-postgresql:hobby-dev -a phx-008-templates-shared
+$ heroku config:set POOL_SIZE=18 -a phx-008-templates-shared
 $ mix phx.gen.secret
-$ heroku config:set  -a phx-008-templates SECRET_KEY_BASE="insertkeyhere"
+$ heroku config:set  -a phx-008-templates-shared SECRET_KEY_BASE="insertkeyhere"
 ```
 
 ### Add a git remote and deploy
 
 ```
-$ git remote add phx-008-templates https://git.heroku.com/phx-008-templates.git
-$ git push phx-008-templates phx-008-templates:master
-$ heroku open -a phx-008-templates
+$ git remote add phx-008-templates-shared https://git.heroku.com/phx-008-templates-shared.git
+$ git push phx-008-templates-shared phx-008-templates-shared:master
+$ heroku open -a phx-008-templates-shared
 ```
 
 ## Learn more
