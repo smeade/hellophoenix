@@ -157,10 +157,12 @@ Contact: [@smeade](https://twitter.com/smeade).
     [ex](https://github.com/smeade/hellophoenix/blob/phx-008-templates/lib/hello_web.ex#L29-L45)
     ]
   - [x] Displaying Lists [
-    [ex](https://github.com/smeade/hellophoenix/blob/phx-008-templates/lib/hello_web/templates/page/test.html.eex#L6-L8)
+    [ex](https://github.com/smeade/hellophoenix/blob/phx-008-templates/lib/hello_web/templates/page/test.html.eex#L6-L8) |
+    [demo](https://phx-008-templates.herokuapp.com/test)
     ]
   - [x] Render templates within templates [
-    [ex](https://github.com/smeade/hellophoenix/blob/phx-008-templates/lib/hello_web/templates/page/test.html.eex#L7)
+    [ex](https://github.com/smeade/hellophoenix/blob/phx-008-templates/lib/hello_web/templates/page/test.html.eex#L7) |
+    [demo](https://phx-008-templates.herokuapp.com/test)
     ]
   - [ ] Shared Templates Across Views
 - [ ] Channels
