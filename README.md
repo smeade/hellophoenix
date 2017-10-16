@@ -2,19 +2,9 @@
 
 Code examples and demonstration apps built while reading through the [Phoenix Guides](https://hexdocs.pm/phoenix/overview.html).
 
-### Working Through the Phoenix Guides
-
-The Phoenix Guides are a very well written and organized introduction to the framework. The guides provide an overview of the framework, [installation](https://hexdocs.pm/phoenix/installation.html) instructions, [learning](https://hexdocs.pm/phoenix/learning.html) resources, and places to connect with the [community](https://hexdocs.pm/phoenix/community.html).
-
-After these prerequisite topics are covered and dependencies (including Elixir, Erlang, Hex, the Phoenix archive, PostgreSQL and node.js) are [installed](https://hexdocs.pm/phoenix/installation.html), the guides move on to building Phoenix apps. 
-
-This repository will have [branches](https://github.com/smeade/hellophoenix/branches/all) for each app-related topic in the guides. Each branch demonstrates concepts discussed in the guide for that topic. Most also have a demonstration app deployed to Heroku.
-
 ### A Cheat-Sheet of Sorts
 
-This repository is not a tutorial. I made these code examples and demo apps only because I learn best by doing. Physically typing the code from the guides into a working and deployed Phoenix app is a great way to learn the framework.
-
-To use this info: Read the Phoenix guides for each topic (see 'guide' links). Then refer to this repository for example code ('code' links) and demo applications ('demo' links).
+This is not a tutorial. I made these code examples in order to have a direct link between content in the guides and code in a working and deployed Phoenix app. To use this info: Read the Phoenix guides for each topic (see 'guide' links). Then refer to example code ('code' links) and demo applications ('demo' links) here.
 
 Note that while Phoenix apps are very responsive, these demo apps are deployed to free Heroku dynos which go to sleep after 30 minutes of inactivity. When you click on a demo link, there will be a delay while the dyno activates.
 
@@ -55,7 +45,7 @@ Contact: [@smeade](https://twitter.com/smeade).
     ]
   - [x] Nested Resources [
       [guide](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L35) |
-      [code](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L32-L36) | 
+      [code](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L32-L36) |
       [demo](https://phx-003-routing.herokuapp.com/users/111/posts)
     ]
   - [x] Scoped Routes [
@@ -97,18 +87,18 @@ Contact: [@smeade](https://twitter.com/smeade).
     ]
 - [x] Controllers
   - [x] Actions [
-    [guide](https://hexdocs.pm/phoenix/controllers.html#actions) | 
+    [guide](https://hexdocs.pm/phoenix/controllers.html#actions) |
     [code](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/hello_controller.ex#L14-L16) |
     [demo](https://phx-006-controllers.herokuapp.com/hello)
     ]
   - [x] Flash Messages [
-    [guide](https://hexdocs.pm/phoenix/controllers.html#flash-messages) | 
+    [guide](https://hexdocs.pm/phoenix/controllers.html#flash-messages) |
     [code](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/hello_controller.ex#L8-L9) |
     [demo](https://phx-006-controllers.herokuapp.com/hello)
     ]
   - [x] Rendering [
-    [guide](https://hexdocs.pm/phoenix/controllers.html#rendering) | 
-    [code](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/hello_controller.ex#L15) | 
+    [guide](https://hexdocs.pm/phoenix/controllers.html#rendering) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/hello_controller.ex#L15) |
     [demo](https://phx-006-controllers.herokuapp.com/hello)
     ]
   - [x] Sending responses directly [
@@ -116,14 +106,14 @@ Contact: [@smeade](https://twitter.com/smeade).
   - [x] Assigning Layouts [
     [guide](https://hexdocs.pm/phoenix/controllers.html#assigning-layouts) |
     [code](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/page_controller.ex#L7) |
-    [code](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/templates/layout/admin.html.eex) | 
+    [code](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/templates/layout/admin.html.eex) |
     [demo](https://phx-006-controllers.herokuapp.com)
     ]
   - [x] Overriding Rendering Formats [
     [guide](https://hexdocs.pm/phoenix/controllers.html#overriding-rendering-formats) |
-    [code](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/router.ex#L6) | 
-    [code](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/templates/page/index.text.eex) | 
-    [code](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/page_controller.ex#L8) | 
+    [code](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/router.ex#L6) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/templates/page/index.text.eex) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/page_controller.ex#L8) |
     [demo](https://phx-006-controllers.herokuapp.com/?_format=text&message=CrazyTown!)
     ]
   - [x] Setting the HTTP Status [
