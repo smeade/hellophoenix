@@ -1,6 +1,6 @@
 # Hello Phoenix
 
-Code examples and demonstration apps in Phoenix 1.3 built while reading through the [Phoenix Guides](https://hexdocs.pm/phoenix/overview.html).
+Code examples and demonstration apps built in Phoenix 1.3 while reading through the [Phoenix Guides](https://hexdocs.pm/phoenix/overview.html).
 
 ### A Cheat-Sheet of Sorts
 
