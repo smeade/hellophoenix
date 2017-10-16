@@ -6,7 +6,7 @@ defmodule HelloWeb.HelloController do
   def index(conn, _params) do
     conn
     |> put_flash(:info, "Welcome to Phoenix, from flash info!")
-    |> put_flash(:error, "Let's pretend there's and error.")
+    |> put_flash(:error, "Let's pretend there is an error.")
     |> assign(:welcome_back_message, "Welcome Back!")
     |> render("index.html")
   end
@@ -17,5 +17,5 @@ defmodule HelloWeb.HelloController do
 
   defp assign_welcome_message(conn, msg) do
     assign(conn, :message, msg)
-  end  
+  end
 end
