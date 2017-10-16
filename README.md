@@ -104,7 +104,7 @@ Contact: [@smeade](https://twitter.com/smeade).
     ]
   - [x] Rendering [
     [guide](https://hexdocs.pm/phoenix/controllers.html#rendering) | 
-    [code](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/hello_controller.ex#L4-L8) | 
+    [code](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/hello_controller.ex#L15) | 
     [demo](https://phx-006-controllers.herokuapp.com/hello)
     ]
   - [x] Sending responses directly [
