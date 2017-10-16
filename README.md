@@ -166,8 +166,8 @@ Contact: [@smeade](https://twitter.com/smeade).
     ]
   - [x] Shared Templates Across Views [
     [code](https://github.com/smeade/hellophoenix/blob/phx-008-templates-shared/lib/hello_web/templates/page/test.html.eex#L7) |
-    [code](https://github.com/smeade/hellophoenix/blob/phx-008-templates-shared/lib/hello_web/templates/shared/key.html.eex) |
     [code](https://github.com/smeade/hellophoenix/blob/phx-008-templates-shared/lib/hello_web/views/shared_view.ex) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-008-templates-shared/lib/hello_web/templates/shared/key.html.eex) |
     [demo](https://phx-008-templates.herokuapp.com/test)
     ]
 - [ ] Channels
