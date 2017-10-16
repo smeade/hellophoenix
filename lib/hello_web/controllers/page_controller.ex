@@ -1,6 +1,10 @@
 defmodule HelloWeb.PageController do
   use HelloWeb, :controller
 
+  def test(conn, _params) do
+    render conn, "test.html"
+  end
+
   def show(conn, _params) do
     page = %{title: "foo"}
 

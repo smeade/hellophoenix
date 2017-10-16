@@ -29,6 +29,7 @@ defmodule HelloWeb.Router do
     get "/", PageController, :index
     get "/hello", HelloController, :index
     get "/hello/:messenger", HelloController, :show
+    get "/test", PageController, :test
 
     # Nested resources:
     # https://hexdocs.pm/phoenix/routing.html#nested-resources

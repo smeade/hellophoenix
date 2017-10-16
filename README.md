@@ -150,7 +150,19 @@ Contact: [@smeade](https://twitter.com/smeade).
     [ex](https://github.com/smeade/hellophoenix/tree/phx-007-views-json/lib/hello_web/controllers/page_controller.ex#L10-L14) |
     [demo](https://phx-007-views-json.herokuapp.com)
     ]
-- [ ] Templates
+- [ ] Templates [
+  [guide](https://hexdocs.pm/phoenix/templates.html)
+  ]
+  - [x] hello_web.ex [
+    [ex](https://github.com/smeade/hellophoenix/blob/phx-008-templates/lib/hello_web.ex#L29-L45)
+    ]
+  - [x] Displaying Lists [
+    [ex](https://github.com/smeade/hellophoenix/blob/phx-008-templates/lib/hello_web/templates/page/test.html.eex#L6-L8)
+    ]
+  - [x] Render templates within templates [
+    [ex](https://github.com/smeade/hellophoenix/blob/phx-008-templates/lib/hello_web/templates/page/test.html.eex#L7)
+    ]
+  - [ ] Shared Templates Across Views
 - [ ] Channels
 - [ ] Ecto
 - [ ] Contexts
@@ -184,31 +196,31 @@ We'll create a demo app for each branch of this repo. To do so, we need to:
 Update the host in `prod.exs`.
 
 ```
-url: [scheme: "https", host: "phx-007-views.herokuapp.com", port: 443],
+url: [scheme: "https", host: "phx-008-templateskuapp.com", port: 443],
 ```
 
 ### Create the Heroku application and add buildpacks
 
 ```
-$ heroku create phx-007-views-json --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
-$ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-007-views-json
+$ heroku create phx-008-templates --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
+$ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-008-templates
 ```
 
 ### Create environment variables in Heroku
 
 ```
-$ heroku addons:create heroku-postgresql:hobby-dev -a phx-007-views-json
-$ heroku config:set POOL_SIZE=18 -a phx-007-views-json
+$ heroku addons:create heroku-postgresql:hobby-dev -a phx-008-templates
+$ heroku config:set POOL_SIZE=18 -a phx-008-templates
 $ mix phx.gen.secret
-$ heroku config:set  -a phx-007-views-json SECRET_KEY_BASE="insertkeyhere"
+$ heroku config:set  -a phx-008-templates SECRET_KEY_BASE="insertkeyhere"
 ```
 
 ### Add a git remote and deploy
 
 ```
-$ git remote add phx-007-views-json https://git.heroku.com/phx-007-views-json.git
-$ git push phx-007-views-json phx-007-views-json:master
-$ heroku open -a phx-007-views-json
+$ git remote add phx-008-templates https://git.heroku.com/phx-008-templates.git
+$ git push phx-008-templates phx-008-templates:master
+$ heroku open -a phx-008-templates
 ```
 
 ## Learn more
