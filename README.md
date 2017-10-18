@@ -41,7 +41,7 @@ Contact: [@smeade](https://twitter.com/smeade).
       [demo](https://phx-002-adding-pages.herokuapp.com/hello)
       ]
   - [x] Another New Page: Sending Parameters [
-    [guide](https://hexdocs.pm/phoenix/adding_pages.html#another-new-page)
+    [guide](https://hexdocs.pm/phoenix/adding_pages.html#another-new-page) |
     [demo](https://phx-002-adding-pages.herokuapp.com/hello/Scott)]
     - [x] Another New Route [
       [guide](https://hexdocs.pm/phoenix/adding_pages.html#another-new-page) |
