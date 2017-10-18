@@ -11,12 +11,12 @@ Note that while Phoenix apps are very responsive, these demo apps are deployed t
 Contact: [@smeade](https://twitter.com/smeade).
 
 ### Guides
-- [x] Up and Running [
+- [x] **Up and Running** [
   [guide](https://hexdocs.pm/phoenix/up_and_running.html#content) |
   [code](https://github.com/smeade/hellophoenix/tree/phx-001-up-and-running) |
   [demo](https://phx-001-up-and-running.herokuapp.com)
   ]
-- [x] Adding Pages [
+- [x] **Adding Pages** [
   [guide](https://hexdocs.pm/phoenix/adding_pages.html) |
   [code](https://github.com/smeade/hellophoenix/tree/phx-002-adding-pages)
   ]
@@ -56,7 +56,7 @@ Contact: [@smeade](https://twitter.com/smeade).
       [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/templates/hello/show.html.eex) |
       [demo](https://phx-002-adding-pages.herokuapp.com/hello/Scott)
       ]
-- [x] Routing [
+- [x] **Routing** [
   [guide](https://hexdocs.pm/phoenix/routing.html) |
   [code](https://github.com/smeade/hellophoenix/tree/phx-003-routing)]
   - [x] Resources [
@@ -95,7 +95,7 @@ Contact: [@smeade](https://twitter.com/smeade).
       [demo](https://phx-003-routing.herokuapp.com/admin/users)
       ]
   - [x] Channel Routes [[guide](https://hexdocs.pm/phoenix/routing.html#channel-routes)]
-- [x] Plug [[guide](https://hexdocs.pm/phoenix/plug.html)]
+- [x] **Plug** [[guide](https://hexdocs.pm/phoenix/plug.html)]
   - [x] Function Plugs [
     [guide](https://hexdocs.pm/phoenix/plug.html#function-plugs) |
     [code](https://github.com/smeade/hellophoenix/blob/phx-004-plug/lib/hello_web/controllers/user_controller.ex#L4) |
@@ -106,7 +106,7 @@ Contact: [@smeade](https://twitter.com/smeade).
     [guide](https://hexdocs.pm/phoenix/plug.html#module-plugs) |
     [code](https://github.com/smeade/hellophoenix/blob/phx-004-plug/lib/hello_web/plugs/locale.ex)
     ]
-- [x] Endpoint [[docs](https://hexdocs.pm/phoenix/Phoenix.Endpoint.html)]
+- [x] **Endpoint** [[docs](https://hexdocs.pm/phoenix/Phoenix.Endpoint.html)]
   - [x] Endpoint Contents [
     [guide](https://hexdocs.pm/phoenix/endpoint.html#endpoint-contents) |
     [code](https://github.com/smeade/hellophoenix/tree/phx-005-endpoint/lib/hello_web/endpoint.ex)
@@ -115,7 +115,7 @@ Contact: [@smeade](https://twitter.com/smeade).
     [guide](https://hexdocs.pm/phoenix/endpoint.html#using-ssl) |
     [code](https://github.com/smeade/hellophoenix/blob/phx-005-endpoint/config/prod.exs#L19-L22)
     ]
-- [x] Controllers
+- [x] **Controllers**
   - [x] Actions [
     [guide](https://hexdocs.pm/phoenix/controllers.html#actions) |
     [code](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/hello_controller.ex#L14-L16) |
@@ -150,7 +150,7 @@ Contact: [@smeade](https://twitter.com/smeade).
     [guide](https://hexdocs.pm/phoenix/controllers.html#setting-the-http-status) |
     [code](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/page_controller.ex#L6)
     ]
-- [x] Views
+- [x] **Views**
   - [x] Rendering Templates [ [guide](https://hexdocs.pm/phoenix/views.html#rendering-templates) ]
     - [x] View Functions [
       [code](https://github.com/smeade/hellophoenix/blob/phx-007-views/lib/hello_web/views/layout_view.ex#L4-L8) |
@@ -174,7 +174,7 @@ Contact: [@smeade](https://twitter.com/smeade).
     [code](https://github.com/smeade/hellophoenix/tree/phx-007-views-json/lib/hello_web/controllers/page_controller.ex#L10-L14) |
     [demo](https://phx-007-views-json.herokuapp.com)
     ]
-- [x] Templates [
+- [x] **Templates** [
   [guide](https://hexdocs.pm/phoenix/templates.html)
   ]
   - [x] hello_web.ex [
@@ -194,7 +194,7 @@ Contact: [@smeade](https://twitter.com/smeade).
     [code](https://github.com/smeade/hellophoenix/blob/phx-008-templates-shared/lib/hello_web/templates/shared/key.html.eex) |
     [demo](https://phx-008-templates.herokuapp.com/test)
     ]
-- [x] Channels
+- [x] **Channels**
   - [x] JavaScript client [[doc](https://hexdocs.pm/phoenix/js/)]
   - [x] Socket Handlers [
     [guide](https://hexdocs.pm/phoenix/channels.html#socket-handlers) |
@@ -233,7 +233,7 @@ Contact: [@smeade](https://twitter.com/smeade).
     [guide](https://hexdocs.pm/phoenix/channels.html#client-libraries) |
     [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L6)
   ]
-- [x] Channels Sample application [
+- [x] **Channels Sample application** [
     [guide](https://hexdocs.pm/phoenix/channels.html#tying-it-all-together) |
     [code](https://github.com/smeade/phoenixchat) |
     [demo](http://phx-009-channels.herokuapp.com/)
@@ -270,19 +270,19 @@ Contact: [@smeade](https://twitter.com/smeade).
     [guide](https://hexdocs.pm/phoenix/channels.html#incoming-events) |
     [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/room_channel.ex#L11-L14)
     ]
-- [ ] Ecto
-- [ ] Contexts
-- [ ] Mix Tasks
-- [ ] Custom Errors
+- [ ] **Ecto**
+- [ ] **Contexts**
+- [ ] **Mix Tasks**
+- [ ] **Custom Errors**
 
 ### Testing
-- [ ] Introduction to Testing
-- [ ] Testing Schemas
-- [ ] Testing Controllers
-- [ ] Testing Channels
+- [ ] **Introduction to Testing**
+- [ ] **Testing Schemas**
+- [ ] **Testing Controllers**
+- [ ] **Testing Channels**
 
 ### Deployment
-- [x] Deploying on Heroku [
+- [x] **Deploying on Heroku** [
   [guide](https://hexdocs.pm/phoenix/heroku.html#content) |
   [code](https://github.com/smeade/hellophoenix/tree/phx-001-up-and-running) |
   [demo](https://phx-001-up-and-running.herokuapp.com)
