@@ -21,9 +21,11 @@ Contact: [@smeade](https://twitter.com/smeade).
     [guide](https://hexdocs.pm/phoenix/heroku.html#content)
     ]
 - [x] **Adding Pages**
-  - [x] A purely static page [
-    [guide](https://hexdocs.pm/phoenix/adding_pages.html) |
-    [demo](https://phx-002-adding-pages.herokuapp.com/hello) ]
+  - [x] A purely static page
+    - [x] Overview [
+      [guide](https://hexdocs.pm/phoenix/adding_pages.html) |
+      [demo](https://phx-002-adding-pages.herokuapp.com/hello)
+      ]
     - [x] A New Route [
       [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-route) |
       [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/router.ex#L20)
@@ -41,9 +43,11 @@ Contact: [@smeade](https://twitter.com/smeade).
       [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/templates/hello/index.html.eex) |
       [demo](https://phx-002-adding-pages.herokuapp.com/hello)
       ]
-  - [x] Another New Page: Sending Parameters [
-    [guide](https://hexdocs.pm/phoenix/adding_pages.html#another-new-page) |
-    [demo](https://phx-002-adding-pages.herokuapp.com/hello/Scott)]
+  - [x] Another New Page: Sending Parameters 
+    - [x] Overview [
+      [guide](https://hexdocs.pm/phoenix/adding_pages.html#another-new-page) |
+      [demo](https://phx-002-adding-pages.herokuapp.com/hello/Scott)
+      ]
     - [x] Another New Route [
       [guide](https://hexdocs.pm/phoenix/adding_pages.html#another-new-page) |
       [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/router.ex#L21)
