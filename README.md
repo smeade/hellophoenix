@@ -187,8 +187,8 @@ Contact: [@smeade](https://twitter.com/smeade).
     ]
   - [x] Topics [
     [guide](https://hexdocs.pm/phoenix/channels.html#topics) |
-    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/user_socket.ex#L5)
-    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/room_channel.ex#L4)
+    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/user_socket.ex#L5) |
+    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/room_channel.ex#L4) |
     [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L57)
     ]
   - [x] Transports [
@@ -197,7 +197,7 @@ Contact: [@smeade](https://twitter.com/smeade).
     ]
   - [x] Transport Adapters [
     [guide](https://hexdocs.pm/phoenix/channels.html#transport-adapters) |
-    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/user_socket.ex#L8-L9)    
+    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/user_socket.ex#L8-L9)
     ]
   - [x] Client Libraries [
     [guide](https://hexdocs.pm/phoenix/channels.html#client-libraries) |
