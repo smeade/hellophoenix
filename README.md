@@ -12,17 +12,17 @@ Contact: [@smeade](https://twitter.com/smeade).
 
 ### Guides
 - [x] Up and Running [
-    [guide](https://hexdocs.pm/phoenix/up_and_running.html#content) |
-    [code](https://github.com/smeade/hellophoenix/tree/phx-001-up-and-running) |
-    [demo](https://phx-001-up-and-running.herokuapp.com)
-    ]
+  [guide](https://hexdocs.pm/phoenix/up_and_running.html#content) |
+  [code](https://github.com/smeade/hellophoenix/tree/phx-001-up-and-running) |
+  [demo](https://phx-001-up-and-running.herokuapp.com)
+  ]
 - [x] Adding Pages [
-    [guide](https://hexdocs.pm/phoenix/adding_pages.html) |
-    [code](https://github.com/smeade/hellophoenix/tree/phx-002-adding-pages)
-    ]
+  [guide](https://hexdocs.pm/phoenix/adding_pages.html) |
+  [code](https://github.com/smeade/hellophoenix/tree/phx-002-adding-pages)
+  ]
   - [x] A purely static page [
-      [guide](https://hexdocs.pm/phoenix/adding_pages.html) |
-      [demo](https://phx-002-adding-pages.herokuapp.com/hello)
+    [guide](https://hexdocs.pm/phoenix/adding_pages.html) |
+    [demo](https://phx-002-adding-pages.herokuapp.com/hello) ]
     - [x] A New Route [
       [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-route) |
       [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/router.ex#L20)
@@ -35,33 +35,30 @@ Contact: [@smeade](https://twitter.com/smeade).
       [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-view) |
       [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/views/hello_view.ex)
       ]
-    - [x] A New Template (index.html.eex) [
+    - [x] A New Template: index.html.eex [
       [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-template) |
       [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/templates/hello/index.html.eex) |
       [demo](https://phx-002-adding-pages.herokuapp.com/hello)
-      ]      
-  - [x] Another New Page: Sending Parameters [
-      [guide](https://hexdocs.pm/phoenix/adding_pages.html#another-new-page)
-      [demo](https://phx-002-adding-pages.herokuapp.com/hello/Scott)
       ]
+  - [x] Another New Page: Sending Parameters [
+    [guide](https://hexdocs.pm/phoenix/adding_pages.html#another-new-page)
+    [demo](https://phx-002-adding-pages.herokuapp.com/hello/Scott)]
     - [x] Another New Route [
       [guide](https://hexdocs.pm/phoenix/adding_pages.html#another-new-page) |
       [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/router.ex#L21)
       ]
-    - [x] A New Action (show) [
+    - [x] A New Action: show [
       [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-action) |
       [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/controllers/hello_controller.ex#L8-L10)
       ]
-    - [x] Another New Template (show.html.eex) [
+    - [x] Another New Template: show.html.eex [
       [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-action) |
-      [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/templates/hello/show.html.eex)
-      ] |
+      [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/templates/hello/show.html.eex) |
       [demo](https://phx-002-adding-pages.herokuapp.com/hello/Scott)
-
+      ]
 - [x] Routing [
-    [guide](https://hexdocs.pm/phoenix/routing.html) |
-    [code](https://github.com/smeade/hellophoenix/tree/phx-003-routing)
-    ]
+  [guide](https://hexdocs.pm/phoenix/routing.html) |
+  [code](https://github.com/smeade/hellophoenix/tree/phx-003-routing)]
   - [x] Resources [
     [guide](https://hexdocs.pm/phoenix/routing.html#resources) |
     [code](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L34) |
@@ -79,28 +76,26 @@ Contact: [@smeade](https://twitter.com/smeade).
     [demo](https://phx-003-routing.herokuapp.com/users?admin=true&active=false)
     ]
   - [x] Nested Resources [
-      [guide](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L35) |
-      [code](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L32-L36) |
-      [demo](https://phx-003-routing.herokuapp.com/users/111/posts)
+    [guide](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L35) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L32-L36) |
+    [demo](https://phx-003-routing.herokuapp.com/users/111/posts)
     ]
   - [x] Scoped Routes [
-      [guide](https://hexdocs.pm/phoenix/routing.html#scoped-routes) |
-      [code](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L38-L44) |
-      [demo](https://phx-003-routing.herokuapp.com/admin/users)
+    [guide](https://hexdocs.pm/phoenix/routing.html#scoped-routes) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L38-L44) |
+    [demo](https://phx-003-routing.herokuapp.com/admin/users)
     ]
   - [x] Pipelines [[guide](https://hexdocs.pm/phoenix/routing.html#pipelines )]
     - [x] The :browser and :api Pipelines [
       [code](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L5-L15)
-    ]
+      ]
     - [x] Creating New Pipelines [
       [code: pipeline](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L17-L23) |
       [code: plug](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/plugs/admin.ex) |
       [demo](https://phx-003-routing.herokuapp.com/admin/users)
       ]
   - [x] Channel Routes [[guide](https://hexdocs.pm/phoenix/routing.html#channel-routes)]
-- [x] Plug [
-    [guide](https://hexdocs.pm/phoenix/plug.html)
-    ]
+- [x] Plug [[guide](https://hexdocs.pm/phoenix/plug.html)]
   - [x] Function Plugs [
     [guide](https://hexdocs.pm/phoenix/plug.html#function-plugs) |
     [code](https://github.com/smeade/hellophoenix/blob/phx-004-plug/lib/hello_web/controllers/user_controller.ex#L4) |
@@ -243,7 +238,7 @@ Contact: [@smeade](https://twitter.com/smeade).
     [code](https://github.com/smeade/phoenixchat) |
     [demo](http://phx-009-channels.herokuapp.com/)
     ]
-  - [x] uncomment the “room:*” channel definition [
+  - [x] uncomment the “room:” channel definition [
     [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/user_socket.ex#L5)
     ]
   - [x] define a HelloWeb.RoomChannel module [
@@ -288,10 +283,10 @@ Contact: [@smeade](https://twitter.com/smeade).
 
 ### Deployment
 - [x] Deploying on Heroku [
-[guide](https://hexdocs.pm/phoenix/heroku.html#content) |
-[code](https://github.com/smeade/hellophoenix/tree/phx-001-up-and-running) |
-[demo](https://phx-001-up-and-running.herokuapp.com)
-]
+  [guide](https://hexdocs.pm/phoenix/heroku.html#content) |
+  [code](https://github.com/smeade/hellophoenix/tree/phx-001-up-and-running) |
+  [demo](https://phx-001-up-and-running.herokuapp.com)
+  ]
 
 ## Deploying each branch to its own Heroku app
 
