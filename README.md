@@ -18,11 +18,46 @@ Contact: [@smeade](https://twitter.com/smeade).
     ]
 - [x] Adding Pages [
     [guide](https://hexdocs.pm/phoenix/adding_pages.html) |
-    [code](https://github.com/smeade/hellophoenix/tree/phx-002-adding-pages) |
-    [demo](https://phx-002-adding-pages.herokuapp.com)
+    [code](https://github.com/smeade/hellophoenix/tree/phx-002-adding-pages)
     ]
-  - [x] A purely static page [[demo](https://phx-002-adding-pages.herokuapp.com/hello)]
-  - [x] A page with a param [[demo](https://phx-002-adding-pages.herokuapp.com/hello/Scott)]
+  - [x] A purely static page [
+      [guide](https://hexdocs.pm/phoenix/adding_pages.html) |
+      [demo](https://phx-002-adding-pages.herokuapp.com/hello)
+    - [x] A New Route [
+      [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-route) |
+      [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/router.ex#L20)
+      ]
+    - [x] A New Controller and Index Action [
+      [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-controller) |
+      [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/controllers/hello_controller.ex#L4-L6)
+      ]
+    - [x] A New View [
+      [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-view) |
+      [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/views/hello_view.ex)
+      ]
+    - [x] A New Template (index.html.eex) [
+      [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-template) |
+      [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/templates/hello/index.html.eex) |
+      [demo](https://phx-002-adding-pages.herokuapp.com/hello)
+      ]      
+  - [x] Another New Page: Sending Parameters [
+      [guide](https://hexdocs.pm/phoenix/adding_pages.html#another-new-page)
+      [demo](https://phx-002-adding-pages.herokuapp.com/hello/Scott)
+      ]
+    - [x] Another New Route [
+      [guide](https://hexdocs.pm/phoenix/adding_pages.html#another-new-page) |
+      [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/router.ex#L21)
+      ]
+    - [x] A New Action (show) [
+      [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-action) |
+      [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/controllers/hello_controller.ex#L8-L10)
+      ]
+    - [x] Another New Template (show.html.eex) [
+      [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-action) |
+      [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/templates/hello/show.html.eex)
+      ] |
+      [demo](https://phx-002-adding-pages.herokuapp.com/hello/Scott)
+
 - [x] Routing [
     [guide](https://hexdocs.pm/phoenix/routing.html) |
     [code](https://github.com/smeade/hellophoenix/tree/phx-003-routing)
