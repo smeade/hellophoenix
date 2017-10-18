@@ -188,7 +188,7 @@ Contact: [@smeade](https://twitter.com/smeade).
     [code](https://github.com/smeade/hellophoenix/blob/phx-008-templates/lib/hello_web.ex#L29-L45)
     ]
   - [x] Displaying Lists [
-    [code](https://github.com/smeade/hellophoenix/blob/phx-008-templates/lib/hello_web/templates/page/test.html.eex#L6-L8) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-008-templates/lib/hello_web/templates/page/test.html.eex#L6) |
     [demo](https://phx-008-templates.herokuapp.com/test)
     ]
   - [x] Render templates within templates [
