@@ -223,11 +223,11 @@ Contact: [@smeade](https://twitter.com/smeade).
     ]
   - [x] Transports [
     [guide](https://hexdocs.pm/phoenix/channels.html#transports) |
-    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/user_socket.ex#L8-L9)
+    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/user_socket.ex#L7)
     ]
   - [x] Transport Adapters [
     [guide](https://hexdocs.pm/phoenix/channels.html#transport-adapters) |
-    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/user_socket.ex#L8-L9)
+    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/user_socket.ex#L8-L10)
     ]
   - [x] Client Libraries [
     [guide](https://hexdocs.pm/phoenix/channels.html#client-libraries) |
