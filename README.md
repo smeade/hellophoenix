@@ -164,7 +164,80 @@ Contact: [@smeade](https://twitter.com/smeade).
     [code](https://github.com/smeade/hellophoenix/blob/phx-008-templates-shared/lib/hello_web/templates/shared/key.html.eex) |
     [demo](https://phx-008-templates.herokuapp.com/test)
     ]
-- [ ] Channels
+- [ ] <a name="channels"></a>Channels
+  - [x] JavaScript client [[doc](https://hexdocs.pm/phoenix/js/)]
+  - [x] Socket Handlers [
+    [guide](https://hexdocs.pm/phoenix/channels.html#socket-handlers) |
+    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/user_socket.ex)
+    ]
+  - [x] Channel Routes [
+    [guide](https://hexdocs.pm/phoenix/channels.html#channel-routes) |
+    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/user_socket.ex#L5)
+    ]
+  - [x] Channels [
+    [guide](https://hexdocs.pm/phoenix/channels.html#channels) |
+    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/room_channel.ex)
+    ]
+  - [x] PubSub [
+    [guide](https://hexdocs.pm/phoenix/channels.html#pubsub)
+    ]
+  - [x] Messages [
+    [guide](https://hexdocs.pm/phoenix/channels.html#messages) |
+    [doc](https://hexdocs.pm/phoenix/Phoenix.Socket.Message.html)
+    ]
+  - [x] Topics [
+    [guide](https://hexdocs.pm/phoenix/channels.html#topics) |
+    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/user_socket.ex#L5)
+    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/room_channel.ex#L4)
+    [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L57)
+    ]
+  - [x] Transports [
+    [guide](https://hexdocs.pm/phoenix/channels.html#transports) |
+    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/user_socket.ex#L8-L9)
+    ]
+  - [x] Transport Adapters [
+    [guide](https://hexdocs.pm/phoenix/channels.html#transport-adapters) |
+    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/user_socket.ex#L8-L9)    
+    ]
+  - [x] Client Libraries [
+    [guide](https://hexdocs.pm/phoenix/channels.html#client-libraries) |
+    [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L6)
+  ]
+  - [x] Sample application [
+      [guide](https://hexdocs.pm/phoenix/channels.html#tying-it-all-together) |
+      [code](https://github.com/smeade/phoenixchat) |
+      [demo](http://phx-009-channels.herokuapp.com/)
+      ]
+    - [x] uncomment the “room:*” channel definition
+      [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/user_socket.ex#L5)
+    - [x] define a HelloWeb.RoomChannel module
+      [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/room_channel.ex)
+    - [x] Joining Channels [[guide](https://hexdocs.pm/phoenix/channels.html#joining-channels)]
+      - [x] authorize clients to join topic [
+        [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/room_channel.ex)
+        ]
+      - [x] set our room name to “room:lobby” [
+        [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L57)
+        ]
+        [x] join room [
+        [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L56-L57)
+        ]
+      - [x] import assets/js/socket.js [
+        [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/app.js#L21)
+        ]
+      - [x] add containers to hold our chat messages [
+        [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/templates/page/index.html.eex#L13-L15)
+        ]
+      - [x] push an event over the channel with the message body [
+        [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L64-L70)
+        ]
+      - [x] listen for new messages and append them to our messages container [
+        [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L64-L70)
+        ]
+    - [x] Incoming Events [
+      [guide](https://hexdocs.pm/phoenix/channels.html#incoming-events) |
+      [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/room_channel.ex#L11-L14)
+      ]
 - [ ] Ecto
 - [ ] Contexts
 - [ ] Mix Tasks
@@ -197,31 +270,31 @@ We'll create a demo app for each branch of this repo. To do so, we need to:
 Update the host in `prod.exs`.
 
 ```
-url: [scheme: "https", host: "phx-008-templates-shared.herokuapp.com", port: 443],
+url: [scheme: "https", host: "phx-009-channels.herokuapp.com", port: 443],
 ```
 
 ### Create the Heroku application and add buildpacks
 
 ```
-$ heroku create phx-008-templates-shared --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
-$ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-008-templates-shared
+$ heroku create phx-009-channels --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
+$ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-009-channels
 ```
 
 ### Create environment variables in Heroku
 
 ```
-$ heroku addons:create heroku-postgresql:hobby-dev -a phx-008-templates-shared
-$ heroku config:set POOL_SIZE=18 -a phx-008-templates-shared
+$ heroku addons:create heroku-postgresql:hobby-dev -a phx-009-channels
+$ heroku config:set POOL_SIZE=18 -a phx-009-channels
 $ mix phx.gen.secret
-$ heroku config:set  -a phx-008-templates-shared SECRET_KEY_BASE="insertkeyhere"
+$ heroku config:set  -a phx-009-channels SECRET_KEY_BASE="insertkeyhere"
 ```
 
 ### Add a git remote and deploy
 
 ```
-$ git remote add phx-008-templates-shared https://git.heroku.com/phx-008-templates-shared.git
-$ git push phx-008-templates-shared phx-008-templates-shared:master
-$ heroku open -a phx-008-templates-shared
+$ git remote add phx-009-channels https://git.heroku.com/phx-009-channels.git
+$ git push phx-009-channels phx-009-channels:master
+$ heroku open -a phx-009-channels
 ```
 
 ## Learn more

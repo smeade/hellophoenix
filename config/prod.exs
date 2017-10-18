@@ -18,7 +18,7 @@ use Mix.Config
 # https://hexdocs.pm/phoenix/heroku.html#making-our-project-ready-for-heroku
 config :hello, HelloWeb.Endpoint,
   load_from_system_env: true,
-  url: [scheme: "https", host: "phx-008-templates-shared.herokuapp.com", port: 443],
+  url: [scheme: "https", host: "phx-009-channels.herokuapp.com", port: 443],
   force_ssl: [rewrite_on: [:x_forwarded_proto]],
   cache_static_manifest: "priv/static/cache_manifest.json",
   secret_key_base: Map.fetch!(System.get_env(), "SECRET_KEY_BASE")
@@ -72,6 +72,6 @@ config :hello, Hello.Repo,
 #     config :hello, HelloWeb.Endpoint, server: true
 #
 
-# Since our configuration is now handled using Heroku’s environment variables, 
+# Since our configuration is now handled using Heroku’s environment variables,
 # we don’t need to import the config/prod.secret.exs
 # https://hexdocs.pm/phoenix/heroku.html#making-our-project-ready-for-heroku
