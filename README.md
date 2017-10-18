@@ -165,6 +165,33 @@ Contact: [@smeade](https://twitter.com/smeade).
     [demo](https://phx-008-templates.herokuapp.com/test)
     ]
 - [ ] Channels
+  - [x] JavaScript client [[doc](https://hexdocs.pm/phoenix/js/)]
+  - [x] Socket Handlers [
+    [guide](https://hexdocs.pm/phoenix/channels.html#socket-handlers) |
+    [code]()
+    ]
+  - [x] Channel Routes [
+    [guide](https://hexdocs.pm/phoenix/channels.html#channel-routes) |
+    [code]()
+    ]
+  - [x] Channels [
+    [guide](https://hexdocs.pm/phoenix/channels.html#channels) |
+    [code]()
+    ]
+  - [ ] PubSub
+  - [ ] Messages
+  - [ ] Topics
+  - [ ] Transports
+  - [ ] Transport Adapters
+  - [ ] Client Libraries
+  - [ ] Sample application
+    - [ ] Joining Channels
+    - [ ] Incoming Events
+    - [ ] Handling Reconnection
+    - [ ] Resending Client Messages
+    - [ ] Resending Server Messages
+    - [ ] Presence
+    - [ ] Example Application (Phoenix 1.3)
 - [ ] Ecto
 - [ ] Contexts
 - [ ] Mix Tasks
@@ -197,31 +224,31 @@ We'll create a demo app for each branch of this repo. To do so, we need to:
 Update the host in `prod.exs`.
 
 ```
-url: [scheme: "https", host: "phx-008-templates-shared.herokuapp.com", port: 443],
+url: [scheme: "https", host: "phx-009-channels.herokuapp.com", port: 443],
 ```
 
 ### Create the Heroku application and add buildpacks
 
 ```
-$ heroku create phx-008-templates-shared --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
-$ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-008-templates-shared
+$ heroku create phx-009-channels --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
+$ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-009-channels
 ```
 
 ### Create environment variables in Heroku
 
 ```
-$ heroku addons:create heroku-postgresql:hobby-dev -a phx-008-templates-shared
-$ heroku config:set POOL_SIZE=18 -a phx-008-templates-shared
+$ heroku addons:create heroku-postgresql:hobby-dev -a phx-009-channels
+$ heroku config:set POOL_SIZE=18 -a phx-009-channels
 $ mix phx.gen.secret
-$ heroku config:set  -a phx-008-templates-shared SECRET_KEY_BASE="insertkeyhere"
+$ heroku config:set  -a phx-009-channels SECRET_KEY_BASE="insertkeyhere"
 ```
 
 ### Add a git remote and deploy
 
 ```
-$ git remote add phx-008-templates-shared https://git.heroku.com/phx-008-templates-shared.git
-$ git push phx-008-templates-shared phx-008-templates-shared:master
-$ heroku open -a phx-008-templates-shared
+$ git remote add phx-009-channels https://git.heroku.com/phx-009-channels.git
+$ git push phx-009-channels phx-009-channels:master
+$ heroku open -a phx-009-channels
 ```
 
 ## Learn more

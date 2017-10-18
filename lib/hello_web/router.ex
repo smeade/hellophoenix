@@ -21,7 +21,7 @@ defmodule HelloWeb.Router do
   pipeline :admin_checks do
     plug :ensure_authenticated_user
     plug :ensure_user_is_admin
-  end  
+  end
 
   scope "/", HelloWeb do
     pipe_through :browser # Use the default browser stack
@@ -36,12 +36,16 @@ defmodule HelloWeb.Router do
     resources "/users", UserController, only: [:index] do
       resources "/posts", PostController
     end
+
+    resources "/selling_users", SellingUserController do
+      resources "/services", ServiceController
+    end
   end
 
   # New route for redirects
   scope "/", HelloWeb do
     get "/redirect_test", PageController, :redirect_test, as: :redirect_test
-  end  
+  end
 
   # Scoped Routes
   # https://hexdocs.pm/phoenix/routing.html#scoped-routes
@@ -50,7 +54,7 @@ defmodule HelloWeb.Router do
 
     resources "/users", UserController
   end
-  
+
   # Forward:
   # Send all requests that start with a particular path to a particular plug
   # https://hexdocs.pm/phoenix/routing.html#forward
