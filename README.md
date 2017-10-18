@@ -43,7 +43,7 @@ Contact: [@smeade](https://twitter.com/smeade).
       [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/templates/hello/index.html.eex) |
       [demo](https://phx-002-adding-pages.herokuapp.com/hello)
       ]
-  - [x] Another New Page: Sending Parameters 
+  - [x] Another New Page: Sending Parameters
     - [x] Overview [
       [guide](https://hexdocs.pm/phoenix/adding_pages.html#another-new-page) |
       [demo](https://phx-002-adding-pages.herokuapp.com/hello/Scott)
@@ -156,7 +156,7 @@ Contact: [@smeade](https://twitter.com/smeade).
     [code](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/page_controller.ex#L6)
     ]
 - [x] **Views**
-  - [x] Rendering Templates 
+  - [x] Rendering Templates
     - [x] Overview [
       [guide](https://hexdocs.pm/phoenix/views.html#rendering-templates)
       ]
@@ -278,7 +278,39 @@ Contact: [@smeade](https://twitter.com/smeade).
     [guide](https://hexdocs.pm/phoenix/channels.html#incoming-events) |
     [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/room_channel.ex#L11-L14)
     ]
-- [ ] **Ecto**
+- [x] **Ecto**
+  - [x] Overview [
+    [Phoenix guide](https://hexdocs.pm/phoenix/ecto.html#content) |
+    [Ecto Guide](https://hexdocs.pm/ecto/getting-started.html)
+    ]
+  - [x] Postgres configuration [
+    [code](https://github.com/smeade/hellophoenix/blob/phx-010-ecto/config/dev.exs#L51-L58)
+    ]
+  - [x] Generate an Ecto schema [
+    [code: schema](https://github.com/smeade/hellophoenix/blob/phx-010-ecto/lib/hello/accounts/user.ex) |
+    [code: migration](https://github.com/smeade/hellophoenix/blob/phx-010-ecto/priv/repo/migrations/20171018223105_create_users.exs)
+    ]
+  - [x] The Repo [
+    [guide](https://hexdocs.pm/phoenix/ecto.html#the-repo) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-010-ecto/config/dev.exs#L51-L58)
+    ]
+  - [x] The Schema [
+    [guide](https://hexdocs.pm/phoenix/ecto.html#the-schema) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-010-ecto/lib/hello/accounts/user.ex)
+    ]
+  - [x] Changesets and Validations [
+    [guide](https://hexdocs.pm/phoenix/ecto.html#changesets-and-validations) |
+    [code: cast](https://github.com/smeade/hellophoenix/blob/phx-010-ecto/lib/hello/accounts/user.ex#L18) |
+    [code: validate_required](https://github.com/smeade/hellophoenix/blob/phx-010-ecto/lib/hello/accounts/user.ex#L19) |
+    [code: validate_length](https://github.com/smeade/hellophoenix/blob/phx-010-ecto/lib/hello/accounts/user.ex#L20-L21) |
+    [code: validate_length](https://github.com/smeade/hellophoenix/blob/phx-010-ecto/lib/hello/accounts/user.ex#L22) |
+    [doc](https://hexdocs.pm/ecto/Ecto.Changeset.html)
+    ]
+  - [x]  Data Persistence [
+    [guide](https://hexdocs.pm/phoenix/ecto.html#data-persistence) |
+    [doc](https://hexdocs.pm/ecto/Ecto.Query.html#content)
+    ]
+  ]
 - [ ] **Contexts**
 - [ ] **Mix Tasks**
 - [ ] **Custom Errors**
@@ -310,31 +342,31 @@ We'll create a demo app for each branch of this repo. To do so, we need to:
 Update the host in `prod.exs`.
 
 ```
-url: [scheme: "https", host: "phx-009-channels.herokuapp.com", port: 443],
+url: [scheme: "https", host: "phx-010-ecto.herokuapp.com", port: 443],
 ```
 
 ### Create the Heroku application and add buildpacks
 
 ```
-$ heroku create phx-009-channels --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
-$ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-009-channels
+$ heroku create phx-010-ecto --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
+$ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-010-ecto
 ```
 
 ### Create environment variables in Heroku
 
 ```
-$ heroku addons:create heroku-postgresql:hobby-dev -a phx-009-channels
-$ heroku config:set POOL_SIZE=18 -a phx-009-channels
+$ heroku addons:create heroku-postgresql:hobby-dev -a phx-010-ecto
+$ heroku config:set POOL_SIZE=18 -a phx-010-ecto
 $ mix phx.gen.secret
-$ heroku config:set  -a phx-009-channels SECRET_KEY_BASE="insertkeyhere"
+$ heroku config:set  -a phx-010-ecto SECRET_KEY_BASE="insertkeyhere"
 ```
 
 ### Add a git remote and deploy
 
 ```
-$ git remote add phx-009-channels https://git.heroku.com/phx-009-channels.git
-$ git push phx-009-channels phx-009-channels:master
-$ heroku open -a phx-009-channels
+$ git remote add phx-010-ecto https://git.heroku.com/phx-010-ecto.git
+$ git push phx-010-ecto phx-010-ecto:master
+$ heroku open -a phx-010-ecto
 ```
 
 ## Learn more
