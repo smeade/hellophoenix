@@ -1,50 +1,333 @@
 # Hello Phoenix
 
-### Working through the Phoenix guides
+Code examples and demonstration apps built in Phoenix 1.3 while reading through the [Phoenix Guides](https://hexdocs.pm/phoenix/overview.html).
 
-The [Phoenix Guides](https://hexdocs.pm/phoenix/overview.html) are a very well written and well organized introduction to the framework. The guides provide an overview of the framework, [installation](https://hexdocs.pm/phoenix/installation.html) instructions, [learning](https://hexdocs.pm/phoenix/learning.html) resources, and places to connect with the [community](https://hexdocs.pm/phoenix/community.html).
+### A Cheat-Sheet of Sorts
 
-After these prerequisite topics are covered and dependencies (including Elixir, Erlang, Hex, the Phoenix archive, PostgreSQL and node.js) are [installed](https://hexdocs.pm/phoenix/installation.html), the guides move on to building Phoenix apps. This repository has [branches](https://github.com/smeade/hellophoenix/branches/all) for each app-related topic in the guides. Each branch demonstrates concepts discussed in the guide for that topic. Most also have a demonstration app deployed to Heroku.
+This is not a tutorial. I made these code examples in order to have a direct link between content in the guides and code in a working and deployed Phoenix app. To use this info: Read the Phoenix guides for each topic (see 'guide' links). Then refer to example code ('code' links) and demo applications ('demo' links) here.
 
-### How to use this
-
-This repository is not a summary of the Phoenix guides nor a replacement for reading them. Read the Phoenix guides for information about each topic (see 'guide' links). Refer to this repository for example code ('src' links) and demo-applications ('demo' links) demonstrating the topic. Note that while Phoenix apps are very responsive, my demo apps are deployed to free Heroku dynos which go to sleep after 30 minutes of inactivity. When you first click on a demo link, there will be a short delay while the dyno becomes active again.
+Note that while Phoenix apps are very responsive, these demo apps are deployed to free Heroku dynos which go to sleep after 30 minutes of inactivity. When you click on a demo link, there will be a delay while the dyno activates.
 
 Contact: [@smeade](https://twitter.com/smeade).
 
-[Master branch](https://github.com/smeade/hellophoenix)
-
 ### Guides
-- [x] Up and Running [
-[guide](https://hexdocs.pm/phoenix/up_and_running.html#content) |
-[src](https://github.com/smeade/hellophoenix/tree/phx-001-up-and-running) |
-[demo](https://phx-001-up-and-running.herokuapp.com)
-]
-- [ ] Adding Pages
-- [ ] Routing
-- [ ] Plug
-- [ ] Endpoint
-- [ ] Controllers
-- [ ] Views
-- [ ] Templates
-- [ ] Channels
-- [ ] Ecto
-- [ ] Contexts
-- [ ] Mix Tasks
-- [ ] Custom Errors
+- [x] **Up and Running**
+  - [x] mix.phx new [
+    [guide](https://hexdocs.pm/phoenix/up_and_running.html#content) |
+    [code](https://github.com/smeade/hellophoenix/tree/phx-001-up-and-running) |
+    [demo](https://phx-001-up-and-running.herokuapp.com)
+    ]
+  - [x] Deploying to Heroku [
+    [guide](https://hexdocs.pm/phoenix/heroku.html#content)
+    ]
+- [x] **Adding Pages**
+  - [x] A purely static page [
+    [guide](https://hexdocs.pm/phoenix/adding_pages.html) |
+    [demo](https://phx-002-adding-pages.herokuapp.com/hello) ]
+    - [x] A New Route [
+      [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-route) |
+      [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/router.ex#L20)
+      ]
+    - [x] A New Controller and Index Action [
+      [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-controller) |
+      [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/controllers/hello_controller.ex#L4-L6)
+      ]
+    - [x] A New View [
+      [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-view) |
+      [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/views/hello_view.ex)
+      ]
+    - [x] A New Template: index.html.eex [
+      [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-template) |
+      [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/templates/hello/index.html.eex) |
+      [demo](https://phx-002-adding-pages.herokuapp.com/hello)
+      ]
+  - [x] Another New Page: Sending Parameters [
+    [guide](https://hexdocs.pm/phoenix/adding_pages.html#another-new-page) |
+    [demo](https://phx-002-adding-pages.herokuapp.com/hello/Scott)]
+    - [x] Another New Route [
+      [guide](https://hexdocs.pm/phoenix/adding_pages.html#another-new-page) |
+      [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/router.ex#L21)
+      ]
+    - [x] A New Action: show [
+      [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-action) |
+      [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/controllers/hello_controller.ex#L8-L10)
+      ]
+    - [x] Another New Template: show.html.eex [
+      [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-action) |
+      [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/templates/hello/show.html.eex) |
+      [demo](https://phx-002-adding-pages.herokuapp.com/hello/Scott)
+      ]
+- [x] **Routing**
+  - [x] Resources [
+    [guide](https://hexdocs.pm/phoenix/routing.html#resources) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L34) |
+    [demo](https://phx-003-routing.herokuapp.com/users)
+    ]
+  - [x] Forward [
+    [guide](https://hexdocs.pm/phoenix/routing.html#forward) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L47-L50) |
+    [demo](https://phx-003-routing.herokuapp.com/jobs) |
+    [demo](https://phx-003-routing.herokuapp.com/jobs/active)
+    ]
+  - [x] Path Helpers [
+    [guide](https://hexdocs.pm/phoenix/routing.html#path-helpers) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/templates/layout/app.html.eex#L87-L90) |
+    [demo](https://phx-003-routing.herokuapp.com/users?admin=true&active=false)
+    ]
+  - [x] Nested Resources [
+    [guide](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L35) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L32-L36) |
+    [demo](https://phx-003-routing.herokuapp.com/users/111/posts)
+    ]
+  - [x] Scoped Routes [
+    [guide](https://hexdocs.pm/phoenix/routing.html#scoped-routes) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L38-L44) |
+    [demo](https://phx-003-routing.herokuapp.com/admin/users)
+    ]
+  - [x] Pipelines [[guide](https://hexdocs.pm/phoenix/routing.html#pipelines )]
+    - [x] The :browser and :api Pipelines [
+      [code](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L5-L15)
+      ]
+    - [x] Creating New Pipelines [
+      [code: pipeline](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L17-L23) |
+      [code: plug](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/plugs/admin.ex) |
+      [demo](https://phx-003-routing.herokuapp.com/admin/users)
+      ]
+  - [x] Channel Routes [[guide](https://hexdocs.pm/phoenix/routing.html#channel-routes)]
+- [x] **Plug**
+  - [x] Function Plugs [
+    [guide](https://hexdocs.pm/phoenix/plug.html#function-plugs) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-004-plug/lib/hello_web/controllers/user_controller.ex#L4) |
+    [code](https://github.com/smeade/hellophoenix/tree/phx-004-plug/lib/hello_web/controllers/user_controller.ex#L10-L14)
+    [demo](https://phx-004-plug.herokuapp.com/users/)
+    ]
+  - [x] Module Plugs [
+    [guide](https://hexdocs.pm/phoenix/plug.html#module-plugs) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-004-plug/lib/hello_web/plugs/locale.ex)
+    ]
+- [x] **Endpoint**
+  - [x] Phoenix.Endpoint [[docs](https://hexdocs.pm/phoenix/Phoenix.Endpoint.html)]
+  - [x] Endpoint Contents [
+    [guide](https://hexdocs.pm/phoenix/endpoint.html#endpoint-contents) |
+    [code](https://github.com/smeade/hellophoenix/tree/phx-005-endpoint/lib/hello_web/endpoint.ex)
+    ]
+  - [x] Using SSL [
+    [guide](https://hexdocs.pm/phoenix/endpoint.html#using-ssl) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-005-endpoint/config/prod.exs#L19-L22)
+    ]
+- [x] **Controllers**
+  - [x] Actions [
+    [guide](https://hexdocs.pm/phoenix/controllers.html#actions) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/hello_controller.ex#L14-L16) |
+    [demo](https://phx-006-controllers.herokuapp.com/hello)
+    ]
+  - [x] Flash Messages [
+    [guide](https://hexdocs.pm/phoenix/controllers.html#flash-messages) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/hello_controller.ex#L8-L9) |
+    [demo](https://phx-006-controllers.herokuapp.com/hello)
+    ]
+  - [x] Rendering [
+    [guide](https://hexdocs.pm/phoenix/controllers.html#rendering) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/hello_controller.ex#L15) |
+    [demo](https://phx-006-controllers.herokuapp.com/hello)
+    ]
+  - [x] Sending responses directly [
+    [guide](https://hexdocs.pm/phoenix/controllers.html#sending-responses-directly) ]
+  - [x] Assigning Layouts [
+    [guide](https://hexdocs.pm/phoenix/controllers.html#assigning-layouts) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/page_controller.ex#L7) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/templates/layout/admin.html.eex) |
+    [demo](https://phx-006-controllers.herokuapp.com)
+    ]
+  - [x] Overriding Rendering Formats [
+    [guide](https://hexdocs.pm/phoenix/controllers.html#overriding-rendering-formats) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/router.ex#L6) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/templates/page/index.text.eex) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/page_controller.ex#L8) |
+    [demo](https://phx-006-controllers.herokuapp.com/?_format=text&message=CrazyTown!)
+    ]
+  - [x] Setting the HTTP Status [
+    [guide](https://hexdocs.pm/phoenix/controllers.html#setting-the-http-status) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/page_controller.ex#L6)
+    ]
+- [x] **Views**
+  - [x] Rendering Templates [ [guide](https://hexdocs.pm/phoenix/views.html#rendering-templates) ]
+    - [x] View Functions [
+      [code](https://github.com/smeade/hellophoenix/blob/phx-007-views/lib/hello_web/views/layout_view.ex#L4-L8) |
+      [demo](https://phx-007-views.herokuapp.com/hello)
+      ]
+    - [x] Templates are function definitions [
+      [code](https://github.com/smeade/hellophoenix/blob/phx-007-views/lib/hello_web/views/page_view.ex#L4-L12) |
+      [demo](https://phx-007-views.herokuapp.com)
+      ]
+  - [x] A Word About Layouts [
+    [guide](https://hexdocs.pm/phoenix/views.html#a-word-about-layouts) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-007-views/lib/hello_web/templates/layout/app.html.eex#L62)
+    ]
+  - [x] The ErrorView [
+    [guide](https://hexdocs.pm/phoenix/views.html#the-errorview) |
+    [code](https://github.com/smeade/hellophoenix/tree/phx-007-views/lib/hello_web/templates/error/404.html.eex) |
+    [demo](https://phx-007-views.herokuapp.com/such/a/wrong/path)
+    ]
+  - [x] Rendering JSON [
+    [guide](https://hexdocs.pm/phoenix/views.html#rendering-json) |
+    [code](https://github.com/smeade/hellophoenix/tree/phx-007-views-json/lib/hello_web/controllers/page_controller.ex#L10-L14) |
+    [demo](https://phx-007-views-json.herokuapp.com)
+    ]
+- [x] **Templates**
+  - [x] hello_web.ex [
+    [guide](https://hexdocs.pm/phoenix/templates.html)
+    [code](https://github.com/smeade/hellophoenix/blob/phx-008-templates/lib/hello_web.ex#L29-L45)
+    ]
+  - [x] Displaying Lists [
+    [code](https://github.com/smeade/hellophoenix/blob/phx-008-templates/lib/hello_web/templates/page/test.html.eex#L6-L8) |
+    [demo](https://phx-008-templates.herokuapp.com/test)
+    ]
+  - [x] Render templates within templates [
+    [code](https://github.com/smeade/hellophoenix/blob/phx-008-templates/lib/hello_web/templates/page/test.html.eex#L7) |
+    [demo](https://phx-008-templates.herokuapp.com/test)
+    ]
+  - [x] Shared Templates Across Views [
+    [code](https://github.com/smeade/hellophoenix/blob/phx-008-templates-shared/lib/hello_web/templates/page/test.html.eex#L7) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-008-templates-shared/lib/hello_web/views/shared_view.ex) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-008-templates-shared/lib/hello_web/templates/shared/key.html.eex) |
+    [demo](https://phx-008-templates.herokuapp.com/test)
+    ]
+- [x] **Channels**
+  - [x] JavaScript client [[doc](https://hexdocs.pm/phoenix/js/)]
+  - [x] Socket Handlers [
+    [guide](https://hexdocs.pm/phoenix/channels.html#socket-handlers) |
+    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/user_socket.ex)
+    ]
+  - [x] Channel Routes [
+    [guide](https://hexdocs.pm/phoenix/channels.html#channel-routes) |
+    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/user_socket.ex#L5)
+    ]
+  - [x] Channels [
+    [guide](https://hexdocs.pm/phoenix/channels.html#channels) |
+    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/room_channel.ex)
+    ]
+  - [x] PubSub [
+    [guide](https://hexdocs.pm/phoenix/channels.html#pubsub)
+    ]
+  - [x] Messages [
+    [guide](https://hexdocs.pm/phoenix/channels.html#messages) |
+    [doc](https://hexdocs.pm/phoenix/Phoenix.Socket.Message.html)
+    ]
+  - [x] Topics [
+    [guide](https://hexdocs.pm/phoenix/channels.html#topics) |
+    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/user_socket.ex#L5) |
+    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/room_channel.ex#L4) |
+    [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L57)
+    ]
+  - [x] Transports [
+    [guide](https://hexdocs.pm/phoenix/channels.html#transports) |
+    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/user_socket.ex#L7)
+    ]
+  - [x] Transport Adapters [
+    [guide](https://hexdocs.pm/phoenix/channels.html#transport-adapters) |
+    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/user_socket.ex#L8-L10)
+    ]
+  - [x] Client Libraries [
+    [guide](https://hexdocs.pm/phoenix/channels.html#client-libraries) |
+    [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L6)
+  ]
+- [x] **Channels Sample application**
+  - [x] Overview [
+    [guide](https://hexdocs.pm/phoenix/channels.html#tying-it-all-together) |
+    [code](https://github.com/smeade/phoenixchat) |
+    [demo](http://phx-009-channels.herokuapp.com/)
+    ]
+  - [x] uncomment the “room:” channel definition [
+    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/user_socket.ex#L5)
+    ]
+  - [x] define a HelloWeb.RoomChannel module [
+    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/room_channel.ex)
+    ]
+  - [x] Joining Channels [[guide](https://hexdocs.pm/phoenix/channels.html#joining-channels)]
+    - [x] authorize clients to join topic [
+      [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/room_channel.ex#L4-L9)
+      ]
+    - [x] set our room name to “room:lobby” [
+      [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L57)
+      ]
+    - [x] join channel [
+      [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L79-L81)
+      ]
+    - [x] import assets/js/socket.js [
+      [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/app.js#L21)
+      ]
+    - [x] add containers to hold our chat messages [
+      [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/templates/page/index.html.eex#L12-L14)
+      ]
+    - [x] push an event over the channel with the message body [
+      [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L64-L70)
+      ]
+    - [x] listen for new messages and append them to our messages container [
+      [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L64-L70)
+      ]
+  - [x] Handle Incoming Events [
+    [guide](https://hexdocs.pm/phoenix/channels.html#incoming-events) |
+    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/room_channel.ex#L11-L14)
+    ]
+- [ ] **Ecto**
+- [ ] **Contexts**
+- [ ] **Mix Tasks**
+- [ ] **Custom Errors**
 
 ### Testing
-- [ ] Introduction to Testing
-- [ ] Testing Schemas
-- [ ] Testing Controllers
-- [ ] Testing Channels
+- [ ] **Introduction to Testing**
+- [ ] **Testing Schemas**
+- [ ] **Testing Controllers**
+- [ ] **Testing Channels**
 
 ### Deployment
-- [x] Deploying on Heroku [
-[guide](https://hexdocs.pm/phoenix/heroku.html#content) |
-[src](https://github.com/smeade/hellophoenix/tree/phx-001-up-and-running) |
-[demo](https://phx-001-up-and-running.herokuapp.com)
-]
+- [x] **Deploying on Heroku** [
+  [guide](https://hexdocs.pm/phoenix/heroku.html#content) |
+  [code](https://github.com/smeade/hellophoenix/tree/phx-001-up-and-running) |
+  [demo](https://phx-001-up-and-running.herokuapp.com)
+  ]
+
+## Deploying each branch to its own Heroku app
+
+We'll create a demo app for each branch of this repo. To do so, we need to:
+
+1. Tell Phoenix of the updated Heroku URL
+2. Create the Heroku application and add buildpacks
+3. Create environment variables in the new app in Heroku
+4. Add a git remote and deploy
+
+### Tell Phoenix of the updated Heroku URL
+
+Update the host in `prod.exs`.
+
+```
+url: [scheme: "https", host: "phx-009-channels.herokuapp.com", port: 443],
+```
+
+### Create the Heroku application and add buildpacks
+
+```
+$ heroku create phx-009-channels --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
+$ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-009-channels
+```
+
+### Create environment variables in Heroku
+
+```
+$ heroku addons:create heroku-postgresql:hobby-dev -a phx-009-channels
+$ heroku config:set POOL_SIZE=18 -a phx-009-channels
+$ mix phx.gen.secret
+$ heroku config:set  -a phx-009-channels SECRET_KEY_BASE="insertkeyhere"
+```
+
+### Add a git remote and deploy
+
+```
+$ git remote add phx-009-channels https://git.heroku.com/phx-009-channels.git
+$ git push phx-009-channels phx-009-channels:master
+$ heroku open -a phx-009-channels
+```
 
 ## Learn more
 
