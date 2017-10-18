@@ -238,10 +238,10 @@ Contact: [@smeade](https://twitter.com/smeade).
     [code](https://github.com/smeade/phoenixchat) |
     [demo](http://phx-009-channels.herokuapp.com/)
     ]
-  - [x] uncomment the “room:” channel definition [
+  - [x] Uncomment the “room:” channel definition [
     [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/user_socket.ex#L5)
     ]
-  - [x] define a HelloWeb.RoomChannel module [
+  - [x] Define a HelloWeb.RoomChannel module [
     [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/room_channel.ex)
     ]
   - [x] Joining Channels [[guide](https://hexdocs.pm/phoenix/channels.html#joining-channels)]
