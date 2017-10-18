@@ -164,7 +164,7 @@ Contact: [@smeade](https://twitter.com/smeade).
     [code](https://github.com/smeade/hellophoenix/blob/phx-008-templates-shared/lib/hello_web/templates/shared/key.html.eex) |
     [demo](https://phx-008-templates.herokuapp.com/test)
     ]
-- [x] <a name="channels"></a>Channels
+- [x] Channels
   - [x] JavaScript client [[doc](https://hexdocs.pm/phoenix/js/)]
   - [x] Socket Handlers [
     [guide](https://hexdocs.pm/phoenix/channels.html#socket-handlers) |
@@ -203,41 +203,41 @@ Contact: [@smeade](https://twitter.com/smeade).
     [guide](https://hexdocs.pm/phoenix/channels.html#client-libraries) |
     [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L6)
   ]
-  - [x] Sample application [
-      [guide](https://hexdocs.pm/phoenix/channels.html#tying-it-all-together) |
-      [code](https://github.com/smeade/phoenixchat) |
-      [demo](http://phx-009-channels.herokuapp.com/)
-      ]
-    - [x] uncomment the “room:*” channel definition
-      [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/user_socket.ex#L5)
-    - [x] define a HelloWeb.RoomChannel module
+- [x] Channels Sample application [
+    [guide](https://hexdocs.pm/phoenix/channels.html#tying-it-all-together) |
+    [code](https://github.com/smeade/phoenixchat) |
+    [demo](http://phx-009-channels.herokuapp.com/)
+    ]
+  - [x] uncomment the “room:*” channel definition
+    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/user_socket.ex#L5)
+  - [x] define a HelloWeb.RoomChannel module
+    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/room_channel.ex)
+  - [x] Joining Channels [[guide](https://hexdocs.pm/phoenix/channels.html#joining-channels)]
+    - [x] authorize clients to join topic [
       [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/room_channel.ex)
-    - [x] Joining Channels [[guide](https://hexdocs.pm/phoenix/channels.html#joining-channels)]
-      - [x] authorize clients to join topic [
-        [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/room_channel.ex)
-        ]
-      - [x] set our room name to “room:lobby” [
-        [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L57)
-        ]
-        [x] join room [
-        [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L56-L57)
-        ]
-      - [x] import assets/js/socket.js [
-        [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/app.js#L21)
-        ]
-      - [x] add containers to hold our chat messages [
-        [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/templates/page/index.html.eex#L13-L15)
-        ]
-      - [x] push an event over the channel with the message body [
-        [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L64-L70)
-        ]
-      - [x] listen for new messages and append them to our messages container [
-        [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L64-L70)
-        ]
-    - [x] Incoming Events [
-      [guide](https://hexdocs.pm/phoenix/channels.html#incoming-events) |
-      [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/room_channel.ex#L11-L14)
       ]
+    - [x] set our room name to “room:lobby” [
+      [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L57)
+      ]
+      [x] join room [
+      [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L56-L57)
+      ]
+    - [x] import assets/js/socket.js [
+      [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/app.js#L21)
+      ]
+    - [x] add containers to hold our chat messages [
+      [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/templates/page/index.html.eex#L13-L15)
+      ]
+    - [x] push an event over the channel with the message body [
+      [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L64-L70)
+      ]
+    - [x] listen for new messages and append them to our messages container [
+      [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L64-L70)
+      ]
+  - [x] Incoming Events [
+    [guide](https://hexdocs.pm/phoenix/channels.html#incoming-events) |
+    [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/room_channel.ex#L11-L14)
+    ]
 - [ ] Ecto
 - [ ] Contexts
 - [ ] Mix Tasks
