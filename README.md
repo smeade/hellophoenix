@@ -17,10 +17,8 @@ Contact: [@smeade](https://twitter.com/smeade).
     [code](https://github.com/smeade/hellophoenix/tree/phx-001-up-and-running) |
     [demo](https://phx-001-up-and-running.herokuapp.com)
     ]
-  - [x] Deploying to Heroku
-    [guide](https://hexdocs.pm/phoenix/heroku.html#content) |
-    [code](https://github.com/smeade/hellophoenix/tree/phx-001-up-and-running) |
-    [demo](https://phx-001-up-and-running.herokuapp.com)
+  - [x] Deploying to Heroku [
+    [guide](https://hexdocs.pm/phoenix/heroku.html#content)
     ]
 - [x] **Adding Pages**
   - [x] A purely static page [
