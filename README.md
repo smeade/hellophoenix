@@ -164,7 +164,7 @@ Contact: [@smeade](https://twitter.com/smeade).
     [code](https://github.com/smeade/hellophoenix/blob/phx-008-templates-shared/lib/hello_web/templates/shared/key.html.eex) |
     [demo](https://phx-008-templates.herokuapp.com/test)
     ]
-- [ ] <a name="channels"></a>Channels
+- [x] <a name="channels"></a>Channels
   - [x] JavaScript client [[doc](https://hexdocs.pm/phoenix/js/)]
   - [x] Socket Handlers [
     [guide](https://hexdocs.pm/phoenix/channels.html#socket-handlers) |
