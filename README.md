@@ -4,7 +4,7 @@ Code examples and demonstration apps built in Phoenix 1.3 while reading through 
 
 ### A Cheat-Sheet of Sorts
 
-This is not a tutorial. I made these code examples in order to have a direct link between content in the guides and code in a working and deployed Phoenix app. To use this info: Read the Phoenix guides for each topic (see 'guide' links). Then refer to example code ('code' links) and demo applications ('demo' links) here.
+This is not a tutorial. :) I made these code examples in order to have a direct link between content in the guides and code in a working and deployed Phoenix app. To use this info: Read the Phoenix guides for each topic (see 'guide' links). Then refer to example code ('code' links) and demo applications ('demo' links) here.
 
 Note that while Phoenix apps are very responsive, these demo apps are deployed to free Heroku dynos which go to sleep after 30 minutes of inactivity. When you click on a demo link, there will be a delay while the dyno activates.
 
@@ -97,13 +97,14 @@ Contact: [@smeade](https://twitter.com/smeade).
 - [x] **Plug**
   - [x] Function Plugs [
     [guide](https://hexdocs.pm/phoenix/plug.html#function-plugs) |
-    [code](https://github.com/smeade/hellophoenix/blob/phx-004-plug/lib/hello_web/controllers/user_controller.ex#L4) |
-    [code](https://github.com/smeade/hellophoenix/tree/phx-004-plug/lib/hello_web/controllers/user_controller.ex#L10-L14)
+    [code: function](https://github.com/smeade/hellophoenix/tree/phx-004-plug/lib/hello_web/controllers/user_controller.ex#L10-L14) |
+    [code: plug](https://github.com/smeade/hellophoenix/blob/phx-004-plug/lib/hello_web/controllers/user_controller.ex#L4) |
     [demo](https://phx-004-plug.herokuapp.com/users/)
     ]
   - [x] Module Plugs [
     [guide](https://hexdocs.pm/phoenix/plug.html#module-plugs) |
-    [code](https://github.com/smeade/hellophoenix/blob/phx-004-plug/lib/hello_web/plugs/locale.ex)
+    [code: module](https://github.com/smeade/hellophoenix/blob/phx-004-plug/lib/hello_web/plugs/locale.ex) |
+    [code: plug](https://github.com/smeade/hellophoenix/blob/phx-004-plug/lib/hello_web/router.ex#L11)
     ]
 - [x] **Endpoint**
   - [x] Phoenix.Endpoint [[docs](https://hexdocs.pm/phoenix/Phoenix.Endpoint.html)]
@@ -151,7 +152,10 @@ Contact: [@smeade](https://twitter.com/smeade).
     [code](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/page_controller.ex#L6)
     ]
 - [x] **Views**
-  - [x] Rendering Templates [ [guide](https://hexdocs.pm/phoenix/views.html#rendering-templates) ]
+  - [x] Rendering Templates 
+    - [x] Overview [
+      [guide](https://hexdocs.pm/phoenix/views.html#rendering-templates)
+      ]
     - [x] View Functions [
       [code](https://github.com/smeade/hellophoenix/blob/phx-007-views/lib/hello_web/views/layout_view.ex#L4-L8) |
       [demo](https://phx-007-views.herokuapp.com/hello)
