@@ -11,15 +11,18 @@ Note that while Phoenix apps are very responsive, these demo apps are deployed t
 Contact: [@smeade](https://twitter.com/smeade).
 
 ### Guides
-- [x] **Up and Running** [
-  [guide](https://hexdocs.pm/phoenix/up_and_running.html#content) |
-  [code](https://github.com/smeade/hellophoenix/tree/phx-001-up-and-running) |
-  [demo](https://phx-001-up-and-running.herokuapp.com)
-  ]
-- [x] **Adding Pages** [
-  [guide](https://hexdocs.pm/phoenix/adding_pages.html) |
-  [code](https://github.com/smeade/hellophoenix/tree/phx-002-adding-pages)
-  ]
+- [x] **Up and Running**
+  - [x] mix.phx new [
+    [guide](https://hexdocs.pm/phoenix/up_and_running.html#content) |
+    [code](https://github.com/smeade/hellophoenix/tree/phx-001-up-and-running) |
+    [demo](https://phx-001-up-and-running.herokuapp.com)
+    ]
+  - [x] Deploying to Heroku
+    [guide](https://hexdocs.pm/phoenix/heroku.html#content) |
+    [code](https://github.com/smeade/hellophoenix/tree/phx-001-up-and-running) |
+    [demo](https://phx-001-up-and-running.herokuapp.com)
+    ]
+- [x] **Adding Pages**
   - [x] A purely static page [
     [guide](https://hexdocs.pm/phoenix/adding_pages.html) |
     [demo](https://phx-002-adding-pages.herokuapp.com/hello) ]
@@ -56,9 +59,7 @@ Contact: [@smeade](https://twitter.com/smeade).
       [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/templates/hello/show.html.eex) |
       [demo](https://phx-002-adding-pages.herokuapp.com/hello/Scott)
       ]
-- [x] **Routing** [
-  [guide](https://hexdocs.pm/phoenix/routing.html) |
-  [code](https://github.com/smeade/hellophoenix/tree/phx-003-routing)]
+- [x] **Routing**
   - [x] Resources [
     [guide](https://hexdocs.pm/phoenix/routing.html#resources) |
     [code](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L34) |
@@ -95,7 +96,7 @@ Contact: [@smeade](https://twitter.com/smeade).
       [demo](https://phx-003-routing.herokuapp.com/admin/users)
       ]
   - [x] Channel Routes [[guide](https://hexdocs.pm/phoenix/routing.html#channel-routes)]
-- [x] **Plug** [[guide](https://hexdocs.pm/phoenix/plug.html)]
+- [x] **Plug**
   - [x] Function Plugs [
     [guide](https://hexdocs.pm/phoenix/plug.html#function-plugs) |
     [code](https://github.com/smeade/hellophoenix/blob/phx-004-plug/lib/hello_web/controllers/user_controller.ex#L4) |
@@ -106,7 +107,8 @@ Contact: [@smeade](https://twitter.com/smeade).
     [guide](https://hexdocs.pm/phoenix/plug.html#module-plugs) |
     [code](https://github.com/smeade/hellophoenix/blob/phx-004-plug/lib/hello_web/plugs/locale.ex)
     ]
-- [x] **Endpoint** [[docs](https://hexdocs.pm/phoenix/Phoenix.Endpoint.html)]
+- [x] **Endpoint**
+  - [x] Phoenix.Endpoint [[docs](https://hexdocs.pm/phoenix/Phoenix.Endpoint.html)]
   - [x] Endpoint Contents [
     [guide](https://hexdocs.pm/phoenix/endpoint.html#endpoint-contents) |
     [code](https://github.com/smeade/hellophoenix/tree/phx-005-endpoint/lib/hello_web/endpoint.ex)
@@ -174,10 +176,9 @@ Contact: [@smeade](https://twitter.com/smeade).
     [code](https://github.com/smeade/hellophoenix/tree/phx-007-views-json/lib/hello_web/controllers/page_controller.ex#L10-L14) |
     [demo](https://phx-007-views-json.herokuapp.com)
     ]
-- [x] **Templates** [
-  [guide](https://hexdocs.pm/phoenix/templates.html)
-  ]
+- [x] **Templates**
   - [x] hello_web.ex [
+    [guide](https://hexdocs.pm/phoenix/templates.html)
     [code](https://github.com/smeade/hellophoenix/blob/phx-008-templates/lib/hello_web.ex#L29-L45)
     ]
   - [x] Displaying Lists [
@@ -233,7 +234,8 @@ Contact: [@smeade](https://twitter.com/smeade).
     [guide](https://hexdocs.pm/phoenix/channels.html#client-libraries) |
     [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L6)
   ]
-- [x] **Channels Sample application** [
+- [x] **Channels Sample application**
+  - [x] Overview [
     [guide](https://hexdocs.pm/phoenix/channels.html#tying-it-all-together) |
     [code](https://github.com/smeade/phoenixchat) |
     [demo](http://phx-009-channels.herokuapp.com/)
