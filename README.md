@@ -290,27 +290,16 @@ Contact: [@smeade](https://twitter.com/smeade).
     [code: schema](https://github.com/smeade/hellophoenix/blob/phx-010-ecto/lib/hello/accounts/user.ex) |
     [code: migration](https://github.com/smeade/hellophoenix/blob/phx-010-ecto/priv/repo/migrations/20171018223105_create_users.exs)
     ]
-  - [x] The Repo [
-    [guide](https://hexdocs.pm/phoenix/ecto.html#the-repo) |
-    [code](https://github.com/smeade/hellophoenix/blob/phx-010-ecto/config/dev.exs#L51-L58)
-    ]
-  - [x] The Schema [
-    [guide](https://hexdocs.pm/phoenix/ecto.html#the-schema) |
-    [code](https://github.com/smeade/hellophoenix/blob/phx-010-ecto/lib/hello/accounts/user.ex)
-    ]
   - [x] Changesets and Validations [
     [guide](https://hexdocs.pm/phoenix/ecto.html#changesets-and-validations) |
     [code: cast](https://github.com/smeade/hellophoenix/blob/phx-010-ecto/lib/hello/accounts/user.ex#L18) |
-    [code: validate_required](https://github.com/smeade/hellophoenix/blob/phx-010-ecto/lib/hello/accounts/user.ex#L19) |
-    [code: validate_length](https://github.com/smeade/hellophoenix/blob/phx-010-ecto/lib/hello/accounts/user.ex#L20-L21) |
-    [code: validate_length](https://github.com/smeade/hellophoenix/blob/phx-010-ecto/lib/hello/accounts/user.ex#L22) |
+    [code: validate](https://github.com/smeade/hellophoenix/blob/phx-010-ecto/lib/hello/accounts/user.ex#L19-L22)
     [doc](https://hexdocs.pm/ecto/Ecto.Changeset.html)
     ]
-  - [x]  Data Persistence [
+  - [x] Data Persistence [
     [guide](https://hexdocs.pm/phoenix/ecto.html#data-persistence) |
     [doc](https://hexdocs.pm/ecto/Ecto.Query.html#content)
     ]
-  ]
 - [ ] **Contexts**
 - [ ] **Mix Tasks**
 - [ ] **Custom Errors**
