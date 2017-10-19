@@ -301,6 +301,30 @@ Contact: [@smeade](https://twitter.com/smeade).
     [doc](https://hexdocs.pm/ecto/Ecto.Query.html#content)
     ]
 - [ ] **Contexts**
+  - [x] Overview [
+    [guide](https://hexdocs.pm/phoenix/contexts.html)
+    ]
+  - [ ] Adding an Accounts Context [
+    [guide](https://hexdocs.pm/phoenix/contexts.html#adding-an-accounts-context)
+    ]
+  - [ ] Starting With Generators [
+    [guide](https://hexdocs.pm/phoenix/contexts.html#starting-with-generators)
+    ]
+  - [ ] In-context Relationships: e.g. Authentication [
+    [guide](https://hexdocs.pm/phoenix/contexts.html#in-context-relationships)
+    ]
+  - [ ] Adding Account Functions: e.g. Sessions [
+    [guide](https://hexdocs.pm/phoenix/contexts.html#adding-account-functions)
+    ]
+  - [ ] Cross-context dependencies: e.g. CMS [
+    [guide](https://hexdocs.pm/phoenix/contexts.html#cross-context-dependencies)
+    ]
+  - [ ] Cross-context data: e.g. belongs_to [
+    [guide](https://hexdocs.pm/phoenix/contexts.html#cross-context-data)
+    ]
+  - [ ] Adding CMS functions: e.g. page views [
+    [guide](https://hexdocs.pm/phoenix/contexts.html#adding-cms-functions)
+    ]
 - [ ] **Mix Tasks**
 - [ ] **Custom Errors**
 
@@ -331,31 +355,31 @@ We'll create a demo app for each branch of this repo. To do so, we need to:
 Update the host in `prod.exs`.
 
 ```
-url: [scheme: "https", host: "phx-010-ecto.herokuapp.com", port: 443],
+url: [scheme: "https", host: "phx-011-contexts.herokuapp.com", port: 443],
 ```
 
 ### Create the Heroku application and add buildpacks
 
 ```
-$ heroku create phx-010-ecto --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
-$ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-010-ecto
+$ heroku create phx-011-contexts --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
+$ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-011-contexts
 ```
 
 ### Create environment variables in Heroku
 
 ```
-$ heroku addons:create heroku-postgresql:hobby-dev -a phx-010-ecto
-$ heroku config:set POOL_SIZE=18 -a phx-010-ecto
+$ heroku addons:create heroku-postgresql:hobby-dev -a phx-011-contexts
+$ heroku config:set POOL_SIZE=18 -a phx-011-contexts
 $ mix phx.gen.secret
-$ heroku config:set  -a phx-010-ecto SECRET_KEY_BASE="insertkeyhere"
+$ heroku config:set  -a phx-011-contexts SECRET_KEY_BASE="insertkeyhere"
 ```
 
 ### Add a git remote and deploy
 
 ```
-$ git remote add phx-010-ecto https://git.heroku.com/phx-010-ecto.git
-$ git push phx-010-ecto phx-010-ecto:master
-$ heroku open -a phx-010-ecto
+$ git remote add phx-011-contexts https://git.heroku.com/phx-011-contexts.git
+$ git push phx-011-contexts phx-011-contexts:master
+$ heroku open -a phx-011-contexts
 ```
 
 ## Learn more
