@@ -393,6 +393,12 @@ Contact: [@smeade](https://twitter.com/smeade).
     - [x] use the inc_page_views function in the controller [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/controllers/cms/page_controller.ex#L35)]
     - [x] see page views increment with each refresh! [[demo](https://phx-011-contexts.herokuapp.com/cms/pages/1)]
 - [ ] **Mix Tasks**
+  - [x] Overview
+    [[guide](https://hexdocs.pm/phoenix/phoenix_mix_tasks.html#content)]
+  - [x] Creating Our Own Mix Tasks [
+    [guide](https://hexdocs.pm/phoenix/phoenix_mix_tasks.html#creating-our-own-mix-tasks) |
+    [code]()
+    ]
 - [ ] **Custom Errors**
 
 ### Testing
