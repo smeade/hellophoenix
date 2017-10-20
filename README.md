@@ -356,8 +356,8 @@ Contact: [@smeade](https://twitter.com/smeade).
       [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/templates/session/new.html.eex)
       ]
   - [x] Cross-context dependencies: e.g. CMS.Author <-> Accounts.User
-    - Overview [[guide](https://hexdocs.pm/phoenix/contexts.html#cross-context-dependencies)]
-    - New CMS context
+    - [x] Overview [[guide](https://hexdocs.pm/phoenix/contexts.html#cross-context-dependencies)]
+    - [x] New CMS context
       - [x] Generate CMS context, Page schema and web modules
         [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/page.ex)]
       - [x] Add to router
