@@ -392,12 +392,12 @@ Contact: [@smeade](https://twitter.com/smeade).
     - [x] add an inc_page_views function [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/cms.ex#L29-L36)]
     - [x] use the inc_page_views function in the controller [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/controllers/cms/page_controller.ex#L35)]
     - [x] see page views increment with each refresh! [[demo](https://phx-011-contexts.herokuapp.com/cms/pages/1)]
-- [ ] **Mix Tasks**
+- [x] **Mix Tasks**
   - [x] Overview
     [[guide](https://hexdocs.pm/phoenix/phoenix_mix_tasks.html#content)]
-  - [x] Creating Our Own Mix Tasks [
+  - [x] Creating Our Own Mix Task [
     [guide](https://hexdocs.pm/phoenix/phoenix_mix_tasks.html#creating-our-own-mix-tasks) |
-    [code]()
+    [code](https://github.com/smeade/hellophoenix/blob/phx-012-mix-tasks/lib/mix/tasks/hello.greeting.ex)
     ]
 - [ ] **Custom Errors**
 
