@@ -449,6 +449,11 @@ $ git push phx-010-ecto phx-010-ecto:master
 $ heroku open -a phx-010-ecto
 ```
 
+### Migrate database as required
+```
+heroku run "POOL_SIZE=2 mix ecto.migrate" -a phx-011-contexts
+```
+
 ## Learn more
 
   * Official website: http://www.phoenixframework.org/
