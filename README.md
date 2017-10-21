@@ -4,7 +4,7 @@ Code examples and demonstration apps built in Phoenix 1.3 while reading through 
 
 ### A Cheat-Sheet of Sorts
 
-This is not a tutorial. :) I made these code examples in order to have a direct link between content in the guides and code in a working and deployed Phoenix app. To use this info: Read the Phoenix guides for each topic (see 'guide' links). Then refer to example code ('code' links) and demo applications ('demo' links) here.
+This is not a tutorial. :) I made these code examples in order to have a direct link between content in the guides and code in a working and deployed Phoenix app.
 
 Note that while Phoenix apps are very responsive, these demo apps are deployed to free Heroku dynos which go to sleep after 30 minutes of inactivity. When you click on a demo link, there will be a delay while the dyno activates.
 
@@ -202,6 +202,7 @@ Contact: [@smeade](https://twitter.com/smeade).
     [demo](https://phx-008-templates.herokuapp.com/test)
     ]
 - [x] **Channels**
+  - [x] App [[demo](http://phx-009-channels.herokuapp.com/)]
   - [x] JavaScript client [[doc](https://hexdocs.pm/phoenix/js/)]
   - [x] Socket Handlers [
     [guide](https://hexdocs.pm/phoenix/channels.html#socket-handlers) |
@@ -356,8 +357,8 @@ Contact: [@smeade](https://twitter.com/smeade).
       [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/templates/session/new.html.eex)
       ]
   - [x] Cross-context dependencies: e.g. CMS.Author <-> Accounts.User
-    - Overview [[guide](https://hexdocs.pm/phoenix/contexts.html#cross-context-dependencies)]
-    - New CMS context
+    - [x] Overview [[guide](https://hexdocs.pm/phoenix/contexts.html#cross-context-dependencies)]
+    - [x] New CMS context
       - [x] Generate CMS context, Page schema and web modules
         [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/page.ex)]
       - [x] Add to router
@@ -399,7 +400,9 @@ Contact: [@smeade](https://twitter.com/smeade).
     [guide](https://hexdocs.pm/phoenix/phoenix_mix_tasks.html#creating-our-own-mix-tasks) |
     [code](https://github.com/smeade/hellophoenix/blob/phx-012-mix-tasks/lib/mix/tasks/hello.greeting.ex)
     ]
-- [ ] **Custom Errors**
+- [x] **Custom Errors**
+  - [x] Overview [
+    [guide](https://hexdocs.pm/phoenix/errors.html#content)
 
 ### Testing
 - [ ] **Introduction to Testing**
