@@ -4,7 +4,7 @@ Code examples and demonstration apps built in Phoenix 1.3 while reading through 
 
 ### A Cheat-Sheet of Sorts
 
-This is not a tutorial. :) I made these code examples in order to have a direct link between content in the guides and code in a working and deployed Phoenix app. To use this info: Read the Phoenix guides for each topic (see 'guide' links). Then refer to example code ('code' links) and demo applications ('demo' links) here.
+This is not a tutorial. :) I made these code examples in order to have a direct link between content in the guides and code in a working and deployed Phoenix app.
 
 Note that while Phoenix apps are very responsive, these demo apps are deployed to free Heroku dynos which go to sleep after 30 minutes of inactivity. When you click on a demo link, there will be a delay while the dyno activates.
 
@@ -202,6 +202,7 @@ Contact: [@smeade](https://twitter.com/smeade).
     [demo](https://phx-008-templates.herokuapp.com/test)
     ]
 - [x] **Channels**
+  - [x] App [[demo](http://phx-009-channels.herokuapp.com/)]
   - [x] JavaScript client [[doc](https://hexdocs.pm/phoenix/js/)]
   - [x] Socket Handlers [
     [guide](https://hexdocs.pm/phoenix/channels.html#socket-handlers) |
@@ -356,8 +357,8 @@ Contact: [@smeade](https://twitter.com/smeade).
       [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/templates/session/new.html.eex)
       ]
   - [x] Cross-context dependencies: e.g. CMS.Author <-> Accounts.User
-    - Overview [[guide](https://hexdocs.pm/phoenix/contexts.html#cross-context-dependencies)]
-    - New CMS context
+    - [x] Overview [[guide](https://hexdocs.pm/phoenix/contexts.html#cross-context-dependencies)]
+    - [x] New CMS context
       - [x] Generate CMS context, Page schema and web modules
         [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/page.ex)]
       - [x] Add to router
@@ -392,8 +393,16 @@ Contact: [@smeade](https://twitter.com/smeade).
     - [x] add an inc_page_views function [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/cms.ex#L29-L36)]
     - [x] use the inc_page_views function in the controller [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/controllers/cms/page_controller.ex#L35)]
     - [x] see page views increment with each refresh! [[demo](https://phx-011-contexts.herokuapp.com/cms/pages/1)]
-- [ ] **Mix Tasks**
-- [ ] **Custom Errors**
+- [x] **Mix Tasks**
+  - [x] Overview
+    [[guide](https://hexdocs.pm/phoenix/phoenix_mix_tasks.html#content)]
+  - [x] Creating Our Own Mix Task [
+    [guide](https://hexdocs.pm/phoenix/phoenix_mix_tasks.html#creating-our-own-mix-tasks) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-012-mix-tasks/lib/mix/tasks/hello.greeting.ex)
+    ]
+- [x] **Custom Errors**
+  - [x] Overview [
+    [guide](https://hexdocs.pm/phoenix/errors.html#content)
 
 ### Testing
 - [ ] **Introduction to Testing**
@@ -422,31 +431,31 @@ We'll create a demo app for each branch of this repo. To do so, we need to:
 Update the host in `prod.exs`.
 
 ```
-url: [scheme: "https", host: "phx-011-contexts.herokuapp.com", port: 443],
+url: [scheme: "https", host: "phx-010-ecto.herokuapp.com", port: 443],
 ```
 
 ### Create the Heroku application and add buildpacks
 
 ```
-$ heroku create phx-011-contexts --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
-$ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-011-contexts
+$ heroku create phx-010-ecto --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
+$ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-010-ecto
 ```
 
 ### Create environment variables in Heroku
 
 ```
-$ heroku addons:create heroku-postgresql:hobby-dev -a phx-011-contexts
-$ heroku config:set POOL_SIZE=18 -a phx-011-contexts
+$ heroku addons:create heroku-postgresql:hobby-dev -a phx-010-ecto
+$ heroku config:set POOL_SIZE=18 -a phx-010-ecto
 $ mix phx.gen.secret
-$ heroku config:set  -a phx-011-contexts SECRET_KEY_BASE="insertkeyhere"
+$ heroku config:set  -a phx-010-ecto SECRET_KEY_BASE="insertkeyhere"
 ```
 
 ### Add a git remote and deploy
 
 ```
-$ git remote add phx-011-contexts https://git.heroku.com/phx-011-contexts.git
-$ git push phx-011-contexts phx-011-contexts:master
-$ heroku open -a phx-011-contexts
+$ git remote add phx-010-ecto https://git.heroku.com/phx-010-ecto.git
+$ git push phx-010-ecto phx-010-ecto:master
+$ heroku open -a phx-010-ecto
 ```
 
 ### Migrate database as required
