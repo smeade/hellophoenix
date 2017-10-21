@@ -4,7 +4,7 @@ Code examples and demonstration apps built in Phoenix 1.3 while reading through 
 
 ### A Cheat-Sheet of Sorts
 
-This is not a tutorial. :) I made these code examples in order to have a direct link between content in the guides and code in a working and deployed Phoenix app.
+This is not a tutorial. :) I made these code examples and deployed demo apps in order to have a direct link between content in the guides and code in a working and deployed Phoenix app for reference and learning. Most of the code is directly from the guides and credit belongs to the [guide contributors](https://github.com/phoenixframework/phoenix/graphs/contributors).
 
 Note that while Phoenix apps are very responsive, these demo apps are deployed to free Heroku dynos which go to sleep after 30 minutes of inactivity. When you click on a demo link, there will be a delay while the dyno activates.
 
@@ -402,7 +402,7 @@ Contact: [@smeade](https://twitter.com/smeade).
     ]
 - [x] **Custom Errors**
   - [x] Overview [
-    [guide](https://hexdocs.pm/phoenix/errors.html#content)
+    [guide](https://hexdocs.pm/phoenix/errors.html#content)]
 
 ### Testing
 - [ ] **Introduction to Testing**
