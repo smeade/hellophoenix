@@ -399,7 +399,9 @@ Contact: [@smeade](https://twitter.com/smeade).
     [guide](https://hexdocs.pm/phoenix/phoenix_mix_tasks.html#creating-our-own-mix-tasks) |
     [code](https://github.com/smeade/hellophoenix/blob/phx-012-mix-tasks/lib/mix/tasks/hello.greeting.ex)
     ]
-- [ ] **Custom Errors**
+- [x] **Custom Errors**
+  - [x] Overview [
+    [guide](https://hexdocs.pm/phoenix/errors.html#content)
 
 ### Testing
 - [ ] **Introduction to Testing**
