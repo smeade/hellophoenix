@@ -4,7 +4,7 @@ Code examples and demonstration apps built in Phoenix 1.3 while reading through 
 
 ### A Cheat-Sheet of Sorts
 
-This is not a tutorial. I made these code examples in order to have a direct link between content in the guides and code in a working and deployed Phoenix app. To use this info: Read the Phoenix guides for each topic (see 'guide' links). Then refer to example code ('code' links) and demo applications ('demo' links) here.
+This is not a tutorial. :) I made these code examples in order to have a direct link between content in the guides and code in a working and deployed Phoenix app.
 
 Note that while Phoenix apps are very responsive, these demo apps are deployed to free Heroku dynos which go to sleep after 30 minutes of inactivity. When you click on a demo link, there will be a delay while the dyno activates.
 
@@ -21,9 +21,11 @@ Contact: [@smeade](https://twitter.com/smeade).
     [guide](https://hexdocs.pm/phoenix/heroku.html#content)
     ]
 - [x] **Adding Pages**
-  - [x] A purely static page [
-    [guide](https://hexdocs.pm/phoenix/adding_pages.html) |
-    [demo](https://phx-002-adding-pages.herokuapp.com/hello) ]
+  - [x] A purely static page
+    - [x] Overview [
+      [guide](https://hexdocs.pm/phoenix/adding_pages.html) |
+      [demo](https://phx-002-adding-pages.herokuapp.com/hello)
+      ]
     - [x] A New Route [
       [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-route) |
       [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/router.ex#L20)
@@ -41,9 +43,11 @@ Contact: [@smeade](https://twitter.com/smeade).
       [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/templates/hello/index.html.eex) |
       [demo](https://phx-002-adding-pages.herokuapp.com/hello)
       ]
-  - [x] Another New Page: Sending Parameters [
-    [guide](https://hexdocs.pm/phoenix/adding_pages.html#another-new-page) |
-    [demo](https://phx-002-adding-pages.herokuapp.com/hello/Scott)]
+  - [x] Another New Page: Sending Parameters
+    - [x] Overview [
+      [guide](https://hexdocs.pm/phoenix/adding_pages.html#another-new-page) |
+      [demo](https://phx-002-adding-pages.herokuapp.com/hello/Scott)
+      ]
     - [x] Another New Route [
       [guide](https://hexdocs.pm/phoenix/adding_pages.html#another-new-page) |
       [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/router.ex#L21)
@@ -97,13 +101,14 @@ Contact: [@smeade](https://twitter.com/smeade).
 - [x] **Plug**
   - [x] Function Plugs [
     [guide](https://hexdocs.pm/phoenix/plug.html#function-plugs) |
-    [code](https://github.com/smeade/hellophoenix/blob/phx-004-plug/lib/hello_web/controllers/user_controller.ex#L4) |
-    [code](https://github.com/smeade/hellophoenix/tree/phx-004-plug/lib/hello_web/controllers/user_controller.ex#L10-L14)
+    [code: function](https://github.com/smeade/hellophoenix/tree/phx-004-plug/lib/hello_web/controllers/user_controller.ex#L10-L14) |
+    [code: plug](https://github.com/smeade/hellophoenix/blob/phx-004-plug/lib/hello_web/controllers/user_controller.ex#L4) |
     [demo](https://phx-004-plug.herokuapp.com/users/)
     ]
   - [x] Module Plugs [
     [guide](https://hexdocs.pm/phoenix/plug.html#module-plugs) |
-    [code](https://github.com/smeade/hellophoenix/blob/phx-004-plug/lib/hello_web/plugs/locale.ex)
+    [code: module](https://github.com/smeade/hellophoenix/blob/phx-004-plug/lib/hello_web/plugs/locale.ex) |
+    [code: plug](https://github.com/smeade/hellophoenix/blob/phx-004-plug/lib/hello_web/router.ex#L11)
     ]
 - [x] **Endpoint**
   - [x] Phoenix.Endpoint [[docs](https://hexdocs.pm/phoenix/Phoenix.Endpoint.html)]
@@ -151,7 +156,10 @@ Contact: [@smeade](https://twitter.com/smeade).
     [code](https://github.com/smeade/hellophoenix/blob/phx-006-controllers/lib/hello_web/controllers/page_controller.ex#L6)
     ]
 - [x] **Views**
-  - [x] Rendering Templates [ [guide](https://hexdocs.pm/phoenix/views.html#rendering-templates) ]
+  - [x] Rendering Templates
+    - [x] Overview [
+      [guide](https://hexdocs.pm/phoenix/views.html#rendering-templates)
+      ]
     - [x] View Functions [
       [code](https://github.com/smeade/hellophoenix/blob/phx-007-views/lib/hello_web/views/layout_view.ex#L4-L8) |
       [demo](https://phx-007-views.herokuapp.com/hello)
@@ -180,7 +188,7 @@ Contact: [@smeade](https://twitter.com/smeade).
     [code](https://github.com/smeade/hellophoenix/blob/phx-008-templates/lib/hello_web.ex#L29-L45)
     ]
   - [x] Displaying Lists [
-    [code](https://github.com/smeade/hellophoenix/blob/phx-008-templates/lib/hello_web/templates/page/test.html.eex#L6-L8) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-008-templates/lib/hello_web/templates/page/test.html.eex#L6) |
     [demo](https://phx-008-templates.herokuapp.com/test)
     ]
   - [x] Render templates within templates [
@@ -194,6 +202,7 @@ Contact: [@smeade](https://twitter.com/smeade).
     [demo](https://phx-008-templates.herokuapp.com/test)
     ]
 - [x] **Channels**
+  - [x] App [[demo](http://phx-009-channels.herokuapp.com/)]
   - [x] JavaScript client [[doc](https://hexdocs.pm/phoenix/js/)]
   - [x] Socket Handlers [
     [guide](https://hexdocs.pm/phoenix/channels.html#socket-handlers) |
@@ -238,10 +247,10 @@ Contact: [@smeade](https://twitter.com/smeade).
     [code](https://github.com/smeade/phoenixchat) |
     [demo](http://phx-009-channels.herokuapp.com/)
     ]
-  - [x] uncomment the “room:” channel definition [
+  - [x] Uncomment the “room:” channel definition [
     [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/user_socket.ex#L5)
     ]
-  - [x] define a HelloWeb.RoomChannel module [
+  - [x] Define a HelloWeb.RoomChannel module [
     [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/room_channel.ex)
     ]
   - [x] Joining Channels [[guide](https://hexdocs.pm/phoenix/channels.html#joining-channels)]
@@ -270,10 +279,130 @@ Contact: [@smeade](https://twitter.com/smeade).
     [guide](https://hexdocs.pm/phoenix/channels.html#incoming-events) |
     [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/room_channel.ex#L11-L14)
     ]
-- [ ] **Ecto**
-- [ ] **Contexts**
-- [ ] **Mix Tasks**
-- [ ] **Custom Errors**
+- [x] **Ecto**
+  - [x] Overview [
+    [Phoenix guide](https://hexdocs.pm/phoenix/ecto.html#content) |
+    [Ecto Guide](https://hexdocs.pm/ecto/getting-started.html)
+    ]
+  - [x] Postgres configuration [
+    [code](https://github.com/smeade/hellophoenix/blob/phx-010-ecto/config/dev.exs#L51-L58)
+    ]
+  - [x] Generate an Ecto schema [
+    [code: schema](https://github.com/smeade/hellophoenix/blob/phx-010-ecto/lib/hello/accounts/user.ex) |
+    [code: migration](https://github.com/smeade/hellophoenix/blob/phx-010-ecto/priv/repo/migrations/20171018223105_create_users.exs)
+    ]
+  - [x] Changesets and Validations [
+    [guide](https://hexdocs.pm/phoenix/ecto.html#changesets-and-validations) |
+    [code: cast](https://github.com/smeade/hellophoenix/blob/phx-010-ecto/lib/hello/accounts/user.ex#L18) |
+    [code: validate](https://github.com/smeade/hellophoenix/blob/phx-010-ecto/lib/hello/accounts/user.ex#L19-L22)
+    [doc](https://hexdocs.pm/ecto/Ecto.Changeset.html)
+    ]
+  - [x] Data Persistence [
+    [guide](https://hexdocs.pm/phoenix/ecto.html#data-persistence) |
+    [doc](https://hexdocs.pm/ecto/Ecto.Query.html#content)
+    ]
+- [x] **Contexts**
+  - [x] Overview [
+    [guide](https://hexdocs.pm/phoenix/contexts.html)
+    ]
+  - [x] Adding an Accounts Context With Generators [
+    [guide](https://hexdocs.pm/phoenix/contexts.html#adding-an-accounts-context) |
+    [code:controller](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/controllers/user_controller.ex) |    [code:context](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/accounts/accounts.ex) |
+    [code:schema](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/accounts/user.ex) |
+    [demo](https://phx-011-contexts.herokuapp.com/users/2)
+    ]
+  - [x] In-context Relationships: e.g. Credential belongs_to User
+    - [x] Overview [
+      [guide](https://hexdocs.pm/phoenix/contexts.html#in-context-relationships)
+      ]
+    - [x] mix phx.gen.context Accounts Credential...[
+      [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/accounts/credential.ex)
+      ]
+    - [x] has_one/belongs_to [
+      [code:belongs_to](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/accounts/credential.ex#L9) | [code:has_one](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/accounts/user.ex#L10)
+      ]
+    - [x] load association data [
+      [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/accounts/accounts.ex#L43)
+      ]
+    - [x] add association changeset [
+      [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/accounts/accounts.ex#L61)
+      ]
+    - [x] add association to user edit/create form [
+      [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/templates/user/form.html.eex#L20-L26)
+      ]
+    - [x] add user.credential.email association to user show [
+      [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/templates/user/show.html.eex#L15-L19) |
+      [demo](https://phx-011-contexts.herokuapp.com/users/2)
+      ]
+  - [x] Adding Account Functions: e.g. Sessions
+    - [x] Overview [
+      [guide](https://hexdocs.pm/phoenix/contexts.html#adding-account-functions) |
+      [demo](https://phx-011-contexts.herokuapp.com/sessions/new)
+      ]
+    - [x] Add authenticate_by_email_password function to accounts [
+      [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/accounts/accounts.ex#L12-L22)
+      ]
+    - [x] Create session controller [
+      [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/accounts/accounts.ex#L12) |
+      [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/controllers/session_controller.ex#L11)
+      ]
+    - [x] Add sessions to router [
+      [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/router.ex#L21-L22)
+      ]
+    - [x] Add an authentication plug to the router [
+      [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/router.ex#L30-L40)
+      ]
+    - [x] Create session view and template [
+      [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/views/session_view.ex) |
+      [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/templates/session/new.html.eex)
+      ]
+  - [x] Cross-context dependencies: e.g. CMS.Author <-> Accounts.User
+    - [x] Overview [[guide](https://hexdocs.pm/phoenix/contexts.html#cross-context-dependencies)]
+    - [x] New CMS context
+      - [x] Generate CMS context, Page schema and web modules
+        [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/page.ex)]
+      - [x] Add to router
+        [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/router.ex#L25-L29)]
+      - [x] Generate an Author schema
+        [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/author.ex)]
+      - [x] Add an author_id field to the pages table
+        [[code](https://github.com/smeade/phoenix-contexts/blob/master/priv/repo/migrations/20171020135327_add_author_id_to_pages.exs)]
+  - [x] Cross-context data: e.g. CMS.Author <-> Accounts.User
+    - [x] Overview [
+      [guide](https://hexdocs.pm/phoenix/contexts.html#cross-context-data) |
+      [demo](https://phx-011-contexts.herokuapp.com/cms/pages/1)
+      ]
+    - [x] Tie pages to authors and author to users
+      - [x] page belongs_to author [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/page.ex#L10)]
+      - [x] author has_many pages [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/author.ex#L11)]
+      - [x] author belongs_to user [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/author.ex#L12)]
+    - [x] Require an author on pages
+      - [x] preload author on page fetch [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/cms.ex#L20)]
+      - [x] persist author data [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/cms.ex#L44)]
+      - [x] ensure author exists [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/cms.ex#L48-L58)]
+      - [x] add require_existing_author plug to CMS.PageController [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/controllers/cms/page_controller.ex#L7) | [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/controllers/cms/page_controller.ex#L61-L64)]
+      - [x] make use of current_author in the connection assigns from require_existing_author plug [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/controllers/cms/page_controller.ex#L21)]
+      - [x] display author when showing a page [
+        [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/templates/cms/page/show.html.eex#L20-L23) | [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/views/cms/page_view.ex#L6-L8) |
+        [demo](https://phx-011-contexts.herokuapp.com/cms/pages/1)
+        ]
+  - [x] Adding CMS functions: e.g. page views
+    - [x] Overview [
+      [guide](https://hexdocs.pm/phoenix/contexts.html#adding-cms-functions)
+      [demo](https://phx-011-contexts.herokuapp.com/cms/pages)]
+    - [x] add an inc_page_views function [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/cms.ex#L29-L36)]
+    - [x] use the inc_page_views function in the controller [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/controllers/cms/page_controller.ex#L35)]
+    - [x] see page views increment with each refresh! [[demo](https://phx-011-contexts.herokuapp.com/cms/pages/1)]
+- [x] **Mix Tasks**
+  - [x] Overview
+    [[guide](https://hexdocs.pm/phoenix/phoenix_mix_tasks.html#content)]
+  - [x] Creating Our Own Mix Task [
+    [guide](https://hexdocs.pm/phoenix/phoenix_mix_tasks.html#creating-our-own-mix-tasks) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-012-mix-tasks/lib/mix/tasks/hello.greeting.ex)
+    ]
+- [x] **Custom Errors**
+  - [x] Overview [
+    [guide](https://hexdocs.pm/phoenix/errors.html#content)
 
 ### Testing
 - [ ] **Introduction to Testing**
@@ -302,31 +431,36 @@ We'll create a demo app for each branch of this repo. To do so, we need to:
 Update the host in `prod.exs`.
 
 ```
-url: [scheme: "https", host: "phx-009-channels.herokuapp.com", port: 443],
+url: [scheme: "https", host: "phx-010-ecto.herokuapp.com", port: 443],
 ```
 
 ### Create the Heroku application and add buildpacks
 
 ```
-$ heroku create phx-009-channels --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
-$ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-009-channels
+$ heroku create phx-010-ecto --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
+$ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-010-ecto
 ```
 
 ### Create environment variables in Heroku
 
 ```
-$ heroku addons:create heroku-postgresql:hobby-dev -a phx-009-channels
-$ heroku config:set POOL_SIZE=18 -a phx-009-channels
+$ heroku addons:create heroku-postgresql:hobby-dev -a phx-010-ecto
+$ heroku config:set POOL_SIZE=18 -a phx-010-ecto
 $ mix phx.gen.secret
-$ heroku config:set  -a phx-009-channels SECRET_KEY_BASE="insertkeyhere"
+$ heroku config:set  -a phx-010-ecto SECRET_KEY_BASE="insertkeyhere"
 ```
 
 ### Add a git remote and deploy
 
 ```
-$ git remote add phx-009-channels https://git.heroku.com/phx-009-channels.git
-$ git push phx-009-channels phx-009-channels:master
-$ heroku open -a phx-009-channels
+$ git remote add phx-010-ecto https://git.heroku.com/phx-010-ecto.git
+$ git push phx-010-ecto phx-010-ecto:master
+$ heroku open -a phx-010-ecto
+```
+
+### Migrate database as required
+```
+heroku run "POOL_SIZE=2 mix ecto.migrate" -a phx-011-contexts
 ```
 
 ## Learn more
