@@ -431,31 +431,31 @@ We'll create a demo app for each branch of this repo. To do so, we need to:
 Update the host in `prod.exs`.
 
 ```
-url: [scheme: "https", host: "phx-010-ecto.herokuapp.com", port: 443],
+url: [scheme: "https", host: "phx-000.herokuapp.com", port: 443],
 ```
 
 ### Create the Heroku application and add buildpacks
 
 ```
-$ heroku create phx-010-ecto --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
-$ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-010-ecto
+$ heroku create phx-000 --buildpack "https://github.com/HashNuke/heroku-buildpack-elixir.git"
+$ heroku buildpacks:add https://github.com/gjaldon/heroku-buildpack-phoenix-static.git -a phx-000
 ```
 
 ### Create environment variables in Heroku
 
 ```
-$ heroku addons:create heroku-postgresql:hobby-dev -a phx-010-ecto
-$ heroku config:set POOL_SIZE=18 -a phx-010-ecto
+$ heroku addons:create heroku-postgresql:hobby-dev -a phx-000
+$ heroku config:set POOL_SIZE=18 -a phx-000
 $ mix phx.gen.secret
-$ heroku config:set  -a phx-010-ecto SECRET_KEY_BASE="insertkeyhere"
+$ heroku config:set  -a phx-000 SECRET_KEY_BASE="insertkeyhere"
 ```
 
 ### Add a git remote and deploy
 
 ```
-$ git remote add phx-010-ecto https://git.heroku.com/phx-010-ecto.git
-$ git push phx-010-ecto phx-010-ecto:master
-$ heroku open -a phx-010-ecto
+$ git remote add phx-000 https://git.heroku.com/phx-000.git
+$ git push phx-000 phx-000:master
+$ heroku open -a phx-000
 ```
 
 ### Migrate database as required
