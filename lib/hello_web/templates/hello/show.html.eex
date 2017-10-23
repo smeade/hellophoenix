@@ -1,3 +1,13 @@
 <div class="jumbotron">
   <h2>Hello World, from <%= @messenger %>!</h2>
 </div>
+
+<%= case {1, 2, 3} do
+  {4, 5, 6} ->
+    "nope"
+  {1, x, 3} ->
+    "yep and x is #{x}"
+  _ ->
+    "any"
+  end
+%>
