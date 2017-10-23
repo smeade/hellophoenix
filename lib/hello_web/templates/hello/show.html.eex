@@ -2,6 +2,7 @@
   <h2>Hello World, from <%= @messenger %>!</h2>
 </div>
 
+<%# Would be much better to put this in lib/hello_web/views/hello_view.ex %>
 <%= case {1, 2, 3} do
   {4, 5, 6} ->
     "nope"
