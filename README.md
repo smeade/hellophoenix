@@ -57,12 +57,12 @@ Contact: [@smeade](https://twitter.com/smeade).
   - [x] Scoped Routes [guide](https://hexdocs.pm/phoenix/routing.html#scoped-routes) |
     [code](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L38-L44) |
     [demo](https://phx-003-routing.herokuapp.com/admin/users)
-  - [x] Pipelines [[guide](https://hexdocs.pm/phoenix/routing.html#pipelines )]
+  - [x] Pipelines [guide](https://hexdocs.pm/phoenix/routing.html#pipelines )
     - [x] The :browser and :api Pipelines   [code](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L5-L15)
     - [x] Creating New Pipelines   [code: pipeline](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L17-L23) |
       [code: plug](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/plugs/admin.ex) |
       [demo](https://phx-003-routing.herokuapp.com/admin/users)
-  - [x] Channel Routes [[guide](https://hexdocs.pm/phoenix/routing.html#channel-routes)]
+  - [x] Channel Routes [guide](https://hexdocs.pm/phoenix/routing.html#channel-routes)
 - [x] **Plug**
   - [x] Function Plugs [guide](https://hexdocs.pm/phoenix/plug.html#function-plugs) |
     [code: function](https://github.com/smeade/hellophoenix/tree/phx-004-plug/lib/hello_web/controllers/user_controller.ex#L10-L14) |
@@ -72,7 +72,7 @@ Contact: [@smeade](https://twitter.com/smeade).
     [code: module](https://github.com/smeade/hellophoenix/blob/phx-004-plug/lib/hello_web/plugs/locale.ex) |
     [code: plug](https://github.com/smeade/hellophoenix/blob/phx-004-plug/lib/hello_web/router.ex#L11)
 - [x] **Endpoint**
-  - [x] Phoenix.Endpoint [[docs](https://hexdocs.pm/phoenix/Phoenix.Endpoint.html)]
+  - [x] Phoenix.Endpoint [docs](https://hexdocs.pm/phoenix/Phoenix.Endpoint.html)
   - [x] Endpoint Contents [guide](https://hexdocs.pm/phoenix/endpoint.html#endpoint-contents) |
     [code](https://github.com/smeade/hellophoenix/tree/phx-005-endpoint/lib/hello_web/endpoint.ex)
   - [x] Using SSL [guide](https://hexdocs.pm/phoenix/endpoint.html#using-ssl) |
@@ -126,8 +126,8 @@ Contact: [@smeade](https://twitter.com/smeade).
     [code](https://github.com/smeade/hellophoenix/blob/phx-008-templates-shared/lib/hello_web/templates/shared/key.html.eex) |
     [demo](https://phx-008-templates.herokuapp.com/test)
 - [x] **Channels**
-  - [x] App [[demo](http://phx-009-channels.herokuapp.com/)]
-  - [x] JavaScript client [[doc](https://hexdocs.pm/phoenix/js/)]
+  - [x] App [demo](http://phx-009-channels.herokuapp.com/)
+  - [x] JavaScript client [doc](https://hexdocs.pm/phoenix/js/)
   - [x] Socket Handlers [guide](https://hexdocs.pm/phoenix/channels.html#socket-handlers) |
     [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/user_socket.ex)
   - [x] Channel Routes [guide](https://hexdocs.pm/phoenix/channels.html#channel-routes) |
@@ -154,7 +154,7 @@ Contact: [@smeade](https://twitter.com/smeade).
     [demo](http://phx-009-channels.herokuapp.com/)
   - [x] Uncomment the “room:” channel definition [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/user_socket.ex#L5)
   - [x] Define a HelloWeb.RoomChannel module [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/room_channel.ex)
-  - [x] Joining Channels [[guide](https://hexdocs.pm/phoenix/channels.html#joining-channels)]
+  - [x] Joining Channels [guide](https://hexdocs.pm/phoenix/channels.html#joining-channels)
     - [x] authorize clients to join topic   [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/room_channel.ex#L4-L9)
     - [x] set our room name to “room:lobby”   [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L57)
      - [x] join channel   [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L79-L81)
@@ -202,41 +202,44 @@ Contact: [@smeade](https://twitter.com/smeade).
         - [x] Create session view and template   [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/views/session_view.ex) |
       [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/templates/session/new.html.eex)
   - [x] Cross-context dependencies: e.g. CMS.Author <-> Accounts.User
-    - [x] Overview [[guide](https://hexdocs.pm/phoenix/contexts.html#cross-context-dependencies)]
+    - [x] Overview [guide](https://hexdocs.pm/phoenix/contexts.html#cross-context-dependencies)
     - [x] New CMS context
       - [x] Generate CMS context, Page schema and web modules
-        [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/page.ex)]
+        [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/page.ex)
       - [x] Add to router
-        [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/router.ex#L25-L29)]
+        [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/router.ex#L25-L29)
       - [x] Generate an Author schema
-        [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/author.ex)]
+        [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/author.ex)
       - [x] Add an author_id field to the pages table
-        [[code](https://github.com/smeade/phoenix-contexts/blob/master/priv/repo/migrations/20171020135327_add_author_id_to_pages.exs)]
+        [code](https://github.com/smeade/phoenix-contexts/blob/master/priv/repo/migrations/20171020135327_add_author_id_to_pages.exs)
   - [x] Cross-context data: e.g. CMS.Author <-> Accounts.User
     - [x] Overview   [guide](https://hexdocs.pm/phoenix/contexts.html#cross-context-data) |
       [demo](https://phx-011-contexts.herokuapp.com/cms/pages/1)
       - [x] Tie pages to authors and author to users
-      - [x] page belongs_to author [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/page.ex#L10)]
-      - [x] author has_many pages [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/author.ex#L11)]
-      - [x] author belongs_to user [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/author.ex#L12)]
+      - [x] page belongs_to author [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/page.ex#L10)
+      - [x] author has_many pages [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/author.ex#L11)
+      - [x] author belongs_to user [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/author.ex#L12)
     - [x] Require an author on pages
-      - [x] preload author on page fetch [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/cms.ex#L20)]
-      - [x] persist author data [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/cms.ex#L44)]
-      - [x] ensure author exists [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/cms.ex#L48-L58)]
-      - [x] add require_existing_author plug to CMS.PageController [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/controllers/cms/page_controller.ex#L7) | [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/controllers/cms/page_controller.ex#L61-L64)]
-      - [x] make use of current_author in the connection assigns from require_existing_author plug [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/controllers/cms/page_controller.ex#L21)]
+      - [x] preload author on page fetch [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/cms.ex#L20)
+      - [x] persist author data [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/cms.ex#L44)
+      - [x] ensure author exists [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/cms.ex#L48-L58)
+      - [x] add require_existing_author plug to CMS.PageController [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/controllers/cms/page_controller.ex#L7) | [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/controllers/cms/page_controller.ex#L61-L64)
+      - [x] make use of current_author in the connection assigns from require_existing_author plug [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/controllers/cms/page_controller.ex#L21)
       - [x] display author when showing a page     [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/templates/cms/page/show.html.eex#L20-L23) | [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/views/cms/page_view.ex#L6-L8) |
-        [demo](https://phx-011-contexts.herokuapp.com/cms/pages/1)
+      [demo](https://phx-011-contexts.herokuapp.com/cms/pages/1)
     - [x] Adding CMS functions: e.g. page views
-    - [x] Overview   [guide](https://hexdocs.pm/phoenix/contexts.html#adding-cms-functions)
-      [demo](https://phx-011-contexts.herokuapp.com/cms/pages)]
-    - [x] add an inc_page_views function [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/cms.ex#L29-L36)]
-    - [x] use the inc_page_views function in the controller [[code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/controllers/cms/page_controller.ex#L35)]
-    - [x] see page views increment with each refresh! [[demo](https://phx-011-contexts.herokuapp.com/cms/pages/1)]
+    - [x] Overview [guide](https://hexdocs.pm/phoenix/contexts.html#adding-cms-functions)
+      [demo](https://phx-011-contexts.herokuapp.com/cms/pages)
+    - [x] add an inc_page_views function
+      [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/cms.ex#L29-L36)
+    - [x] use the inc_page_views function in the controllers
+      [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/controllers/cms/page_controller.ex#L35)
+    - [x] see page views increment with each refresh! [demo](https://phx-011-contexts.herokuapp.com/cms/pages/1)
 - [x] **Mix Tasks**
   - [x] Overview
-    [[guide](https://hexdocs.pm/phoenix/phoenix_mix_tasks.html#content)]
-  - [x] Creating Our Own Mix Task [guide](https://hexdocs.pm/phoenix/phoenix_mix_tasks.html#creating-our-own-mix-tasks) |
+    [guide](https://hexdocs.pm/phoenix/phoenix_mix_tasks.html#content)
+  - [x] Creating Our Own Mix Tasks
+    [guide](https://hexdocs.pm/phoenix/phoenix_mix_tasks.html#creating-our-own-mix-tasks) |
     [code](https://github.com/smeade/hellophoenix/blob/phx-012-mix-tasks/lib/mix/tasks/hello.greeting.ex)
 - [x] **Custom Errors**
   - [x] Overview [guide](https://hexdocs.pm/phoenix/errors.html#content)
