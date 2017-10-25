@@ -255,9 +255,9 @@ Contact: [@smeade](https://twitter.com/smeade).
     [guide](https://hexdocs.pm/phoenix/testing.html#randomization)
 - [x] **Testing Schemas**
   - [x] Test Driving a Changeset
-    [guide](https://hexdocs.pm/phoenix/testing_schemas.html#test-driving-a-changeset) |
-    [code:user_test](https://github.com/smeade/hellophoenix/blob/phx-013-testing/test/hello/accounts/user_test.exs) |
-    [code:user](https://github.com/smeade/hellophoenix/blob/phx-013-testing/lib/hello/accounts/user.ex#L20-L22)
+    [guide](https://hexdocs.pm/phoenix/testing_schemas.html#test-driving-a-changeset)
+  - [x] add tests [code](https://github.com/smeade/hellophoenix/blob/phx-013-testing/test/hello/accounts/user_test.exs)
+  - [x] make them pass [code](https://github.com/smeade/hellophoenix/blob/phx-013-testing/lib/hello/accounts/user.ex#L20-L22)
 - [ ] **Testing Controllers**
 - [ ] **Testing Channels**
 
