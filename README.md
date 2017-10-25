@@ -247,14 +247,15 @@ Contact: [@smeade](https://twitter.com/smeade).
 ### Testing
 - [x] **Introduction to Testing**
   - [x] Running Tests Using Tags [guide](https://hexdocs.pm/phoenix/testing.html#running-tests-using-tags) |
-    [code:module](https://github.com/smeade/hellophoenix/blob/phx-013-testing/test/hello_web/views/error_view_test.exs#L7-L8) |
+    [code:module](https://github.com/smeade/hellophoenix/blob/phx-013-testing/test/hello_web/views/error_view_test.exs#L4-L5) |
     [code:individual](https://github.com/smeade/hellophoenix/blob/phx-013-testing/test/hello_web/views/error_view_test.exs#L10-L11)
   - [x] Randomization
     [guide](https://hexdocs.pm/phoenix/testing.html#randomization)
 - [x] **Testing Schemas**
   - [x] Test Driving a Changeset
     [guide](https://hexdocs.pm/phoenix/testing_schemas.html#test-driving-a-changeset) |
-    [code](https://github.com/smeade/hellophoenix/blob/phx-013-testing/test/hello/accounts/user_test.exs)
+    [code:test](https://github.com/smeade/hellophoenix/blob/phx-013-testing/test/hello/accounts/user_test.exs) |
+    [code:schema](https://github.com/smeade/hellophoenix/blob/phx-013-testing/lib/hello/accounts/user.ex#L20-L22)
 - [ ] **Testing Controllers**
 - [ ] **Testing Channels**
 
