@@ -258,8 +258,28 @@ Contact: [@smeade](https://twitter.com/smeade).
     [guide](https://hexdocs.pm/phoenix/testing_schemas.html#test-driving-a-changeset)
   - [x] add tests [code](https://github.com/smeade/hellophoenix/blob/phx-013-testing/test/hello/accounts/user_test.exs)
   - [x] make them pass [code](https://github.com/smeade/hellophoenix/blob/phx-013-testing/lib/hello/accounts/user.ex#L20-L22)
-- [ ] **Testing Controllers**
-- [ ] **Testing Channels**
+- [x] **Testing Controllers**
+  - [x] Overview [guide](https://hexdocs.pm/phoenix/testing_controllers.html)
+  - [x] user_controller_text.exs [code](https://github.com/smeade/hellophoenix/blob/phx-013-testing/test/hello_web/controllers/user_controller_test.exs)
+- [x] **Testing Channels**
+  - [x] Overview [guide](https://hexdocs.pm/phoenix/testing_channels.html)
+  - [x] Generate a channel and tests
+    [code](https://github.com/smeade/hellophoenix/blob/phx-013-testing/lib/hello_web/channels/room_channel.ex)
+    - [x] Add a channel router
+      [code](https://github.com/smeade/hellophoenix/blob/phx-013-testing/lib/hello_web/channels/user_socket.ex)
+    - [x] The Channel Test Helpers Module
+      [code](https://github.com/smeade/hellophoenix/blob/phx-013-testing/test/support/channel_case.ex)
+    - [x] The Setup Block
+      [code](https://github.com/smeade/hellophoenix/blob/phx-013-testing/test/hello_web/channelsj/room_channel_test.exs#L6-L12)
+  - [x] Testing a Synchronous Reply
+    [code:test](https://github.com/smeade/hellophoenix/blob/phx-013-testing/test/hello_web/channels/room_channel_test.exs#L14-L17) |
+    [code:channel](https://github.com/smeade/hellophoenix/blob/phx-013-testing/lib/hello_web/channels/room_channel.ex#L12-L16)
+  - [x] Testing a Broadcast
+    [code:test](https://github.com/smeade/hellophoenix/blob/phx-013-testing/test/hello_web/channels/room_channel_test.exs#L19-L22) |
+    [code:channel](https://github.com/smeade/hellophoenix/blob/phx-013-testing/lib/hello_web/channels/room_channel.ex#L18-L23)
+  - [x] Testing an Asynchronous Push from the Server
+    [code:test](https://github.com/smeade/hellophoenix/blob/phx-013-testing/test/hello_web/channels/room_channel_test.exs#L24-L27) |
+    [code:channel](https://github.com/smeade/hellophoenix/blob/phx-013-testing/lib/hello_web/channels/room_channel.ex#L25-L28)
 
 ### Deployment
 - [x] **Deploying on Heroku**
