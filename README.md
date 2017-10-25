@@ -20,26 +20,25 @@ Contact: [@smeade](https://twitter.com/smeade).
   - [x] A purely static page
     - [x] Overview   [guide](https://hexdocs.pm/phoenix/adding_pages.html) |
       [demo](https://phx-002-adding-pages.herokuapp.com/hello)
-      - [x] A New Route   [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-route) |
-      [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/router.ex#L20)
-      - [x] A New Controller and Index Action   [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-controller) |
-      [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/controllers/hello_controller.ex#L4-L6)
-      - [x] A New View   [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-view) |
-      [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/views/hello_view.ex)
-      - [x] A New Template: index.html.eex   [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-template) |
-      [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/templates/hello/index.html.eex) |
-      [demo](https://phx-002-adding-pages.herokuapp.com/hello)
+    - [x] A New Route   [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-route) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/router.ex#L20)
+    - [x] A New Controller and Index Action   [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-controller) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/controllers/hello_controller.ex#L4-L6)
+    - [x] A New View   [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-view) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/views/hello_view.ex)
+    - [x] A New Template: index.html.eex   [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-template) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/templates/hello/index.html.eex) |
+    [demo](https://phx-002-adding-pages.herokuapp.com/hello)
   - [x] Another New Page: Sending Parameters
     - [x] Overview   [guide](https://hexdocs.pm/phoenix/adding_pages.html#another-new-page) |
       [demo](https://phx-002-adding-pages.herokuapp.com/hello/Scott)
-      - [x] Another New Route   [guide](https://hexdocs.pm/phoenix/adding_pages.html#another-new-page) |
-      [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/router.ex#L21)
-      - [x] A New Action: show   [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-action) |
-      [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/controllers/hello_controller.ex#L8-L10)
-      - [x] Another New Template: show.html.eex   [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-action) |
-      [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/templates/hello/show.html.eex) |
-      [demo](https://phx-002-adding-pages.herokuapp.com/hello/Scott)
-
+    - [x] Another New Route   [guide](https://hexdocs.pm/phoenix/adding_pages.html#another-new-page) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/router.ex#L21)
+    - [x] A New Action: show   [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-action) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/controllers/hello_controller.ex#L8-L10)
+    - [x] Another New Template: show.html.eex   [guide](https://hexdocs.pm/phoenix/adding_pages.html#a-new-action) |
+    [code](https://github.com/smeade/hellophoenix/blob/phx-002-adding-pages/lib/hello_web/templates/hello/show.html.eex) |
+    [demo](https://phx-002-adding-pages.herokuapp.com/hello/Scott)
 - [x] **Routing**
   - [x] Resources [guide](https://hexdocs.pm/phoenix/routing.html#resources) |
     [code](https://github.com/smeade/hellophoenix/blob/phx-003-routing/lib/hello_web/router.ex#L34) |
@@ -102,9 +101,11 @@ Contact: [@smeade](https://twitter.com/smeade).
 - [x] **Views**
   - [x] Rendering Templates
     - [x] Overview   [guide](https://hexdocs.pm/phoenix/views.html#rendering-templates)
-    - [x] View Functions   [code](https://github.com/smeade/hellophoenix/blob/phx-007-views/lib/hello_web/views/layout_view.ex#L4-L8) |
+    - [x] View Functions
+      [code](https://github.com/smeade/hellophoenix/blob/phx-007-views/lib/hello_web/views/layout_view.ex#L4-L8) |
       [demo](https://phx-007-views.herokuapp.com/hello)
-      - [x] Templates are function definitions   [code](https://github.com/smeade/hellophoenix/blob/phx-007-views/lib/hello_web/views/page_view.ex#L4-L12) |
+    - [x] Templates are function definitions
+      [code](https://github.com/smeade/hellophoenix/blob/phx-007-views/lib/hello_web/views/page_view.ex#L4-L12) |
       [demo](https://phx-007-views.herokuapp.com)
   - [x] A Word About Layouts [guide](https://hexdocs.pm/phoenix/views.html#a-word-about-layouts) |
     [code](https://github.com/smeade/hellophoenix/blob/phx-007-views/lib/hello_web/templates/layout/app.html.eex#L62)
@@ -147,7 +148,6 @@ Contact: [@smeade](https://twitter.com/smeade).
     [code](https://github.com/smeade/phoenixchat/blob/master/lib/hello_web/channels/user_socket.ex#L8-L10)
   - [x] Client Libraries [guide](https://hexdocs.pm/phoenix/channels.html#client-libraries) |
     [code](https://github.com/smeade/phoenixchat/blob/master/assets/js/socket.js#L6)
-  ]
 - [x] **Channels Sample application**
   - [x] Overview [guide](https://hexdocs.pm/phoenix/channels.html#tying-it-all-together) |
     [code](https://github.com/smeade/phoenixchat) |
@@ -171,11 +171,11 @@ Contact: [@smeade](https://twitter.com/smeade).
   - [x] Generate an Ecto schema [code: schema](https://github.com/smeade/hellophoenix/blob/phx-010-ecto/lib/hello/accounts/user.ex) |
     [code: migration](https://github.com/smeade/hellophoenix/blob/phx-010-ecto/priv/repo/migrations/20171018223105_create_users.exs)
   - [x] Changesets and Validations [guide](https://hexdocs.pm/phoenix/ecto.html#changesets-and-validations) |
+    [ecto guide](https://hexdocs.pm/ecto/Ecto.Changeset.html) |
     [code: cast](https://github.com/smeade/hellophoenix/blob/phx-010-ecto/lib/hello/accounts/user.ex#L18) |
     [code: validate](https://github.com/smeade/hellophoenix/blob/phx-010-ecto/lib/hello/accounts/user.ex#L19-L22)
-    [doc](https://hexdocs.pm/ecto/Ecto.Changeset.html)
   - [x] Data Persistence [guide](https://hexdocs.pm/phoenix/ecto.html#data-persistence) |
-    [doc](https://hexdocs.pm/ecto/Ecto.Query.html#content)
+    [ecto guide](https://hexdocs.pm/ecto/Ecto.Query.html#content)
 - [x] **Contexts**
   - [x] Overview [guide](https://hexdocs.pm/phoenix/contexts.html)
   - [x] Adding an Accounts Context With Generators [guide](https://hexdocs.pm/phoenix/contexts.html#adding-an-accounts-context) |
@@ -194,13 +194,14 @@ Contact: [@smeade](https://twitter.com/smeade).
   - [x] Adding Account Functions: e.g. Sessions
     - [x] Overview   [guide](https://hexdocs.pm/phoenix/contexts.html#adding-account-functions) |
       [demo](https://phx-011-contexts.herokuapp.com/sessions/new)
-      - [x] Add authenticate_by_email_password function to accounts   [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/accounts/accounts.ex#L12-L22)
-       - [x] Create session controller   [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/accounts/accounts.ex#L12) |
-      [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/controllers/session_controller.ex#L11)
-      - [x] Add sessions to router   [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/router.ex#L21-L22)
-       - [x] Add an authentication plug to the router   [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/router.ex#L30-L40)
-        - [x] Create session view and template   [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/views/session_view.ex) |
-      [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/templates/session/new.html.eex)
+    - [x] Add authenticate_by_email_password function to accounts
+      [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/accounts/accounts.ex#L12-L22)
+    - [x] Create session controller   [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/accounts/accounts.ex#L12) |
+    [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/controllers/session_controller.ex#L11)
+    - [x] Add sessions to router   [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/router.ex#L21-L22)
+    - [x] Add an authentication plug to the router   [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/router.ex#L30-L40)
+    - [x] Create session view and template   [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/views/session_view.ex) |
+    [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/templates/session/new.html.eex)
   - [x] Cross-context dependencies: e.g. CMS.Author <-> Accounts.User
     - [x] Overview [guide](https://hexdocs.pm/phoenix/contexts.html#cross-context-dependencies)
     - [x] New CMS context
@@ -215,7 +216,7 @@ Contact: [@smeade](https://twitter.com/smeade).
   - [x] Cross-context data: e.g. CMS.Author <-> Accounts.User
     - [x] Overview   [guide](https://hexdocs.pm/phoenix/contexts.html#cross-context-data) |
       [demo](https://phx-011-contexts.herokuapp.com/cms/pages/1)
-      - [x] Tie pages to authors and author to users
+    - [x] Tie pages to authors and author to users
       - [x] page belongs_to author [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/page.ex#L10)
       - [x] author has_many pages [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/author.ex#L11)
       - [x] author belongs_to user [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/author.ex#L12)
@@ -227,8 +228,8 @@ Contact: [@smeade](https://twitter.com/smeade).
       - [x] make use of current_author in the connection assigns from require_existing_author plug [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/controllers/cms/page_controller.ex#L21)
       - [x] display author when showing a page     [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/templates/cms/page/show.html.eex#L20-L23) | [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello_web/views/cms/page_view.ex#L6-L8) |
       [demo](https://phx-011-contexts.herokuapp.com/cms/pages/1)
-    - [x] Adding CMS functions: e.g. page views
-    - [x] Overview [guide](https://hexdocs.pm/phoenix/contexts.html#adding-cms-functions)
+  - [x] Adding CMS functions: e.g. page views
+    - [x] Overview [guide](https://hexdocs.pm/phoenix/contexts.html#adding-cms-functions) |
       [demo](https://phx-011-contexts.herokuapp.com/cms/pages)
     - [x] add an inc_page_views function
       [code](https://github.com/smeade/phoenix-contexts/blob/master/lib/hello/cms/cms.ex#L29-L36)
@@ -254,18 +255,17 @@ Contact: [@smeade](https://twitter.com/smeade).
     [guide](https://hexdocs.pm/phoenix/testing.html#randomization)
 - [x] **Testing Schemas**
   - [x] Test Driving a Changeset
-    [guide](https://hexdocs.pm/phoenix/testing_schemas.html#test-driving-a-changeset) |
-    [code:user_test](https://github.com/smeade/hellophoenix/blob/phx-013-testing/test/hello/accounts/user_test.exs) |
-    [code:user](https://github.com/smeade/hellophoenix/blob/phx-013-testing/lib/hello/accounts/user.ex#L20-L22)
+    [guide](https://hexdocs.pm/phoenix/testing_schemas.html#test-driving-a-changeset)
+  - [x] add tests [code](https://github.com/smeade/hellophoenix/blob/phx-013-testing/test/hello/accounts/user_test.exs)
+  - [x] make them pass [code](https://github.com/smeade/hellophoenix/blob/phx-013-testing/lib/hello/accounts/user.ex#L20-L22)
 - [ ] **Testing Controllers**
 - [ ] **Testing Channels**
 
 ### Deployment
-- [x] **Deploying on Heroku** [
+- [x] **Deploying on Heroku**
   [guide](https://hexdocs.pm/phoenix/heroku.html#content) |
   [code](https://github.com/smeade/hellophoenix/tree/phx-001-up-and-running) |
   [demo](https://phx-001-up-and-running.herokuapp.com)
-  ]
 
 ## Deploying each branch to its own Heroku app
 
