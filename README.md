@@ -246,6 +246,7 @@ Contact: [@smeade](https://twitter.com/smeade).
 
 ### Testing
 - [x] **Introduction to Testing**
+  - [x] Overview [guide](https://hexdocs.pm/phoenix/testing.html)
   - [x] Running Tests Using Tags [guide](https://hexdocs.pm/phoenix/testing.html#running-tests-using-tags) |
     [code:moduletag](https://github.com/smeade/hellophoenix/blob/phx-013-testing/test/hello_web/views/error_view_test.exs#L4-L5) |
     [code:tag](https://github.com/smeade/hellophoenix/blob/phx-013-testing/test/hello_web/views/error_view_test.exs#L10-L11)
