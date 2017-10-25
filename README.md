@@ -261,7 +261,7 @@ Contact: [@smeade](https://twitter.com/smeade).
 - [x] **Testing Controllers**
   - [x] Overview [guide](https://hexdocs.pm/phoenix/testing_controllers.html)
   - [x] user_controller_text.exs [code](https://github.com/smeade/hellophoenix/blob/phx-013-testing/test/hello_web/controllers/user_controller_test.exs)
-- [ ] **Testing Channels**
+- [x] **Testing Channels**
   - [x] Overview [guide](https://hexdocs.pm/phoenix/testing_channels.html)
   - [x] Generate a channel and tests
     [code](https://github.com/smeade/hellophoenix/blob/phx-013-testing/lib/hello_web/channels/room_channel.ex)
