@@ -2,10 +2,10 @@ defmodule HelloWeb.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", HelloWeb.RoomChannel
+  channel "room:lobby", HelloWeb.RoomChannel
 
   ## Transports
-  # Ensure that any idle connections are closed by Phoenix 
+  # Ensure that any idle connections are closed by Phoenix
   # before they reach Heroku’s 55-second timeout window
   # https://hexdocs.pm/phoenix/heroku.html#making-our-project-ready-for-heroku
   transport :websocket, Phoenix.Transports.WebSocket,
